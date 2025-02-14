@@ -259,3 +259,279 @@ INFO 2025-02-14 18:41:08,598 basehttp "GET /static/assets/css/auth.css HTTP/1.1"
 INFO 2025-02-14 18:41:27,447 basehttp "GET / HTTP/1.1" 200 1270
 INFO 2025-02-14 18:41:27,508 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
 INFO 2025-02-14 18:41:27,518 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:48:59,818 autoreload Watching for file changes with StatReloader
+ERROR 2025-02-14 18:53:27,607 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'first_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py", line 25, in register_view
+    first_name = request.POST['first_name']
+                 ~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'first_name'
+INFO 2025-02-14 18:54:01,575 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:54:02,023 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11502
+INFO 2025-02-14 18:54:02,081 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,118 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,126 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,137 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,137 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,144 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:54:02,146 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,149 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,152 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,157 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,159 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,161 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,169 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,174 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,186 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,186 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,202 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,205 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,217 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,217 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,276 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,281 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,281 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:02,282 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,817 basehttp "GET /admin/auth/user/3/change/ HTTP/1.1" 200 21213
+INFO 2025-02-14 18:54:04,862 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,871 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,881 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,882 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,885 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,891 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:54:04,895 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,899 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:04,918 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:05,160 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:05,161 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:05,162 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:05,163 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:05,163 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2025-02-14 18:54:09,468 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11502
+ERROR 2025-02-14 19:15:36,992 log Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py", line 51, in logout_view
+    return redirect('login')
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2025-02-14 19:15:39,728 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py", line 40, in register_view
+    user = User.objects.create_user(username=username, email=email, password=password1,first_name=first_name,last_name=last_name)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\models.py", line 162, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\models.py", line 156, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+ERROR 2025-02-14 19:16:53,054 log Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py", line 51, in logout_view
+    return redirect('login')
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2025-02-14 19:18:58,835 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py", line 40, in register_view
+    user = User.objects.create_user(username=username, email=email, password=password1,first_name=first_name,last_name=last_name)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\models.py", line 162, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\models.py", line 156, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username

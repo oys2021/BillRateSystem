@@ -1,0 +1,18 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.1, pytest-8.3.4, pluggy-1.5.0 -- C:\Users\dell\Documents\revenue_collection\venv\Scripts\python.exe
+cachedir: .pytest_cache
+django: version: 5.1.6, settings: revenue_collection_web.settings (from ini)
+metadata: {'Python': '3.13.1', 'Platform': 'Windows-10-10.0.19045-SP0', 'Packages': {'pytest': '8.3.4', 'pluggy': '1.5.0'}, 'Plugins': {'django': '4.10.0', 'html': '4.1.1', 'metadata': '3.1.1'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-19'}
+rootdir: C:\Users\dell\Documents\revenue_collection\revenue_collection_web
+configfile: pytest.ini
+plugins: django-4.10.0, html-4.1.1, metadata-3.1.1
+collecting ... collected 6 items
+
+tests/test_auth.py::test_register_user PASSED                            [ 16%]
+tests/test_auth.py::test_login_user PASSED                               [ 33%]
+tests/test_auth.py::test_logout_user PASSED                              [ 50%]
+tests/test_auth.py::test_register_with_existing_username PASSED          [ 66%]
+tests/test_auth.py::test_register_with_mismatched_passwords PASSED       [ 83%]
+tests/test_auth.py::test_login_invalid_credentials PASSED                [100%]
+
+============================== 6 passed in 9.77s ==============================
