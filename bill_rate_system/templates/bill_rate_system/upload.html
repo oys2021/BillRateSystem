@@ -1,0 +1,23 @@
+{% extends 'bill_rate_system/base.html' %}
+
+{% block content %}
+    <section>
+        <form class="formclass" action="" autocomplete="off" enctype="multipart/form-data">
+            <p>Upload File</p>
+            <div>
+                <input type="file" id="upload" style="display:none;"/>
+                <label for="upload">Select Files</label>
+            </div>
+            <button id="uploadid"><span>&#8682; Upload</span><span class="uploading">Uploading....</span></button>
+            <button class="cancel">Cancel Upload</button>
+            <div class="pr">
+                <strong>
+                    <h4 class="ex">PDF</h4>
+                    <h5 class="size">2.5kb</h5>
+                </strong>
+                <progress min="0" max="100"></progress>
+                <span class="progress-indicator"></span>
+            </div>
+        </form>
+    </section>
+{% endblock %}

@@ -39,7 +39,7 @@ def test_login_user(client):
     })
     
     assert response.status_code == 302  
-    assert response.url == reverse('authentication:register')  
+    assert response.url == reverse('bill_rate_system:upload-page')  
     
     
 @pytest.mark.django_db

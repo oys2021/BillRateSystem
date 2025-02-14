@@ -57,7 +57,7 @@ function uploadFile(file) {
         }
     });
 
-    fetch('/upload_temp_file/', { 
+    fetch('/revenue_collection/upload_temp_file/', { 
         method: 'POST',
         body: formData,
     })
@@ -135,7 +135,7 @@ function confirmProcessing() {
         }
     });
 
-    fetch("/process_file/", {
+    fetch("/revenue_collection/process_file/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

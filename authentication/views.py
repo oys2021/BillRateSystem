@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.models import User
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('views_logger')
 
 def login_view(request):
     if request.method == 'POST':
@@ -16,7 +16,7 @@ def login_view(request):
             login(request, user)
             messages.success(request, "You have successfully logged in!")
             logger.info(f"User '{username}' logged in successfully.")
-            return redirect('authentication:register')  
+            return redirect('bill_rate_system:upload-page')  
         else:
             messages.error(request, "Invalid username or password.")
             logger.warning(f"Failed login attempt for username: {username}")

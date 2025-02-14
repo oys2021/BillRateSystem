@@ -1,0 +1,32 @@
+
+
+{% extends 'bill_rate_system/base.html' %}
+
+{% block content %}
+<section class="invoice-list">
+    <div class="container">
+        <h1>Projects from Uploaded Invoice</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Project Name</th>
+                    <th>View Invoice</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for project in projects %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ project }}</td>
+                        <td>
+                            <a href="{% url 'view_invoice' project_name=project %}">View Invoice</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}
+

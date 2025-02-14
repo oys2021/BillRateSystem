@@ -1,0 +1,32 @@
+{% extends 'bill_rate_system/base.html' %}
+
+{% block content %}
+    <section class="invoice">
+        <h1>Invoice for {{ project }}</h1>
+    <table id="invoiceTable">
+        <tr>
+            <th>Employee ID</th>
+            <th>Number of Hours</th>
+            <th>Unit Price</th>
+            <th>Cost</th>
+        </tr>
+        {% for entry in invoice %}
+            <tr>
+                <td>{{ entry.Employee_ID }}</td>
+                <td>{{ entry.Total_Hours }}</td>
+                <td>{{ entry.Unit_Price }}</td>
+                <td>{{ entry.Total_Cost }}</td>
+            </tr>
+        {% endfor %}
+        <tr class="total-row">
+            <td colspan="3">Total</td>
+            <td>{{ total_cost }}</td>
+        </tr>
+    </table>
+    <div class="invoice-buttons">
+        <button onclick="exportToExcel()">Download Excel</button>
+        <button onclick="exportToPDF()">Download PDF</button>
+    </div>
+   
+    </section>
+{% endblock %}

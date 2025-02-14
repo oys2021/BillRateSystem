@@ -1,0 +1,43 @@
+{% extends 'brs/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center">
+    <h3>Timesheet Details for {{ sheet_name }}</h3>
+    <a href="{% url 'timesheets' %}" class="btn btn-secondary">Back to List</a>
+</div>
+
+<div class="table-responsive mt-3">
+    <table class="table datanew">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Billable Rate/hr</th>
+                <th>Project</th>
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for timesheet in timesheets %}
+            <tr>
+                <td>{{ timesheet.employee_id }}</td>
+                <td>{{ timesheet.billable_rate }}</td>
+                <td>{{ timesheet.project.name }}</td>
+                <td>{{ timesheet.date }}</td>
+                <td>{{ timesheet.start_time }}</td>
+                <td>{{ timesheet.end_time }}</td>
+                <td>{{ timesheet.created_at }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7" class="text-center">No records found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

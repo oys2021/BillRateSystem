@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="POS - Bootstrap Assistant Template">
+    <meta name="keywords" content="assistant, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, projects">
+    <meta name="author" content="Dreamguys - Bootstrap Assistant Template">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Upload Template</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/law.png' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/select2/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/dataTables.bootstrap4.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/upload.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+
+    {% block extra_head %}
+    {% endblock %}
+</head>
+<body>
+    <div id="global-loader">
+        <div class="whirly-loader"></div>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="header-left active">
+                {% block header %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <ul>
+                    <li><a href=""><img src="{% static 'assets/img/icons/upload.svg' %}" alt="img"><span> Upload Timesheet</span></a></li>
+                    <li><a href=""><img src="{% static 'assets/img/icons/product.svg' %}" alt="img"><span> Projects</span></a></li>
+                    <li><a href=""><img src="{% static 'assets/img/icons/product.svg' %}" alt="img"><span> Add Project</span></a></li>
+                    <li><a href=""><img src="{% static 'assets/img/icons/dashboard.svg' %}" alt="img"><span> Timesheets</span></a></li>
+                    <li><a href=""><img src="{% static 'assets/img/icons/users1.svg' %}" alt="img"><span> Users</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let loader = document.getElementById("global-loader");
+            if (loader) {
+                loader.style.display = "none";
+            }
+        });
+    </script>
+
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/js/upload.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    
+
+    <script src="{%static 'assets/js/feather.min.js'%}"></script>
+    
+    <script src="{%static 'assets/js/jquery.slimscroll.min.js'%}"></script>
+    
+    <script src="{%static 'assets/js/jquery.dataTables.min.js'%}"></script>
+    <script src="{%static 'assets/js/dataTables.bootstrap4.min.js'%}"></script>
+        
+    <script src="{%static 'assets/plugins/select2/js/select2.min.js'%}"></script>
+    
+    <script src="{%static 'assets/plugins/sweetalert/sweetalert2.all.min.js'%}"></script>
+    <script src="{%static 'assets/plugins/sweetalert/sweetalerts.min.js'%}"></script>
+    
+
+    <script>
+        function calculateTotal() {
+            let table = document.getElementById("invoiceTable");
+            let rows = table.getElementsByTagName("tr");
+            let total = 0;
+    
+            // Loop through table rows, skipping the header row and the total row
+            for (let i = 1; i < rows.length - 1; i++) {
+                let costCell = rows[i].getElementsByTagName("td")[3]; // Get the Cost column
+                if (costCell) {
+                    total += parseFloat(costCell.innerText) || 0;
+                }
+            }
+    
+            // Update the total row
+            let totalCell = rows[rows.length - 1].getElementsByTagName("td")[1];
+            if (totalCell) {
+                totalCell.innerText = total.toFixed(2); // Format to 2 decimal places
+            }
+        }
+    
+        function exportToPDF() {
+            calculateTotal(); 
+            const { jsPDF } = window.jspdf;
+            let doc = new jsPDF();
+            doc.text("Invoice for {{ project }}", 10, 10);
+    
+            doc.autoTable({ html: "#invoiceTable", startY: 20 });
+    
+            doc.save("invoice.pdf");
+        }
+
+        function exportToExcel() {
+            calculateTotal(); 
+            let table = document.getElementById("invoiceTable");
+            let wb = XLSX.utils.table_to_book(table, { sheet: "Invoice" });
+            XLSX.writeFile(wb, "invoice.xlsx");
+        }
+    
+     
+    
+       
+        window.onload = calculateTotal;
+    </script>
+    <script>
+        function exportToExcel() {
+            let table = document.getElementById("invoiceTable");
+            let wb = XLSX.utils.table_to_book(table, { sheet: "Invoice" });
+            XLSX.writeFile(wb, "invoice.xlsx");
+        }
+    
+        function exportToPDF() {
+            const { jsPDF } = window.jspdf;  // Correctly reference jsPDF
+            let doc = new jsPDF();
+            doc.text("Invoice for {{ project }}", 10, 10);
+    
+            // Include the autoTable plugin for table export
+            doc.autoTable({ html: "#invoiceTable", startY: 20 });
+    
+            doc.save("invoice.pdf");
+        }
+    </script>
+
+    
+
+    
+    
+
+    {% block extra_js %}
+    {% endblock %}
+</body>
+</html>

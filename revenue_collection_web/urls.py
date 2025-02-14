@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("authentication.urls")),
+    path('revenue_collection/', include("bill_rate_system.urls")),
     
 ]
 
