@@ -1,0 +1,261 @@
+INFO 2025-02-14 17:58:01,475 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 17:59:39,202 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:00:13,540 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-14 18:00:20,750 log Not Found: /
+WARNING 2025-02-14 18:00:20,751 basehttp "GET / HTTP/1.1" 404 3110
+WARNING 2025-02-14 18:00:21,050 log Not Found: /favicon.ico
+WARNING 2025-02-14 18:00:21,051 basehttp "GET /favicon.ico HTTP/1.1" 404 3161
+INFO 2025-02-14 18:02:06,952 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-14 18:02:12,061 log Not Found: /
+WARNING 2025-02-14 18:02:12,062 basehttp "GET / HTTP/1.1" 404 3110
+WARNING 2025-02-14 18:02:14,781 log Not Found: /
+WARNING 2025-02-14 18:02:14,783 basehttp "GET / HTTP/1.1" 404 3110
+INFO 2025-02-14 18:02:44,362 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\urls.py changed, reloading.
+INFO 2025-02-14 18:02:45,461 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-14 18:02:55,706 log Not Found: /
+WARNING 2025-02-14 18:02:55,707 basehttp "GET / HTTP/1.1" 404 2487
+INFO 2025-02-14 18:03:04,636 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-02-14 18:03:04,654 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:03:04,993 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-02-14 18:03:05,596 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-02-14 18:03:05,631 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-02-14 18:03:05,660 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-02-14 18:03:05,698 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-02-14 18:03:05,704 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-02-14 18:03:05,725 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-02-14 18:03:05,743 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+WARNING 2025-02-14 18:03:12,203 log Not Found: /
+WARNING 2025-02-14 18:03:12,204 basehttp "GET / HTTP/1.1" 404 2487
+INFO 2025-02-14 18:03:25,946 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\urls.py changed, reloading.
+INFO 2025-02-14 18:03:27,083 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:03:37,975 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\urls.py changed, reloading.
+INFO 2025-02-14 18:03:38,909 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:03:42,136 basehttp "GET / HTTP/1.1" 200 1088
+INFO 2025-02-14 18:03:42,394 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2703
+INFO 2025-02-14 18:03:42,516 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 200 2485883
+INFO 2025-02-14 18:04:53,859 basehttp "GET / HTTP/1.1" 200 1088
+INFO 2025-02-14 18:04:53,982 basehttp "GET /static/assets/img/law2.jpg HTTP/1.1" 200 2485883
+INFO 2025-02-14 18:05:01,001 basehttp "GET / HTTP/1.1" 200 1088
+INFO 2025-02-14 18:05:01,106 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 200 2445372
+INFO 2025-02-14 18:06:49,991 basehttp "GET / HTTP/1.1" 200 1088
+INFO 2025-02-14 18:06:50,031 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:06:50,035 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2726
+INFO 2025-02-14 18:07:48,136 basehttp "GET / HTTP/1.1" 200 1097
+INFO 2025-02-14 18:07:48,166 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:07:49,679 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:07:49,743 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:08:42,962 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:08:43,034 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2758
+INFO 2025-02-14 18:09:03,407 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:09:03,468 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2760
+INFO 2025-02-14 18:09:04,223 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:09:04,305 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:09:11,064 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:09:11,108 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2760
+INFO 2025-02-14 18:09:11,900 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:09:11,946 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:09:12,082 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:09:12,159 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:09:21,734 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:09:21,773 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2760
+INFO 2025-02-14 18:09:43,550 basehttp "GET / HTTP/1.1" 200 1097
+INFO 2025-02-14 18:09:43,594 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2760
+INFO 2025-02-14 18:09:43,603 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:10:00,208 basehttp "GET / HTTP/1.1" 200 1097
+INFO 2025-02-14 18:10:00,253 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2766
+INFO 2025-02-14 18:10:09,171 basehttp "GET /register/ HTTP/1.1" 200 1150
+INFO 2025-02-14 18:10:09,251 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:10:09,251 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:10:55,998 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:10:56,992 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:11:00,654 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:11:01,990 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:11:07,036 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:11:08,271 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:11:28,528 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:11:29,489 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:11:32,458 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:11:33,540 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:11:35,413 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:11:36,349 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:11:57,583 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:11:58,848 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:01,637 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:02,798 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:05,524 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:06,640 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:19,130 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:20,349 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:23,998 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:25,286 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:28,242 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:29,512 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:37,854 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:38,832 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:42,544 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:43,761 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:12:53,310 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:12:54,293 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:13:02,742 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:13:03,974 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:13:14,708 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:13:15,804 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:13:21,264 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:13:22,488 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:13:27,677 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:13:28,950 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:13:35,484 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:13:36,893 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:13:58,701 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:13:59,932 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:14:01,494 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:14:03,048 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:14:21,263 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:14:22,313 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:14:25,124 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:14:26,299 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:14:56,154 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:14:57,562 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:15:00,259 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:15:01,304 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:15:05,533 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:15:06,613 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:16:50,295 basehttp "GET /register/ HTTP/1.1" 200 1261
+INFO 2025-02-14 18:16:50,336 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:16:50,551 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2726
+INFO 2025-02-14 18:22:25,037 basehttp "GET /register/ HTTP/1.1" 200 1879
+INFO 2025-02-14 18:22:25,112 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 4967
+INFO 2025-02-14 18:22:25,112 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:22:48,299 basehttp "GET /register/ HTTP/1.1" 200 1261
+INFO 2025-02-14 18:22:48,339 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2726
+INFO 2025-02-14 18:24:34,621 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:24:35,640 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:26:26,251 basehttp "GET /register/?username=Yaw&email=sarfo%40gmail.com&password1=yawsarfo2021&password2=yawsarfo2021 HTTP/1.1" 200 1436
+INFO 2025-02-14 18:26:26,307 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:26:26,311 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:21,203 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:27:29,017 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:27:29,118 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-02-14 18:27:29,180 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:29,215 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:29,216 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:29,251 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:29,266 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:29,283 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:29,286 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:27:34,619 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:27:34,644 basehttp "GET /admin/ HTTP/1.1" 200 5850
+INFO 2025-02-14 18:27:34,865 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-02-14 18:27:34,879 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-02-14 18:27:34,879 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-02-14 18:27:38,476 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11045
+INFO 2025-02-14 18:27:38,540 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-02-14 18:27:38,549 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-02-14 18:27:38,555 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-02-14 18:27:38,558 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-02-14 18:27:38,563 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-02-14 18:27:38,572 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:27:38,574 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-02-14 18:27:38,578 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-02-14 18:27:38,591 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-02-14 18:27:38,607 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-02-14 18:27:38,608 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-02-14 18:27:38,647 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-02-14 18:27:38,651 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-02-14 18:27:38,807 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-02-14 18:27:38,817 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-02-14 18:27:38,818 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-02-14 18:28:05,257 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:28:06,217 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:28:19,294 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:28:20,299 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:28:43,339 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:28:44,365 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:29:09,706 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:29:10,756 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:30:08,781 basehttp "GET /register/ HTTP/1.1" 200 1428
+INFO 2025-02-14 18:30:08,861 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:30:08,863 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:30:41,589 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:30:41,602 basehttp "GET / HTTP/1.1" 200 1413
+INFO 2025-02-14 18:30:41,655 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:31:01,150 basehttp "POST / HTTP/1.1" 302 0
+INFO 2025-02-14 18:31:01,158 basehttp "GET /register/ HTTP/1.1" 200 1543
+INFO 2025-02-14 18:31:01,207 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:32:27,861 basehttp "GET /register/ HTTP/1.1" 200 1614
+INFO 2025-02-14 18:32:27,944 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:33:43,420 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:33:44,478 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:33:47,972 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:33:49,386 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:33:52,643 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:33:53,960 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:33:57,085 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:33:58,240 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:34:01,472 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:34:02,477 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:34:05,587 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:34:07,011 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:34:25,752 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:34:26,934 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:34:30,642 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:34:31,803 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:34:37,408 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\authentication\views.py changed, reloading.
+INFO 2025-02-14 18:34:38,498 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 18:34:45,005 basehttp "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:34:45,096 basehttp "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 3692
+INFO 2025-02-14 18:34:52,511 basehttp "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:34:52,566 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11494
+INFO 2025-02-14 18:34:52,650 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:34:52,973 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-02-14 18:34:56,176 basehttp "GET /admin/auth/user/2/change/ HTTP/1.1" 200 21185
+INFO 2025-02-14 18:34:56,231 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2025-02-14 18:34:56,243 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:34:56,259 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-02-14 18:34:56,260 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-02-14 18:34:56,260 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-02-14 18:34:56,267 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2025-02-14 18:34:56,270 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15502
+INFO 2025-02-14 18:34:56,274 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-02-14 18:34:56,292 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-02-14 18:34:56,475 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2025-02-14 18:34:56,477 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-02-14 18:34:56,478 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-02-14 18:34:56,484 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-02-14 18:34:56,502 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-02-14 18:34:59,555 basehttp "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:34:59,581 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11685
+INFO 2025-02-14 18:34:59,633 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:35:02,083 basehttp "GET /admin/auth/user/2/change/ HTTP/1.1" 200 21185
+INFO 2025-02-14 18:35:02,138 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:35:04,172 basehttp "GET /admin/auth/user/2/delete/ HTTP/1.1" 200 7080
+INFO 2025-02-14 18:35:04,226 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-02-14 18:35:05,341 basehttp "POST /admin/auth/user/2/delete/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:35:05,366 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11195
+INFO 2025-02-14 18:35:05,429 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-02-14 18:35:54,985 log Forbidden (CSRF token from POST incorrect.): /register/
+WARNING 2025-02-14 18:35:54,986 basehttp "POST /register/ HTTP/1.1" 403 2503
+INFO 2025-02-14 18:36:01,092 basehttp "GET /register/ HTTP/1.1" 200 1614
+INFO 2025-02-14 18:36:28,388 basehttp "GET /register/ HTTP/1.1" 200 1614
+INFO 2025-02-14 18:36:28,439 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 2726
+INFO 2025-02-14 18:36:28,504 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 200 2485883
+WARNING 2025-02-14 18:36:29,630 log Not Found: /favicon.ico
+WARNING 2025-02-14 18:36:29,632 basehttp "GET /favicon.ico HTTP/1.1" 404 3155
+INFO 2025-02-14 18:36:35,285 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11045
+INFO 2025-02-14 18:36:35,347 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 18:37:05,279 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2025-02-14 18:37:05,288 basehttp "GET / HTTP/1.1" 200 1413
+INFO 2025-02-14 18:37:05,450 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 200 2445372
+INFO 2025-02-14 18:37:15,120 basehttp "POST / HTTP/1.1" 200 1398
+INFO 2025-02-14 18:37:27,284 basehttp "POST / HTTP/1.1" 302 0
+INFO 2025-02-14 18:37:27,291 basehttp "GET /register/ HTTP/1.1" 200 1729
+INFO 2025-02-14 18:40:55,564 basehttp "GET /register/ HTTP/1.1" 200 1614
+INFO 2025-02-14 18:40:55,613 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3267
+INFO 2025-02-14 18:40:55,622 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-14 18:41:07,074 basehttp "GET /register/ HTTP/1.1" 200 1614
+INFO 2025-02-14 18:41:07,127 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:41:08,551 basehttp "GET /register/ HTTP/1.1" 200 1614
+INFO 2025-02-14 18:41:08,598 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:41:27,447 basehttp "GET / HTTP/1.1" 200 1270
+INFO 2025-02-14 18:41:27,508 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-14 18:41:27,518 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
