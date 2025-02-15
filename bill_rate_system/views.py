@@ -3,7 +3,7 @@ from django.core.files.storage import default_storage
 import pandas as pd 
 import json
 import os
-from datetime import datetime
+from datetime import datetime,date
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from bill_rate_system.models import Timesheet,Project 
@@ -15,6 +15,9 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 import logging
 logger = logging.getLogger('views_logger')
+from collections import defaultdict
+from decimal import Decimal
+
 
 
 @login_required(login_url='authentication:login')
@@ -337,6 +340,7 @@ def project_list(request):
     logger.info(f"Retrieved {projects.count()} projects from the database.")
     return render(request, 'bill_rate_system/project_list.html', {'projects': projects})
 
+
 @login_required(login_url='authentication:login')
 def timesheets(request):
     logger.info(f"User {request.user} accessed the timesheets page.")
@@ -364,12 +368,14 @@ def edit_timesheet_name(request, timesheet_id):
 
     return render(request, "bill_rate_system/edit_timesheet.html", {"timesheet": timesheet})
 
+
 @login_required(login_url='authentication:login')
 def timesheet_detail(request, sheet_name):
     logger.info(f"User {request.user} accessed timesheet details for sheet name {sheet_name}.")
     timesheets = Timesheet.objects.filter(sheet_name=sheet_name)
     logger.info(f"Retrieved {timesheets.count()} entries for sheet name {sheet_name}.")
     return render(request, 'bill_rate_system/timesheet_detail.html', {'timesheets': timesheets, "sheet_name": sheet_name})
+
 
 @login_required(login_url='authentication:login')
 def project_add(request):
@@ -403,3 +409,42 @@ def project_edit(request, id):
             return redirect('bill_rate_system:project_edit', id=id) 
 
     return render(request, 'bill_rate_system/project_edit.html', {'project': project})
+
+
+
+
+@login_required(login_url='authentication:login')
+def invoice_db_list(request, sheet_name):
+    projects = Timesheet.objects.filter(sheet_name=sheet_name).values('project__name', 'sheet_name').distinct()
+    return render(request, 'bill_rate_system/invoice_list.html', {'projects': projects})
+
+
+
+@login_required(login_url='authentication:login')
+def invoice_details(request,sheet_name, project_name):
+    timesheets = Timesheet.objects.filter(sheet_name=sheet_name,project__name=project_name)
+    
+    invoices = defaultdict(lambda: {"hours_worked": 0, "unit_price": 0, "cost": 0})
+
+    for timesheet in timesheets:
+        hours_worked = (datetime.combine(date.min, timesheet.end_time) - 
+                        datetime.combine(date.min, timesheet.start_time)).total_seconds() / 3600
+
+        employee_id = timesheet.employee_id
+
+        invoices[employee_id]["hours_worked"] += round(hours_worked, 2)
+        invoices[employee_id]["unit_price"] = timesheet.billable_rate  
+        invoices[employee_id]["cost"] += Decimal(hours_worked) * timesheet.billable_rate  # Sum up total cost
+
+    invoice_list = [
+        {"employee_id": emp_id, "hours_worked": data["hours_worked"], "unit_price": data["unit_price"], "cost": data["cost"]}
+        for emp_id, data in invoices.items()
+    ]
+
+    total_cost = sum(item["cost"] for item in invoice_list)
+
+    return render(request, 'bill_rate_system/invoice_details.html', {
+        'project_name': project_name,
+        'invoices': invoice_list,
+        'total_cost': total_cost
+    })

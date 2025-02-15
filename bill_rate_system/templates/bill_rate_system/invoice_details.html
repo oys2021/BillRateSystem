@@ -1,0 +1,62 @@
+{% extends 'bill_rate_system/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h3>Invoice for Project: {{ project_name }}</h3>
+
+    <table class="table datanew" id="invoiceTable">
+        <thead>
+            <tr style="background-color: #3366cc; color: white;">
+                <th>Employee ID</th>
+                <th>Number of Hours</th>
+                <th>Unit Price</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for invoice in invoices %}
+                <tr>
+                    <td>{{ invoice.employee_id }}</td>
+                    <td>{{ invoice.hours_worked }}</td>
+                    <td>{{ invoice.unit_price }}</td>
+                    <td>{{ invoice.cost }}</td>  
+                </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="3" class="text-right"><strong>Total</strong></td>
+                <td><strong>{{ total_cost }}</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <div class="mb-3">
+        <button onclick="downloadPDF()" class="btn btn-danger">Download PDF</button>
+        <button onclick="downloadExcel()" class="btn btn-success">Download Excel</button>
+    </div>
+
+</div>
+
+<script>
+    function downloadPDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        doc.text("Invoice for Project: {{ project_name }}", 10, 10);
+
+        doc.autoTable({ html: '#invoiceTable', startY: 20 });
+
+        doc.save("Invoice_{{ project_name }}.pdf");
+    }
+
+    function downloadExcel() {
+        let table = document.getElementById("invoiceTable");
+        let worksheet = XLSX.utils.table_to_sheet(table);
+        let workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Invoice");
+
+        XLSX.writeFile(workbook, "Invoice_{{ project_name }}.xlsx");
+    }
+</script>
+
+{% endblock %}

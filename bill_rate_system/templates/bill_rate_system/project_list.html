@@ -1,50 +1,58 @@
 {% extends 'bill_rate_system/base.html' %}
-{%load static %}
+{% load static %}
 {% block content %}
+
 <div class="d-flex justify-content-between align-items-center">
     <h3>Project List</h3>
     
     <div class="page-header">
-    <div class="page-btn">
-    <a href="{% url 'bill_rate_system:project_add' %}" class="btn btn-added">
-    <img src="{% static 'assets/img/icons/plus.svg'%}" class="me-1" alt="img">Add Project
-    </a>
+        <div class="page-btn">
+            <a href="{% url 'bill_rate_system:project_add' %}" class="btn btn-added">
+                <img src="{% static 'assets/img/icons/plus.svg' %}" class="me-1" alt="img">Add Project
+            </a>
+        </div>
     </div>
-    </div>
-    <div></div>
 </div>
-    
+
 <div class="table-responsive">
-    <table class="table  datanew">
-    <thead>
-    <tr>
-    <th>Project Name</th>
-    <th>Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-       
-        {% for project in projects %}
-        <tr>
-            <td>{{ project.name }}</td>
-            <td>
-                <a href="{% url 'bill_rate_system:project_edit' project.id %}" class="btn btn-primary">Edit</a>
-
-            </td>
-        </tr>
-    {% endfor %}
-    
-    </tbody>
+    <table class="table datanew">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for project in projects %}
+                <tr>
+                    <td>{{ project.name }}</td>
+                    <td>
+                        <a href="{% url 'bill_rate_system:project_edit' project.id %}" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
     </table>
-    </div>
-    </div>
-    </div>
-    
-    </div>
-    </div>
-    </div>
-    
-    
+</div>
 
-{% comment %} <a href="{% url 'project_add' %}" class="btn btn-success">Add New Project</a> {% endcomment %}
+{% comment %} <!-- Expire Confirmation Modal -->
+<div class="modal fade" id="confirmExpireModal" tabindex="-1" aria-labelledby="confirmExpireLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmExpireLabel">Confirm Expiration</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to expire the project <strong id="projectName"></strong>?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirmExpireBtn">Yes, Expire</button>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+
+
 {% endblock %}

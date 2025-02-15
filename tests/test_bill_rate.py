@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 from bill_rate_system.models import Project, Timesheet
 from django.contrib.messages import get_messages
 from datetime import date, time
-
+from decimal import Decimal
 
 
 
@@ -63,7 +63,9 @@ def test_upload_temp_file_unregistered_project(client):
     response = client.post(reverse('bill_rate_system:upload_temp_file'), {'file': csv_file})
 
     assert response.status_code == 400
-    assert "These projects are not registered" in response.json()['error']
+    assert "These projects/companies are not registered" in response.json()['error']
+    assert "Unknown Project" in response.json()['error']
+
 
 @pytest.mark.django_db
 def test_process_file(client):
@@ -283,3 +285,31 @@ def test_project_edit(client):
 
 
 
+def test_invoice_db_list_authenticated(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    url = reverse("bill_rate_system:invoice_list", args=["sheet1"])
+    response = client.get(url)
+
+    assert response.status_code == 200
+    assert "projects" in response.context
+    assert len(response.context["projects"]) == 2  
+    
+
+def test_invoice_details_authenticated(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    url = reverse("bill_rate_system:invoice_details", args=["sheet1", "Facebook"])
+    response = client.get(url)
+
+    assert response.status_code == 200
+    assert "invoices" in response.context
+    assert "total_cost" in response.context
+
+    invoices = response.context["invoices"]
+    total_cost = response.context["total_cost"]
+
+    assert len(invoices) == 2 
+    assert total_cost == Decimal("580.00")  
+
+ 

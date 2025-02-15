@@ -9,6 +9,7 @@
     <meta name="author" content="Dreamguys - Bootstrap Assistant Template">
     <meta name="robots" content="noindex, nofollow">
     <title>Upload Template</title>
+    
 
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/law.png' %}">
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
@@ -21,7 +22,12 @@
     <link rel="stylesheet" href="{% static 'assets/css/upload.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-
+    
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+    </style>
 
     {% block extra_head %}
     {% endblock %}
@@ -45,10 +51,11 @@
             <div id="sidebar-menu" class="sidebar-menu">
                 <ul>
                     <li><a href="{% url 'bill_rate_system:upload-page'%}"><img src="{% static 'assets/img/icons/upload1.svg' %}" alt="img"><span> Upload Timesheet</span></a></li>
-                    <li><a href="{% url 'bill_rate_system:project_list'%}"><img src="{% static 'assets/img/icons/company.svg' %}" alt="img"><span> Projects</span></a></li>
-                    {% comment %} <li><a href="{% url 'bill_rate_system:project_add'%}"><img src="{% static 'assets/img/icons/product.svg' %}" alt="img"><span> Add Project</span></a></li> {% endcomment %}
+                    <li><a href="{% url 'bill_rate_system:project_list'%}"><img src="{% static 'assets/img/icons/company.svg' %}" alt="img"><span> project</span></a></li>
                     <li><a href="{% url 'bill_rate_system:timesheets'%}"><img src="{% static 'assets/img/icons/csv.svg' %}" alt="img"><span> Timesheets</span></a></li>
                     <li><a href="{% url 'authentication:logout'%}"><img  src="{% static 'assets/img/icons/logout.svg' %}" alt="img" ><span> logout</span></a></li>
+                    
+
                 </ul>
             </div>
         </div>

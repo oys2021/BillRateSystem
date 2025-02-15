@@ -1,0 +1,43 @@
+{% extends 'bill_rate_system/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h3>Invoices</h3>
+
+    
+<div class="table-responsive mt-3">
+    <table class="table datanew">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Invoice Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for project in projects %}
+            <tr>
+                <td>{{ project.project__name }}</td>
+                <td>
+                    {% if project.sheet_name and project.project__name %}
+                        <a href="{% url 'bill_rate_system:invoice_details' project.sheet_name project.project__name %}" class="btn btn-primary">
+                            View Invoice
+                        </a>
+                    {% else %}
+                        <span class="text-danger">Missing Data</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No invoices available.</td>
+            </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+</div>
+    
+   
+</div>
+{% endblock %}

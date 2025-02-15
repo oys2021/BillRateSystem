@@ -7,6 +7,13 @@
     <a href="{% url 'bill_rate_system:timesheets' %}" class="btn btn-secondary">Back to List</a>
 </div>
 
+<!-- Generate Invoice Button -->
+<div class="text-right mt-3">
+    <a href="{% url 'bill_rate_system:invoice_list' sheet_name=sheet_name %}" class="btn btn-success">
+        Generate Invoice
+    </a>
+</div>
+
 <div class="table-responsive mt-3">
     <table class="table datanew">
         <thead>

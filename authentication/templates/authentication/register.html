@@ -26,8 +26,8 @@
                     <input type="text" name="last_name" placeholder="Last Name" required />
                     <input type="text" name="username" placeholder="User Name" required />
                     <input type="email" name="email" placeholder="Email" required />
-                    <input type="password" name="password1" placeholder="User Password" required />
-                    <input type="password" name="password2" placeholder="Confirm Password" required />
+                    <input type="password" name="password1" placeholder="User Password" minlength="8" required />
+                    <input type="password" name="password2" placeholder="Confirm Password"  minlength="8" required />
                     <button class="btn" type="submit">Register</button>
                 </form>
                 <p class="account">Already have an account <a href="{%url 'authentication:login'%}">Login</a></p>
