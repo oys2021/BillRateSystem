@@ -1,0 +1,29 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.1, pytest-8.3.4, pluggy-1.5.0 -- C:\Users\dell\Documents\revenue_collection\venv\Scripts\python.exe
+cachedir: .pytest_cache
+django: version: 5.1.6, settings: revenue_collection_web.settings (from ini)
+metadata: {'Python': '3.13.1', 'Platform': 'Windows-10-10.0.19045-SP0', 'Packages': {'pytest': '8.3.4', 'pluggy': '1.5.0'}, 'Plugins': {'django': '4.10.0', 'html': '4.1.1', 'metadata': '3.1.1'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-19'}
+rootdir: C:\Users\dell\Documents\revenue_collection\revenue_collection_web
+configfile: pytest.ini
+plugins: django-4.10.0, html-4.1.1, metadata-3.1.1
+collecting ... collected 17 items
+
+tests/test_auth.py::test_register_user PASSED                            [  5%]
+tests/test_auth.py::test_login_user PASSED                               [ 11%]
+tests/test_auth.py::test_logout_user PASSED                              [ 17%]
+tests/test_auth.py::test_register_with_existing_username PASSED          [ 23%]
+tests/test_auth.py::test_register_with_mismatched_passwords PASSED       [ 29%]
+tests/test_auth.py::test_login_invalid_credentials PASSED                [ 35%]
+tests/test_bill_rate.py::test_upload_page PASSED                         [ 41%]
+tests/test_bill_rate.py::test_upload_temp_file_valid_csv PASSED          [ 47%]
+tests/test_bill_rate.py::test_upload_temp_file_missing_file PASSED       [ 52%]
+tests/test_bill_rate.py::test_upload_temp_file_invalid_extension PASSED  [ 58%]
+tests/test_bill_rate.py::test_upload_temp_file_unregistered_project PASSED [ 64%]
+tests/test_bill_rate.py::test_process_file PASSED                        [ 70%]
+tests/test_bill_rate.py::test_process_file_missing_file PASSED           [ 76%]
+tests/test_bill_rate.py::test_list_projects_with_data PASSED             [ 82%]
+tests/test_bill_rate.py::test_view_invoice_authenticated PASSED          [ 88%]
+tests/test_bill_rate.py::test_view_invoice_no_session_data PASSED        [ 94%]
+tests/test_bill_rate.py::test_view_invoice_project_not_found PASSED      [100%]
+
+============================= 17 passed in 18.59s =============================

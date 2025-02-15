@@ -1,32 +1,40 @@
 {% extends 'bill_rate_system/base.html' %}
 
 {% block content %}
-    <section class="invoice">
-        <h1>Invoice for {{ project }}</h1>
-    <table id="invoiceTable">
-        <tr>
-            <th>Employee ID</th>
-            <th>Number of Hours</th>
-            <th>Unit Price</th>
-            <th>Cost</th>
-        </tr>
-        {% for entry in invoice %}
+<section class="invoice">
+    <h1>Invoice for {{ project }}</h1>
+
+    {% if invoice and invoice != "No invoice data found" and invoice != "No data found for project: " %}
+        <table id="invoiceTable">
             <tr>
-                <td>{{ entry.Employee_ID }}</td>
-                <td>{{ entry.Total_Hours }}</td>
-                <td>{{ entry.Unit_Price }}</td>
-                <td>{{ entry.Total_Cost }}</td>
+                <th>Employee ID</th>
+                <th>Number of Hours</th>
+                <th>Unit Price</th>
+                <th>Cost</th>
             </tr>
-        {% endfor %}
-        <tr class="total-row">
-            <td colspan="3">Total</td>
-            <td>{{ total_cost }}</td>
-        </tr>
-    </table>
-    <div class="invoice-buttons">
-        <button onclick="exportToExcel()">Download Excel</button>
-        <button onclick="exportToPDF()">Download PDF</button>
-    </div>
-   
-    </section>
+            {% for entry in invoice %}
+                <tr>
+                    <td>{{ entry.Employee_ID }}</td>
+                    <td>{{ entry.Total_Hours }}</td>
+                    <td>{{ entry.Unit_Price }}</td>
+                    <td>{{ entry.Total_Cost }}</td>
+                </tr>
+            {% endfor %}
+            <tr class="total-row">
+                <td colspan="3">Total</td>
+                <td>{{ total_cost }}</td>
+            </tr>
+        </table>
+        <div class="invoice-buttons">
+            <button onclick="exportToExcel()">Download Excel</button>
+            <button onclick="exportToPDF()">Download PDF</button>
+        </div>
+    {% else %}
+        <p class="error-message">{{ invoice }}</p>  
+    {% endif %}
+    {% if error %}
+    <p class="error">{{ error }}</p>
+{% endif %}
+
+</section>
 {% endblock %}

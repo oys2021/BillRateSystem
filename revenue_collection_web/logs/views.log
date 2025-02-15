@@ -492,3 +492,491 @@ WARNING 2025-02-14 23:02:53,788 basehttp "GET /static/assets/js/bootstrap.bundle
 WARNING 2025-02-14 23:02:53,802 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
 WARNING 2025-02-14 23:02:54,104 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
 INFO 2025-02-14 23:03:50,695 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 23:04:48,311 basehttp "GET / HTTP/1.1" 200 1270
+INFO 2025-02-14 23:04:48,863 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3099
+INFO 2025-02-14 23:04:48,954 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 200 2445372
+INFO 2025-02-14 23:04:58,048 views User 'oys' logged in successfully.
+INFO 2025-02-14 23:04:58,061 basehttp "POST / HTTP/1.1" 302 0
+INFO 2025-02-14 23:04:58,079 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
+INFO 2025-02-14 23:04:58,152 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 163879
+INFO 2025-02-14 23:04:58,159 basehttp "GET /static/assets/css/animate.css HTTP/1.1" 200 17506
+INFO 2025-02-14 23:04:58,173 basehttp "GET /static/assets/plugins/select2/css/select2.min.css HTTP/1.1" 200 14989
+INFO 2025-02-14 23:04:58,182 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 130303
+INFO 2025-02-14 23:04:58,183 basehttp "GET /static/assets/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 5233
+INFO 2025-02-14 23:04:58,187 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
+INFO 2025-02-14 23:04:58,196 basehttp "GET /static/assets/img/icons/upload.svg HTTP/1.1" 200 985
+INFO 2025-02-14 23:04:58,205 basehttp "GET /static/assets/img/icons/product.svg HTTP/1.1" 200 1271
+WARNING 2025-02-14 23:04:58,222 log Not Found: /css2
+WARNING 2025-02-14 23:04:58,228 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-14 23:04:58,230 basehttp "GET /static/assets/img/icons/users1.svg HTTP/1.1" 200 1468
+INFO 2025-02-14 23:04:58,231 basehttp "GET /static/assets/img/icons/dashboard.svg HTTP/1.1" 200 1187
+INFO 2025-02-14 23:04:58,238 basehttp "GET /static/assets/plugins/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 55418
+INFO 2025-02-14 23:04:58,248 basehttp "GET /static/assets/js/jquery-3.6.0.min.js HTTP/1.1" 200 89503
+INFO 2025-02-14 23:04:58,252 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 78135
+INFO 2025-02-14 23:04:58,270 basehttp "GET /static/assets/js/script.js HTTP/1.1" 200 13994
+INFO 2025-02-14 23:04:58,271 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5119
+INFO 2025-02-14 23:04:58,286 basehttp "GET /static/assets/plugins/fontawesome/css/all.min.css HTTP/1.1" 200 56794
+INFO 2025-02-14 23:04:58,424 basehttp "GET /static/assets/js/feather.min.js HTTP/1.1" 200 75775
+INFO 2025-02-14 23:04:58,434 basehttp "GET /static/assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 4739
+INFO 2025-02-14 23:04:58,447 basehttp "GET /static/assets/js/jquery.dataTables.min.js HTTP/1.1" 200 106738
+INFO 2025-02-14 23:04:58,472 basehttp "GET /static/assets/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4534
+INFO 2025-02-14 23:04:58,487 basehttp "GET /static/assets/plugins/select2/js/select2.min.js HTTP/1.1" 200 70338
+INFO 2025-02-14 23:04:58,500 basehttp "GET /static/assets/plugins/sweetalert/sweetalert2.all.min.js HTTP/1.1" 200 72874
+INFO 2025-02-14 23:04:58,516 basehttp "GET /static/assets/plugins/sweetalert/sweetalerts.min.js HTTP/1.1" 200 7493
+INFO 2025-02-14 23:04:59,078 basehttp "GET /static/assets/img/law.png HTTP/1.1" 200 27979
+WARNING 2025-02-14 23:05:07,176 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:05:07,177 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 40
+WARNING 2025-02-14 23:05:34,426 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:05:34,427 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 178
+INFO 2025-02-14 23:05:53,160 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-02-14 23:05:53,179 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-02-14 23:05:53,255 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-02-14 23:05:53,324 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-02-14 23:05:53,343 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-02-14 23:05:53,347 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-02-14 23:05:53,349 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-02-14 23:05:53,351 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-02-14 23:05:53,352 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-02-14 23:05:53,367 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-02-14 23:05:53,595 log Not Found: /favicon.ico
+WARNING 2025-02-14 23:05:53,596 basehttp "GET /favicon.ico HTTP/1.1" 404 3317
+INFO 2025-02-14 23:05:59,075 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-02-14 23:05:59,101 basehttp "GET /admin/ HTTP/1.1" 200 8120
+INFO 2025-02-14 23:05:59,147 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-02-14 23:05:59,167 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-02-14 23:05:59,169 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-02-14 23:05:59,172 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-02-14 23:06:02,760 basehttp "GET /admin/bill_rate_system/timesheet/ HTTP/1.1" 200 8415
+INFO 2025-02-14 23:06:02,808 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-02-14 23:06:02,823 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 23:06:02,825 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-02-14 23:06:02,826 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-02-14 23:06:02,826 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-02-14 23:06:02,826 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-02-14 23:06:02,831 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-02-14 23:06:02,838 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-02-14 23:06:02,845 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-02-14 23:06:02,853 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-02-14 23:06:02,871 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-02-14 23:06:02,917 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-02-14 23:06:05,507 basehttp "GET /admin/bill_rate_system/project/ HTTP/1.1" 200 8401
+INFO 2025-02-14 23:06:05,551 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 23:06:07,179 basehttp "GET /admin/bill_rate_system/project/add/ HTTP/1.1" 200 9169
+INFO 2025-02-14 23:06:07,223 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2025-02-14 23:06:07,226 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-02-14 23:06:07,235 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 23:06:07,237 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2025-02-14 23:06:07,249 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-02-14 23:06:13,664 basehttp "POST /admin/bill_rate_system/project/add/ HTTP/1.1" 302 0
+INFO 2025-02-14 23:06:13,698 basehttp "GET /admin/bill_rate_system/project/ HTTP/1.1" 200 9899
+INFO 2025-02-14 23:06:13,741 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 23:06:13,767 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-02-14 23:06:18,854 basehttp "GET /admin/bill_rate_system/project/1/change/ HTTP/1.1" 200 9409
+INFO 2025-02-14 23:06:18,900 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 23:06:20,758 basehttp "GET /admin/bill_rate_system/project/1/delete/ HTTP/1.1" 200 8365
+INFO 2025-02-14 23:06:20,804 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-02-14 23:06:21,904 basehttp "POST /admin/bill_rate_system/project/1/delete/ HTTP/1.1" 302 0
+INFO 2025-02-14 23:06:21,930 basehttp "GET /admin/bill_rate_system/project/ HTTP/1.1" 200 8557
+INFO 2025-02-14 23:06:21,971 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-14 23:10:50,724 autoreload Watching for file changes with StatReloader
+INFO 2025-02-14 23:15:58,903 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:16:00,887 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:16:02,873 views User 'testuser' logged out.
+WARNING 2025-02-14 23:16:03,845 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:16:03,851 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:16:05,837 views Failed login attempt for username: testuser
+INFO 2025-02-14 23:18:43,520 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:18:45,460 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:18:47,423 views User 'testuser' logged out.
+WARNING 2025-02-14 23:18:48,402 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:18:48,408 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:18:50,719 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:18:53,099 log Bad Request: /revenue_collection/upload_temp_file/
+INFO 2025-02-14 23:20:48,713 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:20:50,632 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:20:52,595 views User 'testuser' logged out.
+WARNING 2025-02-14 23:20:53,573 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:20:53,579 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:20:55,572 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:20:57,514 log Bad Request: /revenue_collection/upload_temp_file/
+INFO 2025-02-14 23:22:35,281 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:22:37,247 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:22:39,206 views User 'testuser' logged out.
+WARNING 2025-02-14 23:22:40,173 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:22:40,180 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:22:42,173 views Failed login attempt for username: testuser
+INFO 2025-02-14 23:23:13,883 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:23:16,134 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:23:18,176 views User 'testuser' logged out.
+WARNING 2025-02-14 23:23:19,150 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:23:19,155 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:23:21,102 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:23:23,079 log Bad Request: /revenue_collection/upload_temp_file/
+INFO 2025-02-14 23:24:46,388 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:24:48,335 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:24:50,282 views User 'testuser' logged out.
+WARNING 2025-02-14 23:24:51,286 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:24:51,291 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:24:53,238 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:24:55,187 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:24:55,192 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:24:55,199 log Bad Request: /revenue_collection/upload_temp_file/
+INFO 2025-02-14 23:25:43,597 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:25:45,539 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:25:47,476 views User 'testuser' logged out.
+WARNING 2025-02-14 23:25:48,533 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:25:48,538 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:25:50,544 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:25:52,674 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:25:52,679 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:25:52,685 log Bad Request: /revenue_collection/upload_temp_file/
+INFO 2025-02-14 23:26:22,197 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:26:25,517 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:26:27,479 views User 'testuser' logged out.
+INFO 2025-02-14 23:26:36,947 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:26:39,315 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:26:41,610 views User 'testuser' logged out.
+WARNING 2025-02-14 23:26:42,831 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:26:42,837 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:26:44,855 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:26:46,855 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:26:46,859 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:26:46,867 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:26:46,913 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-14 23:27:53,477 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:27:55,615 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:27:57,549 views User 'testuser' logged out.
+WARNING 2025-02-14 23:27:58,521 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:27:58,527 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:28:00,515 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:28:02,516 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:28:02,522 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:28:02,531 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:28:02,577 log Bad Request: /revenue_collection/process_file/
+ERROR 2025-02-14 23:28:02,585 log Internal Server Error: /revenue_collection/list_projects/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 264, in list_projects
+    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
+INFO 2025-02-14 23:34:31,870 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:34:33,844 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:34:35,954 views User 'testuser' logged out.
+WARNING 2025-02-14 23:34:37,204 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:34:37,212 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:34:39,187 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:34:41,283 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:34:41,288 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:34:41,295 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:34:41,357 log Bad Request: /revenue_collection/process_file/
+ERROR 2025-02-14 23:34:41,372 log Internal Server Error: /revenue_collection/list_projects/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 264, in list_projects
+    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
+INFO 2025-02-14 23:36:45,987 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:36:48,504 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:36:50,443 views User 'testuser' logged out.
+WARNING 2025-02-14 23:36:51,429 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:36:51,435 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:36:53,420 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:36:55,400 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:36:55,405 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:36:55,412 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:36:55,459 log Bad Request: /revenue_collection/process_file/
+ERROR 2025-02-14 23:36:56,571 log Internal Server Error: /revenue_collection/list_projects/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 264, in list_projects
+    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
+INFO 2025-02-14 23:43:45,676 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:43:47,598 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:43:49,553 views User 'testuser' logged out.
+WARNING 2025-02-14 23:43:50,535 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:43:50,540 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:43:52,484 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:43:54,447 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:43:54,452 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:43:54,459 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:43:54,505 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-14 23:46:29,592 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:46:31,515 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:46:33,762 views User 'testuser' logged out.
+WARNING 2025-02-14 23:46:34,743 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:46:34,748 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:46:36,739 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:46:38,726 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:46:38,732 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:46:38,738 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:46:38,785 log Bad Request: /revenue_collection/process_file/
+ERROR 2025-02-14 23:46:39,808 log Internal Server Error: /revenue_collection/list_projects/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 270, in list_projects
+    return render(request, "bill_rate_system/list_projects.html", {"projects": projects})
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_invoice' not found. 'view_invoice' is not a valid view function or pattern name.
+INFO 2025-02-14 23:49:05,346 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:49:07,314 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:49:09,341 views User 'testuser' logged out.
+WARNING 2025-02-14 23:49:10,319 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:49:10,324 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:49:12,302 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:49:14,285 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:49:14,291 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:49:14,297 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:49:14,349 log Bad Request: /revenue_collection/process_file/
+ERROR 2025-02-14 23:49:15,487 log Internal Server Error: /revenue_collection/list_projects/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 270, in list_projects
+    return render(request, "bill_rate_system/list_projects.html", {"projects": projects})
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'bill_rate_system/view_invoice' not found. 'bill_rate_system/view_invoice' is not a valid view function or pattern name.
+INFO 2025-02-14 23:49:38,837 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:49:40,799 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:49:42,770 views User 'testuser' logged out.
+WARNING 2025-02-14 23:49:43,824 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:49:43,830 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:49:45,833 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:49:47,773 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:49:47,778 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:49:47,785 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:49:47,832 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-14 23:54:51,641 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:54:54,350 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:54:57,006 views User 'testuser' logged out.
+WARNING 2025-02-14 23:54:58,572 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:54:58,578 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:55:01,346 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:55:03,630 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:55:03,634 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:55:03,641 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:55:03,698 log Bad Request: /revenue_collection/process_file/
+ERROR 2025-02-14 23:55:07,207 log Internal Server Error: /revenue_collection/view_invoice/Test Project/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 278, in view_invoice
+    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
+ERROR 2025-02-14 23:55:09,080 log Internal Server Error: /revenue_collection/view_invoice/Test Project/
+Traceback (most recent call last):
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 283, in view_invoice
+    return render(request, "bill_rate_system/invoices.html", {"error": f"No data found for project: {project_name}"})
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
+INFO 2025-02-14 23:58:46,247 views New user registered: testuser (test@example.com)
+INFO 2025-02-14 23:58:48,232 views User 'testuser' logged in successfully.
+INFO 2025-02-14 23:58:50,193 views User 'testuser' logged out.
+WARNING 2025-02-14 23:58:51,162 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-14 23:58:51,169 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-14 23:58:53,131 views Failed login attempt for username: testuser
+WARNING 2025-02-14 23:58:55,102 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:58:55,107 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:58:55,114 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-14 23:58:55,164 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-15 00:13:05,555 views New user registered: testuser (test@example.com)
+INFO 2025-02-15 00:13:07,533 views User 'testuser' logged in successfully.
+INFO 2025-02-15 00:13:09,492 views User 'testuser' logged out.
+WARNING 2025-02-15 00:13:10,467 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-15 00:13:10,473 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-15 00:13:12,452 views Failed login attempt for username: testuser
+WARNING 2025-02-15 00:13:14,420 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:13:14,425 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:13:14,432 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:13:14,481 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-15 00:19:00,255 views New user registered: testuser (test@example.com)
+INFO 2025-02-15 00:19:02,290 views User 'testuser' logged in successfully.
+INFO 2025-02-15 00:19:04,263 views User 'testuser' logged out.
+WARNING 2025-02-15 00:19:05,255 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-15 00:19:05,260 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-15 00:19:07,281 views Failed login attempt for username: testuser
+WARNING 2025-02-15 00:19:09,308 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:19:09,315 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:19:09,321 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:19:09,366 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-15 00:22:32,448 views New user registered: testuser (test@example.com)
+INFO 2025-02-15 00:22:34,404 views User 'testuser' logged in successfully.
+INFO 2025-02-15 00:22:36,360 views User 'testuser' logged out.
+WARNING 2025-02-15 00:22:37,352 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-15 00:22:37,358 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-15 00:22:39,341 views Failed login attempt for username: testuser
+WARNING 2025-02-15 00:22:41,326 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:22:41,331 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:22:41,338 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:22:41,384 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-15 00:23:55,962 views New user registered: testuser (test@example.com)
+INFO 2025-02-15 00:23:58,254 views User 'testuser' logged in successfully.
+INFO 2025-02-15 00:24:01,390 views User 'testuser' logged out.
+WARNING 2025-02-15 00:24:02,475 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-15 00:24:02,480 views User 'newuser' registration failed: Passwords do not match.
+WARNING 2025-02-15 00:24:05,179 views Failed login attempt for username: testuser
+WARNING 2025-02-15 00:24:07,773 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:24:07,778 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:24:07,785 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 00:24:07,860 log Bad Request: /revenue_collection/process_file/

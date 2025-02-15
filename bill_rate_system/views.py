@@ -20,7 +20,7 @@ def upload_page(request):
     return render(request, "bill_rate_system/upload.html")
 
 
-@login_required(login_url='authentication:login')
+
 def validate_row(row, index, required_columns, actual_column_count):
     errors = []
 
@@ -65,6 +65,7 @@ def validate_row(row, index, required_columns, actual_column_count):
         errors.append(f"End Time must be after Start Time at row {index + 1}.")
 
     return errors
+
 
 
 @csrf_exempt
@@ -256,13 +257,40 @@ def generate_invoice(df):
     except Exception as e:
         return {"error": f"Invoice generation error: {str(e)}"}
     
-    
+
+@login_required(login_url='authentication:login')
 def list_projects(request):
     invoice_data = request.session.get("invoice_data", {})
 
     if not invoice_data:
-        return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
+        return render(request, "bill_rate_system/view_invoice.html", {"invoice": "No invoice data found"})
 
     projects = list(invoice_data.keys())  
 
     return render(request, "bill_rate_system/list_projects.html", {"projects": projects})
+
+
+
+@login_required(login_url='authentication:login')
+def view_invoice(request, project_name):
+    invoice_data = request.session.get("invoice_data", {})
+
+    if not invoice_data:
+        return render(request, "bill_rate_system/view_invoice.html", {"invoice": "No invoice data found", "error": "No invoice data found"})
+    
+    project_invoice = invoice_data.get(project_name)
+
+    if not project_invoice:
+        return render(request, "bill_rate_system/view_invoice.html", {"invoice": f"No data found for project: {project_name}", "error": f"No data found for project: {project_name}"})
+
+    processed_invoice = []
+    for entry in project_invoice:
+        processed_invoice.append({
+            "Employee_ID": entry["Employee ID"],
+            "Total_Hours": entry["Total_Hours"],
+            "Unit_Price": entry["Unit_Price"],
+            "Total_Cost": entry["Total_Cost"]
+        })
+
+    return render(request, "bill_rate_system/view_invoice.html", {"project": project_name, "invoice": processed_invoice})
+

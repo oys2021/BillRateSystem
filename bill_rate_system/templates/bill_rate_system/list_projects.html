@@ -20,7 +20,7 @@
                         <td>{{ forloop.counter }}</td>
                         <td>{{ project }}</td>
                         <td>
-                            <a href="{% url 'view_invoice' project_name=project %}">View Invoice</a>
+                            <a href="{% url 'bill_rate_system:view_invoice' project_name=project %}">View Invoice</a>
                         </td>
                     </tr>
                 {% endfor %}
