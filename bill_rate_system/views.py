@@ -361,12 +361,12 @@ def edit_timesheet_name(request, timesheet_id):
             timesheets.update(sheet_name=new_name)
             logger.info(f"Updated timesheet name from {timesheet.sheet_name} to {new_name}.")
             messages.success(request, "All timesheets with this name have been updated successfully!")
-            return render(request, "bill_rate_system/edit_timesheet.html", {"timesheet": timesheet})  
+            return render(request, "bill_rate_system/edit_timesheet_name.html", {"timesheet": timesheet})  
         else:
             logger.warning(f"User {request.user} attempted to rename a timesheet but provided an empty name.")
             messages.error(request, "Timesheet name cannot be empty.")
 
-    return render(request, "bill_rate_system/edit_timesheet.html", {"timesheet": timesheet})
+    return render(request, "bill_rate_system/edit_timesheet_name.html", {"timesheet": timesheet})
 
 
 @login_required(login_url='authentication:login')
@@ -415,36 +415,93 @@ def project_edit(request, id):
 
 @login_required(login_url='authentication:login')
 def invoice_db_list(request, sheet_name):
-    projects = Timesheet.objects.filter(sheet_name=sheet_name).values('project__name', 'sheet_name').distinct()
+    logger.info(f"Fetching invoice list for sheet_name: {sheet_name}")
+
+    try:
+        projects = Timesheet.objects.filter(sheet_name=sheet_name).values('project__name', 'sheet_name').distinct()
+        logger.debug(f"Retrieved projects: {list(projects)}")
+    except Exception as e:
+        logger.error(f"Error fetching invoice list: {e}", exc_info=True)
+        messages.error(request, "An error occurred while fetching invoice list.")
+        projects = []
+
     return render(request, 'bill_rate_system/invoice_list.html', {'projects': projects})
 
 
-
 @login_required(login_url='authentication:login')
-def invoice_details(request,sheet_name, project_name):
-    timesheets = Timesheet.objects.filter(sheet_name=sheet_name,project__name=project_name)
-    
-    invoices = defaultdict(lambda: {"hours_worked": 0, "unit_price": 0, "cost": 0})
+def invoice_details(request, sheet_name, project_name):
+    logger.info(f"Fetching invoice details for sheet: {sheet_name}, project: {project_name}")
 
-    for timesheet in timesheets:
-        hours_worked = (datetime.combine(date.min, timesheet.end_time) - 
-                        datetime.combine(date.min, timesheet.start_time)).total_seconds() / 3600
+    try:
+        timesheets = Timesheet.objects.filter(sheet_name=sheet_name, project__name=project_name)
+        logger.debug(f"Retrieved timesheets: {list(timesheets)}")
+        
+        invoices = defaultdict(lambda: {"hours_worked": 0, "unit_price": 0, "cost": 0})
 
-        employee_id = timesheet.employee_id
+        for timesheet in timesheets:
+            hours_worked = (datetime.combine(date.min, timesheet.end_time) - 
+                            datetime.combine(date.min, timesheet.start_time)).total_seconds() / 3600
 
-        invoices[employee_id]["hours_worked"] += round(hours_worked, 2)
-        invoices[employee_id]["unit_price"] = timesheet.billable_rate  
-        invoices[employee_id]["cost"] += Decimal(hours_worked) * timesheet.billable_rate  # Sum up total cost
+            employee_id = timesheet.employee_id
 
-    invoice_list = [
-        {"employee_id": emp_id, "hours_worked": data["hours_worked"], "unit_price": data["unit_price"], "cost": data["cost"]}
-        for emp_id, data in invoices.items()
-    ]
+            invoices[employee_id]["hours_worked"] += round(hours_worked, 2)
+            invoices[employee_id]["unit_price"] = timesheet.billable_rate
+            invoices[employee_id]["cost"] += Decimal(hours_worked) * timesheet.billable_rate
 
-    total_cost = sum(item["cost"] for item in invoice_list)
+        invoice_list = [
+            {"employee_id": emp_id, "hours_worked": data["hours_worked"], "unit_price": data["unit_price"], "cost": data["cost"]}
+            for emp_id, data in invoices.items()
+        ]
+        
+        total_cost = sum(item["cost"] for item in invoice_list)
+        logger.info(f"Total cost calculated: {total_cost}")
+
+    except Exception as e:
+        logger.error(f"Error fetching invoice details: {e}", exc_info=True)
+        messages.error(request, "An error occurred while fetching invoice details.")
+        invoice_list = []
+        total_cost = 0
 
     return render(request, 'bill_rate_system/invoice_details.html', {
         'project_name': project_name,
         'invoices': invoice_list,
         'total_cost': total_cost
+    })
+
+
+@login_required(login_url='authentication:login')
+def edit_timesheet(request, timesheet_id):
+    logger.info(f"Editing timesheet with ID: {timesheet_id}")
+
+    timesheet = get_object_or_404(Timesheet, id=timesheet_id)
+    projects = Project.objects.all()
+
+    if request.method == "POST":
+        try:
+            logger.debug(f"Received POST data: {request.POST}")
+
+            timesheet.billable_rate = request.POST.get("billable_rate", timesheet.billable_rate)
+            timesheet.date = request.POST.get("date", timesheet.date)
+
+            start_time_str = request.POST.get("start_time", str(timesheet.start_time))
+            end_time_str = request.POST.get("end_time", str(timesheet.end_time))
+
+            timesheet.start_time = datetime.strptime(start_time_str, "%H:%M").time()
+            timesheet.end_time = datetime.strptime(end_time_str, "%H:%M").time()
+
+            timesheet.project_id = request.POST.get("project", timesheet.project.id)
+
+            timesheet.save()
+            logger.info(f"Timesheet {timesheet_id} updated successfully.")
+
+            messages.success(request, "Timesheet updated successfully!")
+            return redirect("bill_rate_system:timesheets")
+        
+        except Exception as e:
+            logger.error(f"Error updating timesheet {timesheet_id}: {e}", exc_info=True)
+            messages.error(request, "An error occurred while updating the timesheet.")
+
+    return render(request, "bill_rate_system/update_timesheet.html", {
+        "timesheet": timesheet,
+        "projects": projects  
     })

@@ -25,6 +25,8 @@
                 <th>Start Time</th>
                 <th>End Time</th>
                 <th>Created At</th>
+                <th>Action</th>
+
             </tr>
         </thead>
         <tbody>
@@ -37,6 +39,9 @@
                 <td>{{ timesheet.start_time }}</td>
                 <td>{{ timesheet.end_time }}</td>
                 <td>{{ timesheet.created_at }}</td>
+                <td>
+                    <a href="{% url 'bill_rate_system:edit_timesheet' timesheet_id=timesheet.id %}" class="btn btn-primary">Edit</a>
+                </td>
             </tr>
             {% empty %}
             <tr>

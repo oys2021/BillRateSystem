@@ -1,0 +1,96 @@
+{% extends 'bill_rate_system/base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+    <h3>Edit Timesheet</h3>
+</div>
+
+{% if messages %}
+<div class="container mt-3">
+    {% for message in messages %}
+    <div class="alert {% if message.tags == 'success' %}alert-success{% elif message.tags == 'error' %}alert-danger{% endif %}" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<form id="editsheetsForm" method="POST">
+    {% csrf_token %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Billable Rate -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="billable_rate">Billable Rate:</label>
+                                    <input type="text" id="billable_rate" name="billable_rate" class="form-control" value="{{ timesheet.billable_rate }}" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="date">Date:</label>
+                                    <input type="date" id="date" name="date" class="form-control" value="{{ timesheet.date|date:'Y-m-d' }}" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Start Time -->
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="form-group">
+            <label for="start_time">Start Time:</label>
+            <input type="time" id="start_time" name="start_time" class="form-control"
+                value="{{ timesheet.start_time|time:'H:i' }}" required>
+        </div>
+    </div>
+</div>
+
+<!-- End Time -->
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="form-group">
+            <label for="end_time">End Time:</label>
+            <input type="time" id="end_time" name="end_time" class="form-control"
+                value="{{ timesheet.end_time|time:'H:i' }}" required>
+        </div>
+    </div>
+</div>
+
+
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="project">Project:</label>
+                                    <select id="project" name="project" class="form-control" required>
+                                        {% for project in projects %}
+                                        <option value="{{ project.id }}" {% if timesheet.project.id == project.id %}selected{% endif %}>
+                                            {{ project.name }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-submit me-2">Save Changes</button>
+                                <a href="{% url 'bill_rate_system:timesheets' %}" class="btn btn-cancel">Cancel</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

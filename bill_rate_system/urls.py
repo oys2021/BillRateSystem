@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import upload_page,invoice_details,invoice_db_list,upload_temp_file,process_file ,list_projects,view_invoice,project_list,project_add,project_edit,timesheets,timesheet_detail,edit_timesheet_name
+from .views import upload_page,edit_timesheet,invoice_details,invoice_db_list,upload_temp_file,process_file ,list_projects,view_invoice,project_list,project_add,project_edit,timesheets,timesheet_detail,edit_timesheet_name
 
 app_name="bill_rate_system"
 urlpatterns = [
@@ -15,5 +15,6 @@ urlpatterns = [
     path('timesheet/edit/<int:timesheet_id>/', edit_timesheet_name, name='edit_timesheet_name'),
     path('view_invoice/<str:project_name>/', view_invoice, name='view_invoice'),
     path('invoices/<str:sheet_name>/', invoice_db_list, name='invoice_list'),
+    path("timesheets/edit/<int:timesheet_id>/", edit_timesheet, name="edit_timesheet"),
     path('invoice_details/<str:sheet_name>/<str:project_name>/', invoice_details, name='invoice_details'),
 ]
