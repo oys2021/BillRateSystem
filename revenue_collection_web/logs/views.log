@@ -3858,3 +3858,53 @@ INFO 2025-02-15 17:33:43,551 views User testuser added a new project: New Projec
 WARNING 2025-02-15 17:33:43,555 views User testuser attempted to add a duplicate project: New Project.
 INFO 2025-02-15 17:33:44,618 views User testuser accessed project edit page for project ID 1.
 INFO 2025-02-15 17:33:44,619 views User testuser updated project ID 1 to new name Updated Project.
+INFO 2025-02-15 19:04:38,049 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 19:08:06,882 views User oys accessed the upload page.
+INFO 2025-02-15 19:08:06,911 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7191
+WARNING 2025-02-15 19:08:07,073 log Not Found: /static/assets/css/upload.css
+WARNING 2025-02-15 19:08:07,074 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 404 179
+WARNING 2025-02-15 19:08:07,087 log Not Found: /static/assets/img/icons/upload1.svg
+WARNING 2025-02-15 19:08:07,088 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 404 179
+WARNING 2025-02-15 19:08:07,093 log Not Found: /static/assets/img/icons/company.svg
+WARNING 2025-02-15 19:08:07,094 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 404 179
+WARNING 2025-02-15 19:08:07,673 log Not Found: /css2
+WARNING 2025-02-15 19:08:07,675 log Not Found: /static/assets/img/icons/csv.svg
+WARNING 2025-02-15 19:08:07,676 basehttp "GET /css2 HTTP/1.1" 404 179
+WARNING 2025-02-15 19:08:07,677 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 404 179
+WARNING 2025-02-15 19:08:07,685 log Not Found: /static/assets/img/icons/logout.svg
+WARNING 2025-02-15 19:08:07,686 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 404 179
+WARNING 2025-02-15 19:08:07,828 log Not Found: /static/assets/js/upload.js
+WARNING 2025-02-15 19:08:07,829 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 404 179
+INFO 2025-02-15 19:09:38,471 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 19:10:56,956 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 19:11:06,114 views User oys accessed the upload page.
+INFO 2025-02-15 19:11:06,135 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7191
+INFO 2025-02-15 19:11:06,201 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
+INFO 2025-02-15 19:11:06,228 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 200 436
+INFO 2025-02-15 19:11:06,232 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 200 906
+WARNING 2025-02-15 19:11:06,387 log Not Found: /css2
+WARNING 2025-02-15 19:11:06,388 basehttp "GET /css2 HTTP/1.1" 404 179
+INFO 2025-02-15 19:11:06,392 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 200 1252
+INFO 2025-02-15 19:11:06,396 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 200 421
+INFO 2025-02-15 19:11:06,490 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5119
+INFO 2025-02-15 19:11:19,429 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 67
+INFO 2025-02-15 19:11:27,464 views Processing file request received.
+INFO 2025-02-15 19:11:27,464 views Request JSON successfully parsed.
+INFO 2025-02-15 19:11:27,465 views Generated sheet name: sheetFZ119S
+INFO 2025-02-15 19:11:27,470 views CSV file loaded successfully.
+INFO 2025-02-15 19:11:27,506 views Starting invoice generation process.
+INFO 2025-02-15 19:11:27,516 views Converted time fields successfully.
+INFO 2025-02-15 19:11:27,520 views Calculated billable hours and cost.
+INFO 2025-02-15 19:11:27,553 views Invoice data successfully generated.
+INFO 2025-02-15 19:11:27,554 views File processing completed successfully.
+INFO 2025-02-15 19:11:27,572 basehttp "POST /revenue_collection/process_file/ HTTP/1.1" 200 115
+INFO 2025-02-15 19:11:33,979 views User oys accessed the project list page.
+INFO 2025-02-15 19:11:33,980 views Retrieved 4 projects from session data.
+INFO 2025-02-15 19:11:33,997 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 7996
+WARNING 2025-02-15 19:11:34,140 log Not Found: /css2
+WARNING 2025-02-15 19:11:34,141 basehttp "GET /css2 HTTP/1.1" 404 179
+INFO 2025-02-15 19:11:38,145 views User oys accessed invoice for project: Spotify
+INFO 2025-02-15 19:11:38,145 views Successfully retrieved invoice data for project: Spotify. Entries found: 1
+INFO 2025-02-15 19:11:38,154 basehttp "GET /revenue_collection/view_invoice/Spotify/ HTTP/1.1" 200 7221
+WARNING 2025-02-15 19:11:38,286 log Not Found: /css2
+WARNING 2025-02-15 19:11:38,287 basehttp "GET /css2 HTTP/1.1" 404 179

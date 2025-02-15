@@ -34,7 +34,7 @@ def validate_row(row, index, required_columns, actual_column_count):
         errors.append(f"Row {index + 1}: Incorrect number of columns.")
 
     try:
-        employee_id = float(row['Employee ID'])  #
+        employee_id = float(row['Employee ID'])  
         if employee_id <= 0 or not employee_id.is_integer():
             errors.append(f"Row {index + 1}: Invalid Employee ID ({row['Employee ID']}).")
     except ValueError:
