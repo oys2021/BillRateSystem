@@ -33,6 +33,7 @@ Ensure you have the following installed:
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/oys2021/BillRateSystem.git
+   cd BillRateSystem
 
 2. **Create and Activate a Virtual Environment**
    ```sh
