@@ -69,7 +69,9 @@ Ensure you have the following installed:
 
 ## Usage
 
-- **Login**: Users(Finance Team) can log in by providing a username and password. 
+- **Login**: Users(Finance Team) can log in by providing a username and password or Register.
+      -Route="/" for login
+       -Route="/register" for registering   
 
 - **Add Company or Project**: After login, users(Finance team) can add project/company to system.All projects in the timesheet that are not registered in the system are rejected and an error is thrown.
   
