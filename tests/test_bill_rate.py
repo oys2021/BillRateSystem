@@ -36,21 +36,16 @@ def test_upload_temp_file_valid_csv(client):
     
 @pytest.mark.django_db
 def test_upload_temp_file_missing_file(client):
-    """Test uploading without a file."""
     response = client.post(reverse('bill_rate_system:upload_temp_file'))
-
     assert response.status_code == 400
     assert "No file provided" in response.json()['error']
     
 
 @pytest.mark.django_db
 def test_upload_temp_file_invalid_extension(client):
-    """Test uploading a non-CSV file."""
     txt_content = b"Invalid file content"
     txt_file = SimpleUploadedFile("test.txt", txt_content, content_type="text/plain")
-
     response = client.post(reverse('bill_rate_system:upload_temp_file'), {'file': txt_file})
-
     assert response.status_code == 400
     assert "Only CSV files are allowed" in response.json()['error']
 
@@ -68,10 +63,8 @@ def test_upload_temp_file_unregistered_project(client):
 
 @pytest.mark.django_db
 def test_process_file(client):
-    """Test processing a valid CSV file and storing timesheets."""
     project = Project.objects.create(name="Test Project")
     file_path = "uploads/test.csv"
-    
     df = pd.DataFrame([{
         "Employee ID": 123, 
         "Billable Rate": 50, 
@@ -81,9 +74,7 @@ def test_process_file(client):
         "End Time": "17:00"
     }])
     df.to_csv(file_path, index=False)
-
     response = client.post(reverse('bill_rate_system:process_file'), json.dumps({"file_name": "test.csv"}), content_type="application/json")
-
     assert response.status_code == 200
     assert "File processed successfully!" in response.json()["message"]
     assert Timesheet.objects.count() == 1
