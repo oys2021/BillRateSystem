@@ -26,12 +26,23 @@ def upload_page(request):
 
 def validate_row(row, index, required_columns, actual_column_count):
     errors = []
+    
+    if len(row) != actual_column_count:
+        errors.append(f"Row {index + 1}: Incorrect number of columns.")
 
-    if not isinstance(row['Employee ID'], (int, float)) or row['Employee ID'] <= 0:
-        errors.append(f"Invalid Employee ID at row {index + 1}.")
-
-    if not isinstance(row['Billable Rate'], (int, float)) or row['Billable Rate'] <= 0:
-        errors.append(f"Invalid Billable Rate at row {index + 1}. Should be an Integer or Float.")
+    try:
+        employee_id = float(row['Employee ID'])  #
+        if employee_id <= 0 or not employee_id.is_integer():
+            errors.append(f"Row {index + 1}: Invalid Employee ID ({row['Employee ID']}).")
+    except ValueError:
+        errors.append(f"Row {index + 1}: Invalid Employee ID ({row['Employee ID']}).")
+        
+    try:
+        billable_rate = float(row['Billable Rate'])  
+        if billable_rate <= 0:
+            errors.append(f"Row {index + 1}: Invalid Billable Rate ({row['Billable Rate']}).")
+    except ValueError:
+        errors.append(f"Row {index + 1}: Invalid Billable Rate ({row['Billable Rate']}).")
 
     date_formats = ['%Y-%m-%d', '%d/%m/%Y', '%m-%d-%Y']
     time_formats = ['%H:%M', '%I:%M %p']
@@ -94,7 +105,7 @@ def upload_temp_file(request):
         missing_projects = project_names - existing_projects
         
         if missing_projects:
-            return JsonResponse({"error": f"Invalid file: These projects are not registered to the system {list(missing_projects)}, Please check for Project Spelling Errors or Add Project to the system"}, status=400)
+            return JsonResponse({"error": f"Invalid file: These projects/companies are not registered to the system {list(missing_projects)}, Please check for Project Spelling Errors or Add Project to the system"}, status=400)
 
         required_columns = ['Employee ID', 'Billable Rate', 'Project', 'Date', 'Start Time', 'End Time']
         extra_columns = [col for col in df.columns if col not in required_columns]
@@ -103,7 +114,16 @@ def upload_temp_file(request):
             return JsonResponse({
                 "error": f"Unexpected extra columns detected: {', '.join(extra_columns)}"
             }, status=400)
+            
+        validation_errors = []
+        for index, row in df.head(10).iterrows():
+            errors = validate_row(row, index, required_columns, len(df.columns))
+            if errors:
+                validation_errors.extend(errors)
 
+        if validation_errors:
+            return JsonResponse({"error": validation_errors}, status=400)
+            
         for column in required_columns:
             if column not in df.columns:
                 return JsonResponse({"error": f" Missing required column: {column}"}, status=400)
@@ -217,7 +237,7 @@ def process_file(request):
         response_data = {
             "message": "File processed successfully!",
             "sheet_name": sheet_name_message if new_entries else "",
-            "redirect_url": "/list_projects/"
+            "redirect_url": "/revenue_collection/list_projects/"
         }
         logger.info("File processing completed successfully.")
         return JsonResponse(response_data)

@@ -1,1527 +1,664 @@
-INFO 2025-02-14 19:40:19,495 basehttp "GET / HTTP/1.1" 200 1270
-INFO 2025-02-14 19:40:19,550 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
-INFO 2025-02-14 19:40:19,720 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3099
-WARNING 2025-02-14 19:40:40,694 views Failed login attempt for username: oys
-INFO 2025-02-14 19:40:40,696 basehttp "POST / HTTP/1.1" 200 1398
-INFO 2025-02-14 19:41:22,228 views User 'oys' logged in successfully.
-INFO 2025-02-14 19:41:22,238 basehttp "POST / HTTP/1.1" 302 0
-INFO 2025-02-14 19:41:22,249 basehttp "GET /register/ HTTP/1.1" 200 1729
-INFO 2025-02-14 19:41:22,308 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
-INFO 2025-02-14 19:41:51,737 basehttp "GET / HTTP/1.1" 200 1270
-INFO 2025-02-14 21:05:33,222 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 21:05:51,112 views User 'oys' logged in successfully.
-INFO 2025-02-14 21:05:51,126 basehttp "POST / HTTP/1.1" 302 0
-ERROR 2025-02-14 21:05:51,317 log Internal Server Error: /revenue_collection/
+INFO 2025-02-15 01:41:49,807 views User oys accessed the upload page.
+INFO 2025-02-15 01:41:49,836 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6962
+WARNING 2025-02-15 01:41:49,938 log Not Found: /css2
+WARNING 2025-02-15 01:41:49,938 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 01:41:50,139 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
+INFO 2025-02-15 01:41:50,888 basehttp "GET /static/assets/img/law.png HTTP/1.1" 304 0
+INFO 2025-02-15 01:43:01,581 views User oys accessed the upload page.
+INFO 2025-02-15 01:43:01,590 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7093
+WARNING 2025-02-15 01:43:01,657 log Not Found: /css2
+WARNING 2025-02-15 01:43:01,666 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 01:43:01,667 basehttp "GET /static/assets/img/icons/logout1.svg HTTP/1.1" 404 1898
+INFO 2025-02-15 01:43:16,300 views User oys accessed the upload page.
+INFO 2025-02-15 01:43:16,309 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7092
+WARNING 2025-02-15 01:43:16,392 log Not Found: /css2
+WARNING 2025-02-15 01:43:16,393 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 01:43:16,402 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 404 1895
+INFO 2025-02-15 01:47:36,934 views User oys accessed the upload page.
+INFO 2025-02-15 01:47:36,946 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7093
+WARNING 2025-02-15 01:47:37,040 log Not Found: /css2
+WARNING 2025-02-15 01:47:37,041 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 01:47:37,339 basehttp "GET /static/assets/img/icons/log-out.svg HTTP/1.1" 200 923
+INFO 2025-02-15 01:48:23,624 views User oys accessed the upload page.
+INFO 2025-02-15 01:48:23,632 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7114
+WARNING 2025-02-15 01:48:23,696 log Not Found: /css2
+WARNING 2025-02-15 01:48:23,696 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 01:48:24,530 views User oys accessed the upload page.
+INFO 2025-02-15 01:48:24,533 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7114
+WARNING 2025-02-15 01:48:24,605 log Not Found: /css2
+WARNING 2025-02-15 01:48:24,605 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 01:48:38,132 views User oys accessed the upload page.
+INFO 2025-02-15 01:48:38,140 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7119
+WARNING 2025-02-15 01:48:38,198 log Not Found: /css2
+WARNING 2025-02-15 01:48:38,199 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 01:50:08,300 views User oys accessed the upload page.
+INFO 2025-02-15 01:50:08,309 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7200
+WARNING 2025-02-15 01:50:08,405 log Not Found: /css2
+WARNING 2025-02-15 01:50:08,406 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 01:50:11,049 views User oys accessed the upload page.
+INFO 2025-02-15 01:50:11,051 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7200
+WARNING 2025-02-15 01:50:11,104 log Not Found: /css2
+WARNING 2025-02-15 01:50:11,105 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 01:50:48,941 log Not Found: /css2
+WARNING 2025-02-15 01:50:48,942 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 01:50:49,430 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-02-15 01:50:49,445 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
+WARNING 2025-02-15 01:50:49,659 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
+INFO 2025-02-15 01:51:05,577 views User oys accessed the upload page.
+INFO 2025-02-15 01:51:05,580 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7200
+WARNING 2025-02-15 01:51:05,742 log Not Found: /css2
+WARNING 2025-02-15 01:51:05,744 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 01:51:06,381 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
+WARNING 2025-02-15 01:51:06,460 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-02-15 01:51:07,097 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
+INFO 2025-02-15 01:56:18,439 views User oys accessed the upload page.
+INFO 2025-02-15 01:56:18,448 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7094
+WARNING 2025-02-15 01:56:18,528 log Not Found: /css2
+WARNING 2025-02-15 01:56:18,530 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 01:56:18,538 basehttp "GET /static/assets/img/icons/logout.png HTTP/1.1" 404 1895
+INFO 2025-02-15 01:56:21,195 views User oys accessed the upload page.
+INFO 2025-02-15 01:56:21,197 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7094
+WARNING 2025-02-15 01:56:21,255 basehttp "GET /static/assets/img/icons/logout.png HTTP/1.1" 404 1895
+WARNING 2025-02-15 01:56:21,263 log Not Found: /css2
+WARNING 2025-02-15 01:56:21,263 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:03:15,055 views User oys accessed the upload page.
+INFO 2025-02-15 02:03:15,064 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7094
+WARNING 2025-02-15 02:03:15,160 log Not Found: /css2
+WARNING 2025-02-15 02:03:15,162 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:03:15,164 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 200 421
+INFO 2025-02-15 02:03:15,281 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
+INFO 2025-02-15 02:04:58,533 views User oys accessed the upload page.
+INFO 2025-02-15 02:04:58,541 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7095
+INFO 2025-02-15 02:04:58,616 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 200 436
+WARNING 2025-02-15 02:04:58,633 log Not Found: /css2
+WARNING 2025-02-15 02:04:58,633 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:04:58,668 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:05:28,555 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:05:28,555 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 40
+WARNING 2025-02-15 02:05:35,278 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:05:35,279 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 178
+INFO 2025-02-15 02:08:56,987 views User oys accessed the upload page.
+INFO 2025-02-15 02:08:56,999 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+INFO 2025-02-15 02:08:57,076 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:08:57,088 log Not Found: /css2
+WARNING 2025-02-15 02:08:57,089 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:08:57,092 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 200 1252
+INFO 2025-02-15 02:08:57,107 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:10:31,175 views User oys accessed the upload page.
+INFO 2025-02-15 02:10:31,183 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:10:31,287 log Not Found: /css2
+WARNING 2025-02-15 02:10:31,289 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:10:31,293 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 200 906
+INFO 2025-02-15 02:10:31,294 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:10:31,440 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:10:31,442 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:11:27,830 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:11:27,831 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 178
+INFO 2025-02-15 02:12:21,015 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:12:22,329 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:12:33,029 views User oys accessed the upload page.
+INFO 2025-02-15 02:12:33,062 basehttp "GET /revenue_collection/? HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:12:33,181 log Not Found: /css2
+WARNING 2025-02-15 02:12:33,182 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:12:33,192 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:12:33,200 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:12:33,477 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:12:33,479 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:12:37,984 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:12:37,985 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 188
+INFO 2025-02-15 02:12:44,838 views User oys accessed the project list.
+INFO 2025-02-15 02:12:44,840 views Retrieved 0 projects from the database.
+INFO 2025-02-15 02:12:44,846 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6864
+WARNING 2025-02-15 02:12:44,919 log Not Found: /css2
+WARNING 2025-02-15 02:12:44,920 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:12:46,916 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7584
+WARNING 2025-02-15 02:12:46,974 log Not Found: /css2
+WARNING 2025-02-15 02:12:46,974 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:12:52,592 views User oys added a new project: Google.
+INFO 2025-02-15 02:12:52,594 basehttp "POST /revenue_collection/projects/add/ HTTP/1.1" 302 0
+INFO 2025-02-15 02:12:52,623 views User oys accessed the project list.
+INFO 2025-02-15 02:12:52,625 views Retrieved 1 projects from the database.
+INFO 2025-02-15 02:12:52,631 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7056
+INFO 2025-02-15 02:12:52,689 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:12:52,709 log Not Found: /css2
+WARNING 2025-02-15 02:12:52,710 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:12:59,872 views User oys accessed project edit page for project ID 2.
+INFO 2025-02-15 02:12:59,880 basehttp "GET /revenue_collection/projects/edit/2/ HTTP/1.1" 200 7871
+WARNING 2025-02-15 02:12:59,944 log Not Found: /css2
+INFO 2025-02-15 02:12:59,945 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:12:59,945 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:13:05,222 views User oys accessed the project list.
+INFO 2025-02-15 02:13:05,223 views Retrieved 1 projects from the database.
+INFO 2025-02-15 02:13:05,227 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7056
+INFO 2025-02-15 02:13:07,617 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7584
+WARNING 2025-02-15 02:13:07,691 log Not Found: /css2
+WARNING 2025-02-15 02:13:07,691 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:13:15,214 views User oys added a new project: Facebook.
+INFO 2025-02-15 02:13:15,215 basehttp "POST /revenue_collection/projects/add/ HTTP/1.1" 302 0
+INFO 2025-02-15 02:13:15,232 views User oys accessed the project list.
+INFO 2025-02-15 02:13:15,234 views Retrieved 2 projects from the database.
+INFO 2025-02-15 02:13:15,238 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7250
+INFO 2025-02-15 02:13:15,299 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:13:15,309 log Not Found: /css2
+WARNING 2025-02-15 02:13:15,310 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:13:20,818 views User oys accessed the timesheets page.
+INFO 2025-02-15 02:13:20,819 views Retrieved 0 distinct timesheets.
+INFO 2025-02-15 02:13:20,825 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 6893
+WARNING 2025-02-15 02:13:20,913 log Not Found: /css2
+WARNING 2025-02-15 02:13:20,914 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:13:21,953 views User oys accessed the upload page.
+INFO 2025-02-15 02:13:21,956 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:13:22,023 log Not Found: /css2
+WARNING 2025-02-15 02:13:22,024 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 02:13:27,450 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:13:27,451 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 166
+INFO 2025-02-15 02:13:31,531 views User oys accessed the project list.
+INFO 2025-02-15 02:13:31,532 views Retrieved 2 projects from the database.
+INFO 2025-02-15 02:13:31,535 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7250
+INFO 2025-02-15 02:13:31,634 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:13:31,655 log Not Found: /css2
+WARNING 2025-02-15 02:13:31,657 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:13:31,658 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:13:33,787 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7584
+WARNING 2025-02-15 02:13:33,851 log Not Found: /css2
+WARNING 2025-02-15 02:13:33,852 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:14:00,069 views User oys added a new project: Amazon.
+INFO 2025-02-15 02:14:00,071 basehttp "POST /revenue_collection/projects/add/ HTTP/1.1" 302 0
+INFO 2025-02-15 02:14:00,088 views User oys accessed the project list.
+INFO 2025-02-15 02:14:00,089 views Retrieved 3 projects from the database.
+INFO 2025-02-15 02:14:00,097 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7442
+WARNING 2025-02-15 02:14:00,169 log Not Found: /css2
+WARNING 2025-02-15 02:14:00,171 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:14:00,172 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:14:00,172 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:14:03,311 views User oys accessed project edit page for project ID 4.
+INFO 2025-02-15 02:14:03,315 basehttp "GET /revenue_collection/projects/edit/4/ HTTP/1.1" 200 7866
+INFO 2025-02-15 02:14:03,365 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:14:03,378 log Not Found: /css2
+WARNING 2025-02-15 02:14:03,379 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:14:08,475 views User oys accessed project edit page for project ID 4.
+INFO 2025-02-15 02:14:08,478 basehttp "GET /revenue_collection/projects/edit/4/ HTTP/1.1" 200 7618
+WARNING 2025-02-15 02:14:08,542 log Not Found: /css2
+WARNING 2025-02-15 02:14:08,543 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:14:12,231 views User oys accessed the timesheets page.
+INFO 2025-02-15 02:14:12,232 views Retrieved 0 distinct timesheets.
+INFO 2025-02-15 02:14:12,235 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 6893
+WARNING 2025-02-15 02:14:12,310 log Not Found: /css2
+WARNING 2025-02-15 02:14:12,310 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:14:13,701 views User oys accessed the project list.
+INFO 2025-02-15 02:14:13,701 views Retrieved 3 projects from the database.
+INFO 2025-02-15 02:14:13,706 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7442
+WARNING 2025-02-15 02:14:13,769 log Not Found: /css2
+WARNING 2025-02-15 02:14:13,770 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:14:21,798 views User oys accessed the upload page.
+INFO 2025-02-15 02:14:21,801 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:14:21,874 log Not Found: /css2
+WARNING 2025-02-15 02:14:21,874 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:14:27,914 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 68
+INFO 2025-02-15 02:14:34,084 views Processing file request received.
+INFO 2025-02-15 02:14:34,084 views Request JSON successfully parsed.
+INFO 2025-02-15 02:14:34,084 views Generated sheet name: sheet2ZYUDO
+INFO 2025-02-15 02:14:34,087 views CSV file loaded successfully.
+INFO 2025-02-15 02:14:34,105 views New entry added for Employee ID: 1 on 2019-07-01.
+INFO 2025-02-15 02:14:34,109 views New entry added for Employee ID: 2 on 2019-07-01.
+INFO 2025-02-15 02:14:34,113 views New entry added for Employee ID: 3 on 2019-07-01.
+INFO 2025-02-15 02:14:34,117 views New entry added for Employee ID: 4 on 2019-07-01.
+INFO 2025-02-15 02:14:34,129 views 4 new entries successfully added to the database.
+INFO 2025-02-15 02:14:34,129 views Starting invoice generation process.
+INFO 2025-02-15 02:14:34,142 views Converted time fields successfully.
+INFO 2025-02-15 02:14:34,146 views Calculated billable hours and cost.
+INFO 2025-02-15 02:14:34,192 views Invoice data successfully generated.
+INFO 2025-02-15 02:14:34,193 views File processing completed successfully.
+INFO 2025-02-15 02:14:34,206 basehttp "POST /revenue_collection/process_file/ HTTP/1.1" 200 151
+WARNING 2025-02-15 02:14:41,852 log Not Found: /list_projects/
+WARNING 2025-02-15 02:14:41,853 basehttp "GET /list_projects/ HTTP/1.1" 404 3326
+INFO 2025-02-15 02:16:31,233 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:16:32,746 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:17:07,732 views User oys accessed the project list page.
+INFO 2025-02-15 02:17:07,732 views Retrieved 3 projects from session data.
+INFO 2025-02-15 02:17:07,761 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 7517
+INFO 2025-02-15 02:17:07,849 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:17:07,850 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:17:07,865 log Not Found: /css2
+WARNING 2025-02-15 02:17:07,867 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:17:07,868 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:17:07,869 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:17:51,376 views User oys accessed the project list page.
+INFO 2025-02-15 02:17:51,377 views Retrieved 3 projects from session data.
+INFO 2025-02-15 02:17:51,389 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 7594
+WARNING 2025-02-15 02:17:51,493 log Not Found: /css2
+WARNING 2025-02-15 02:17:51,494 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:17:54,200 views User oys accessed invoice for project: Amazon
+INFO 2025-02-15 02:17:54,200 views Successfully retrieved invoice data for project: Amazon. Entries found: 1
+INFO 2025-02-15 02:17:54,204 basehttp "GET /revenue_collection/view_invoice/Amazon/ HTTP/1.1" 200 7040
+WARNING 2025-02-15 02:17:54,272 log Not Found: /css2
+INFO 2025-02-15 02:17:54,273 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:17:54,273 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:18:27,792 views User oys accessed invoice for project: Amazon
+INFO 2025-02-15 02:18:27,792 views Successfully retrieved invoice data for project: Amazon. Entries found: 1
+INFO 2025-02-15 02:18:27,802 basehttp "GET /revenue_collection/view_invoice/Amazon/ HTTP/1.1" 200 7116
+WARNING 2025-02-15 02:18:27,881 log Not Found: /css2
+INFO 2025-02-15 02:18:27,882 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:18:27,882 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:18:27,882 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:19:52,855 views User oys accessed the upload page.
+INFO 2025-02-15 02:19:52,859 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+INFO 2025-02-15 02:19:52,955 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:19:52,967 log Not Found: /css2
+WARNING 2025-02-15 02:19:52,967 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:19:52,983 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:19:52,995 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:19:57,394 views User oys accessed the timesheets page.
+INFO 2025-02-15 02:19:57,396 views Retrieved 1 distinct timesheets.
+INFO 2025-02-15 02:19:57,438 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 7288
+WARNING 2025-02-15 02:19:57,505 log Not Found: /css2
+WARNING 2025-02-15 02:19:57,506 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:19:57,507 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:20:00,150 views User oys accessed timesheet details for sheet name sheet2ZYUDO.
+INFO 2025-02-15 02:20:00,152 views Retrieved 4 entries for sheet name sheet2ZYUDO.
+INFO 2025-02-15 02:20:00,167 basehttp "GET /revenue_collection/timesheets/sheet2ZYUDO/ HTTP/1.1" 200 8029
+WARNING 2025-02-15 02:20:00,234 log Not Found: /css2
+WARNING 2025-02-15 02:20:00,234 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:20:26,978 views User oys accessed timesheet edit page for ID 1.
+INFO 2025-02-15 02:20:26,985 basehttp "GET /revenue_collection/timesheet/edit/1/ HTTP/1.1" 200 7592
+WARNING 2025-02-15 02:20:27,054 log Not Found: /css2
+WARNING 2025-02-15 02:20:27,055 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:20:30,297 views User oys accessed timesheet edit page for ID 1.
+INFO 2025-02-15 02:20:30,304 views Updated timesheet name from sheet2ZYUDO to sheet2ZYUD1.
+INFO 2025-02-15 02:20:30,308 basehttp "POST /revenue_collection/timesheet/edit/1/ HTTP/1.1" 200 7771
+WARNING 2025-02-15 02:20:30,394 log Not Found: /css2
+WARNING 2025-02-15 02:20:30,395 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:20:35,118 views User oys accessed the timesheets page.
+INFO 2025-02-15 02:20:35,119 views Retrieved 1 distinct timesheets.
+INFO 2025-02-15 02:20:35,125 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 7288
+WARNING 2025-02-15 02:20:35,185 log Not Found: /css2
+WARNING 2025-02-15 02:20:35,186 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:20:38,924 views User oys accessed timesheet details for sheet name sheet2ZYUD1.
+INFO 2025-02-15 02:20:38,925 views Retrieved 4 entries for sheet name sheet2ZYUD1.
+INFO 2025-02-15 02:20:38,937 basehttp "GET /revenue_collection/timesheets/sheet2ZYUD1/ HTTP/1.1" 200 8029
+WARNING 2025-02-15 02:20:39,049 log Not Found: /css2
+WARNING 2025-02-15 02:20:39,050 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 02:20:42,019 log Not Found: /css2
+WARNING 2025-02-15 02:20:42,020 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:20:49,245 views User oys accessed the upload page.
+INFO 2025-02-15 02:20:49,247 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:20:49,314 log Not Found: /css2
+WARNING 2025-02-15 02:20:49,314 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:20:55,825 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 68
+INFO 2025-02-15 02:21:02,288 views Processing file request received.
+INFO 2025-02-15 02:21:02,288 views Request JSON successfully parsed.
+INFO 2025-02-15 02:21:02,289 views Generated sheet name: sheet1VLZGV
+INFO 2025-02-15 02:21:02,294 views CSV file loaded successfully.
+INFO 2025-02-15 02:21:02,316 views Starting invoice generation process.
+INFO 2025-02-15 02:21:02,320 views Converted time fields successfully.
+INFO 2025-02-15 02:21:02,322 views Calculated billable hours and cost.
+INFO 2025-02-15 02:21:02,341 views Invoice data successfully generated.
+INFO 2025-02-15 02:21:02,344 views File processing completed successfully.
+INFO 2025-02-15 02:21:02,354 basehttp "POST /revenue_collection/process_file/ HTTP/1.1" 200 115
+INFO 2025-02-15 02:21:11,021 views User oys accessed the project list page.
+INFO 2025-02-15 02:21:11,021 views Retrieved 3 projects from session data.
+INFO 2025-02-15 02:21:11,026 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 7594
+WARNING 2025-02-15 02:21:11,114 log Not Found: /css2
+INFO 2025-02-15 02:21:11,115 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:21:11,115 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:21:11,115 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:21:13,531 views User oys accessed invoice for project: Amazon
+INFO 2025-02-15 02:21:13,531 views Successfully retrieved invoice data for project: Amazon. Entries found: 1
+INFO 2025-02-15 02:21:13,535 basehttp "GET /revenue_collection/view_invoice/Amazon/ HTTP/1.1" 200 7116
+WARNING 2025-02-15 02:21:13,604 log Not Found: /css2
+WARNING 2025-02-15 02:21:13,605 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:22:51,532 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:22:52,813 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:23:03,187 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:23:04,342 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:23:07,789 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:23:09,085 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:23:12,677 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:23:13,832 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:23:18,426 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:23:20,886 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:23:24,064 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:23:25,424 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:23:33,499 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:23:34,802 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:23:53,207 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\revenue_collection_web\settings.py changed, reloading.
+INFO 2025-02-15 02:23:54,284 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:26:44,987 views User oys accessed the upload page.
+INFO 2025-02-15 02:26:45,026 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+INFO 2025-02-15 02:26:45,125 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:26:45,128 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:26:45,137 log Not Found: /css2
+WARNING 2025-02-15 02:26:45,139 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:26:45,139 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:26:45,140 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:26:45,284 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
+WARNING 2025-02-15 02:26:50,098 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:26:50,099 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 180
+WARNING 2025-02-15 02:27:16,834 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:27:16,835 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 180
+WARNING 2025-02-15 02:27:29,671 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:27:29,672 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 167
+INFO 2025-02-15 02:27:32,361 views User oys accessed the project list.
+INFO 2025-02-15 02:27:32,362 views Retrieved 3 projects from the database.
+INFO 2025-02-15 02:27:32,369 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7442
+WARNING 2025-02-15 02:27:32,493 log Not Found: /css2
+WARNING 2025-02-15 02:27:32,494 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:27:35,469 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7584
+WARNING 2025-02-15 02:27:35,540 log Not Found: /css2
+WARNING 2025-02-15 02:27:35,541 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:27:45,873 views User oys added a new project: Spotify.
+INFO 2025-02-15 02:27:45,875 basehttp "POST /revenue_collection/projects/add/ HTTP/1.1" 302 0
+INFO 2025-02-15 02:27:45,892 views User oys accessed the project list.
+INFO 2025-02-15 02:27:45,893 views Retrieved 4 projects from the database.
+INFO 2025-02-15 02:27:45,899 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7635
+WARNING 2025-02-15 02:27:45,971 log Not Found: /css2
+WARNING 2025-02-15 02:27:45,972 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:27:50,797 views User oys accessed the upload page.
+INFO 2025-02-15 02:27:50,800 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:27:50,871 log Not Found: /css2
+WARNING 2025-02-15 02:27:50,872 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:27:55,753 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 67
+INFO 2025-02-15 02:28:33,772 views Processing file request received.
+INFO 2025-02-15 02:28:33,773 views Request JSON successfully parsed.
+INFO 2025-02-15 02:28:33,773 views Generated sheet name: sheetRYEW20
+INFO 2025-02-15 02:28:33,777 views CSV file loaded successfully.
+INFO 2025-02-15 02:28:33,788 views New entry added for Employee ID: 2 on 2019-07-01.
+INFO 2025-02-15 02:28:33,792 views New entry added for Employee ID: 3 on 2019-07-01.
+INFO 2025-02-15 02:28:33,796 views New entry added for Employee ID: 4 on 2019-07-01.
+ERROR 2025-02-15 02:28:33,799 views Error processing row {'Employee ID': '"gff"', 'Billable Rate': 200, 'Project': 'Spotify', 'Date': '2019-07-01', 'Start Time': '2:00', 'End Time': '21:00'}: Field 'employee_id' expected a number but got '"gff"'.
 Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
-    compiled_parent = self.get_parent(context)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
-    return self.find_template(parent, context)
-           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
-    template, origin = context.template.engine.find_template(
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        template_name,
-        ^^^^^^^^^^^^^^
-        skip=history,
-        ^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-django.template.exceptions.TemplateDoesNotExist: brs/base.html
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2123, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '"gff"'
 
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 20, in upload_page
-    return render(request, "bill_rate_system/upload.html")
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 109, in render
-    reraise(exc, self.backend)
-    ~~~~~~~^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
-    raise new from exc
-django.template.exceptions.TemplateDoesNotExist: brs/base.html
-ERROR 2025-02-14 21:05:51,333 basehttp "GET /revenue_collection/ HTTP/1.1" 500 136172
-ERROR 2025-02-14 21:06:12,278 log Internal Server Error: /revenue_collection/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 20, in upload_page
-    return render(request, "bill_rate_system/upload.html")
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
-    return compiled_parent._render(context)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'upload-page' not found. 'upload-page' is not a valid view function or pattern name.
-ERROR 2025-02-14 21:06:12,284 basehttp "GET /revenue_collection/ HTTP/1.1" 500 148257
-ERROR 2025-02-14 21:06:49,213 log Internal Server Error: /revenue_collection/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 20, in upload_page
-    return render(request, "bill_rate_system/upload.html")
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
-    return compiled_parent._render(context)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'timesheets' not found. 'timesheets' is not a valid view function or pattern name.
-ERROR 2025-02-14 21:06:49,220 basehttp "GET /revenue_collection/ HTTP/1.1" 500 146273
-INFO 2025-02-14 21:07:10,380 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-INFO 2025-02-14 21:07:11,043 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 163879
-INFO 2025-02-14 21:07:11,049 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 130303
-INFO 2025-02-14 21:07:11,060 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
-WARNING 2025-02-14 21:07:11,078 log Not Found: /css2
-WARNING 2025-02-14 21:07:11,079 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-14 21:07:11,093 basehttp "GET /static/assets/img/icons/upload.svg HTTP/1.1" 200 985
-INFO 2025-02-14 21:07:11,103 basehttp "GET /static/assets/css/animate.css HTTP/1.1" 200 17506
-INFO 2025-02-14 21:07:11,108 basehttp "GET /static/assets/img/icons/product.svg HTTP/1.1" 200 1271
-INFO 2025-02-14 21:07:11,111 basehttp "GET /static/assets/plugins/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 55418
-INFO 2025-02-14 21:07:11,116 basehttp "GET /static/assets/img/icons/dashboard.svg HTTP/1.1" 200 1187
-INFO 2025-02-14 21:07:11,120 basehttp "GET /static/assets/plugins/select2/css/select2.min.css HTTP/1.1" 200 14989
-INFO 2025-02-14 21:07:11,125 basehttp "GET /static/assets/img/icons/users1.svg HTTP/1.1" 200 1468
-INFO 2025-02-14 21:07:11,126 basehttp "GET /static/assets/plugins/fontawesome/css/all.min.css HTTP/1.1" 200 56794
-INFO 2025-02-14 21:07:11,137 basehttp "GET /static/assets/js/jquery-3.6.0.min.js HTTP/1.1" 200 89503
-INFO 2025-02-14 21:07:11,144 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 78135
-INFO 2025-02-14 21:07:11,148 basehttp "GET /static/assets/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 5233
-INFO 2025-02-14 21:07:11,155 basehttp "GET /static/assets/js/script.js HTTP/1.1" 200 13994
-INFO 2025-02-14 21:07:11,185 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5081
-INFO 2025-02-14 21:07:11,208 basehttp "GET /static/assets/js/feather.min.js HTTP/1.1" 200 75775
-INFO 2025-02-14 21:07:11,217 basehttp "GET /static/assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 4739
-INFO 2025-02-14 21:07:11,230 basehttp "GET /static/assets/js/jquery.dataTables.min.js HTTP/1.1" 200 106738
-INFO 2025-02-14 21:07:11,380 basehttp "GET /static/assets/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4534
-INFO 2025-02-14 21:07:11,385 basehttp "GET /static/assets/plugins/select2/js/select2.min.js HTTP/1.1" 200 70338
-INFO 2025-02-14 21:07:11,386 basehttp "GET /static/assets/plugins/sweetalert/sweetalert2.all.min.js HTTP/1.1" 200 72874
-INFO 2025-02-14 21:07:11,388 basehttp "GET /static/assets/plugins/sweetalert/sweetalerts.min.js HTTP/1.1" 200 7493
-INFO 2025-02-14 21:07:11,598 basehttp "GET /static/assets/img/law.png HTTP/1.1" 200 27979
-INFO 2025-02-14 22:10:16,191 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 22:10:18,449 views User 'testuser' logged in successfully.
-INFO 2025-02-14 22:10:20,637 views User 'testuser' logged out.
-WARNING 2025-02-14 22:10:21,843 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 22:10:21,852 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 22:10:24,016 views Failed login attempt for username: testuser
-INFO 2025-02-14 22:15:18,546 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 22:15:21,054 views User 'testuser' logged in successfully.
-INFO 2025-02-14 22:15:23,331 views User 'testuser' logged out.
-WARNING 2025-02-14 22:15:24,416 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 22:15:24,421 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 22:15:26,630 views Failed login attempt for username: testuser
-INFO 2025-02-14 22:25:12,264 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:25:31,130 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-14 22:25:32,330 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:26:01,853 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-14 22:26:03,295 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:27:05,176 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-14 22:27:06,434 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:31:31,018 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-14 22:31:32,825 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:32:38,311 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-14 22:32:39,777 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:34:29,133 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:34:33,422 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 22:34:33,566 log Not Found: /css2
-WARNING 2025-02-14 22:34:33,567 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-14 22:34:34,095 basehttp "GET /static/assets/img/law.png HTTP/1.1" 304 0
-WARNING 2025-02-14 22:34:41,818 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:34:41,824 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 22:34:53,538 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:34:53,576 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-INFO 2025-02-14 22:34:57,441 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 22:34:57,513 log Not Found: /css2
-WARNING 2025-02-14 22:34:57,513 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:35:13,390 log Not Found: /css2
-WARNING 2025-02-14 22:35:13,391 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:35:13,704 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 22:35:13,713 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 22:35:13,849 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-WARNING 2025-02-14 22:35:25,685 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:35:25,687 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-INFO 2025-02-14 22:36:03,725 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:36:04,967 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:36:13,693 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:36:14,886 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:36:19,093 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:36:20,271 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:36:25,161 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:36:26,661 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:36:35,504 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:36:37,601 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:36:44,870 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:36:46,254 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:36:52,270 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:36:54,170 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:37:16,737 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:37:17,830 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:38:09,977 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:38:11,246 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:38:16,173 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:38:17,422 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:38:20,928 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-14 22:38:22,359 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:42:32,123 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 22:42:32,233 log Not Found: /css2
-WARNING 2025-02-14 22:42:32,235 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:42:39,313 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:42:39,314 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 22:42:44,112 log Not Found: /css2
-WARNING 2025-02-14 22:42:44,113 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:42:44,508 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 22:42:44,509 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 22:42:44,859 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-INFO 2025-02-14 22:43:14,535 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 22:43:14,652 log Not Found: /css2
-WARNING 2025-02-14 22:43:14,653 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-14 22:43:36,177 basehttp "GET /revenue_collection/ HTTP/1.1" 302 0
-INFO 2025-02-14 22:43:36,189 basehttp "GET /?next=/revenue_collection/ HTTP/1.1" 200 1270
-INFO 2025-02-14 22:43:36,699 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3099
-INFO 2025-02-14 22:43:36,924 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 200 2445372
-WARNING 2025-02-14 22:43:37,206 log Not Found: /favicon.ico
-WARNING 2025-02-14 22:43:37,210 basehttp "GET /favicon.ico HTTP/1.1" 404 3317
-INFO 2025-02-14 22:43:52,023 views User 'oys' logged in successfully.
-INFO 2025-02-14 22:43:52,035 basehttp "POST /?next=/revenue_collection/ HTTP/1.1" 302 0
-INFO 2025-02-14 22:43:52,048 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-INFO 2025-02-14 22:43:52,215 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 163879
-INFO 2025-02-14 22:43:52,268 basehttp "GET /static/assets/css/animate.css HTTP/1.1" 200 17506
-INFO 2025-02-14 22:43:52,273 basehttp "GET /static/assets/plugins/select2/css/select2.min.css HTTP/1.1" 200 14989
-INFO 2025-02-14 22:43:52,283 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
-INFO 2025-02-14 22:43:52,284 basehttp "GET /static/assets/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 5233
-INFO 2025-02-14 22:43:52,291 basehttp "GET /static/assets/img/icons/upload.svg HTTP/1.1" 200 985
-INFO 2025-02-14 22:43:52,293 basehttp "GET /static/assets/plugins/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 55418
-INFO 2025-02-14 22:43:52,300 basehttp "GET /static/assets/img/icons/product.svg HTTP/1.1" 200 1271
-INFO 2025-02-14 22:43:52,309 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 130303
-INFO 2025-02-14 22:43:52,313 basehttp "GET /static/assets/img/icons/dashboard.svg HTTP/1.1" 200 1187
-INFO 2025-02-14 22:43:52,315 basehttp "GET /static/assets/plugins/fontawesome/css/all.min.css HTTP/1.1" 200 56794
-INFO 2025-02-14 22:43:52,324 basehttp "GET /static/assets/img/icons/users1.svg HTTP/1.1" 200 1468
-INFO 2025-02-14 22:43:52,355 basehttp "GET /static/assets/js/jquery-3.6.0.min.js HTTP/1.1" 200 89503
-WARNING 2025-02-14 22:43:52,380 log Not Found: /css2
-WARNING 2025-02-14 22:43:52,382 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-14 22:43:52,389 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 78135
-INFO 2025-02-14 22:43:52,438 basehttp "GET /static/assets/js/script.js HTTP/1.1" 200 13994
-INFO 2025-02-14 22:43:52,481 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5081
-INFO 2025-02-14 22:43:52,867 basehttp "GET /static/assets/js/jquery.dataTables.min.js HTTP/1.1" 200 106738
-INFO 2025-02-14 22:43:52,868 basehttp "GET /static/assets/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4534
-INFO 2025-02-14 22:43:52,869 basehttp "GET /static/assets/plugins/select2/js/select2.min.js HTTP/1.1" 200 70338
-INFO 2025-02-14 22:43:52,870 basehttp "GET /static/assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 4739
-INFO 2025-02-14 22:43:52,871 basehttp "GET /static/assets/js/feather.min.js HTTP/1.1" 200 75775
-INFO 2025-02-14 22:43:52,918 basehttp "GET /static/assets/plugins/sweetalert/sweetalert2.all.min.js HTTP/1.1" 200 72874
-INFO 2025-02-14 22:43:53,049 basehttp "GET /static/assets/plugins/sweetalert/sweetalerts.min.js HTTP/1.1" 200 7493
-INFO 2025-02-14 22:43:53,436 basehttp "GET /static/assets/img/law.png HTTP/1.1" 200 27979
-WARNING 2025-02-14 22:44:00,037 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:44:00,038 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 22:44:06,382 log Not Found: /css2
-WARNING 2025-02-14 22:44:06,383 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:44:06,638 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 22:44:06,648 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 22:44:06,797 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-INFO 2025-02-14 22:44:21,796 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 22:44:22,073 log Not Found: /css2
-WARNING 2025-02-14 22:44:22,074 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:44:22,964 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-WARNING 2025-02-14 22:44:22,966 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 22:44:22,976 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 22:44:31,641 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:44:31,642 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 22:46:49,690 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:46:49,692 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 22:46:55,820 log Not Found: /css2
-WARNING 2025-02-14 22:46:55,821 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:46:56,167 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 22:46:56,369 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 22:46:56,465 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-WARNING 2025-02-14 22:47:11,091 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:47:11,093 basehttp "GET /upload_temp_file/ HTTP/1.1" 404 3335
-INFO 2025-02-14 22:48:23,497 autoreload Watching for file changes with StatReloader
-WARNING 2025-02-14 22:48:27,664 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:48:27,665 basehttp "GET /upload_temp_file/ HTTP/1.1" 404 3335
-INFO 2025-02-14 22:48:35,441 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 22:48:35,593 log Not Found: /css2
-WARNING 2025-02-14 22:48:35,594 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:48:41,681 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:48:41,682 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 22:48:45,413 log Not Found: /css2
-WARNING 2025-02-14 22:48:45,414 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:48:45,653 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 22:48:45,664 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 22:48:45,774 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-WARNING 2025-02-14 22:48:54,827 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:48:54,829 basehttp "GET /upload_temp_file/ HTTP/1.1" 404 3335
-INFO 2025-02-14 22:51:19,163 basehttp "GET / HTTP/1.1" 200 1270
-INFO 2025-02-14 22:51:19,239 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
-INFO 2025-02-14 22:51:19,246 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:51:23,222 views User 'oys' logged in successfully.
-INFO 2025-02-14 22:51:23,231 basehttp "POST / HTTP/1.1" 302 0
-INFO 2025-02-14 22:51:23,245 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-INFO 2025-02-14 22:51:23,675 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 163879
-INFO 2025-02-14 22:51:23,683 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 130303
-INFO 2025-02-14 22:51:23,687 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
-INFO 2025-02-14 22:51:23,700 basehttp "GET /static/assets/img/icons/upload.svg HTTP/1.1" 200 985
-WARNING 2025-02-14 22:51:23,713 log Not Found: /css2
-WARNING 2025-02-14 22:51:23,714 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-14 22:51:23,719 basehttp "GET /static/assets/img/icons/product.svg HTTP/1.1" 200 1271
-INFO 2025-02-14 22:51:23,725 basehttp "GET /static/assets/img/icons/dashboard.svg HTTP/1.1" 200 1187
-INFO 2025-02-14 22:51:23,731 basehttp "GET /static/assets/img/icons/users1.svg HTTP/1.1" 200 1468
-INFO 2025-02-14 22:51:23,738 basehttp "GET /static/assets/js/jquery-3.6.0.min.js HTTP/1.1" 200 89503
-INFO 2025-02-14 22:51:23,746 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 78135
-INFO 2025-02-14 22:51:23,752 basehttp "GET /static/assets/js/script.js HTTP/1.1" 200 13994
-INFO 2025-02-14 22:51:23,763 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5119
-INFO 2025-02-14 22:51:23,833 basehttp "GET /static/assets/css/animate.css HTTP/1.1" 200 17506
-INFO 2025-02-14 22:51:23,886 basehttp "GET /static/assets/js/feather.min.js HTTP/1.1" 200 75775
-INFO 2025-02-14 22:51:23,897 basehttp "GET /static/assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 4739
-INFO 2025-02-14 22:51:23,905 basehttp "GET /static/assets/js/jquery.dataTables.min.js HTTP/1.1" 200 106738
-INFO 2025-02-14 22:51:23,918 basehttp "GET /static/assets/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4534
-INFO 2025-02-14 22:51:23,928 basehttp "GET /static/assets/plugins/select2/js/select2.min.js HTTP/1.1" 200 70338
-INFO 2025-02-14 22:51:23,934 basehttp "GET /static/assets/plugins/select2/css/select2.min.css HTTP/1.1" 200 14989
-INFO 2025-02-14 22:51:23,947 basehttp "GET /static/assets/plugins/sweetalert/sweetalert2.all.min.js HTTP/1.1" 200 72874
-INFO 2025-02-14 22:51:23,959 basehttp "GET /static/assets/plugins/sweetalert/sweetalerts.min.js HTTP/1.1" 200 7493
-INFO 2025-02-14 22:51:24,011 basehttp "GET /static/assets/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 5233
-INFO 2025-02-14 22:51:24,113 basehttp "GET /static/assets/plugins/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 55418
-INFO 2025-02-14 22:51:24,179 basehttp "GET /static/assets/plugins/fontawesome/css/all.min.css HTTP/1.1" 200 56794
-INFO 2025-02-14 22:51:25,011 basehttp "GET /static/assets/img/law.png HTTP/1.1" 200 27979
-WARNING 2025-02-14 22:51:34,297 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 22:51:34,298 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 40
-WARNING 2025-02-14 22:53:36,395 log Not Found: /favicon.ico
-WARNING 2025-02-14 22:53:36,396 basehttp "GET /favicon.ico HTTP/1.1" 404 3317
-INFO 2025-02-14 22:57:12,265 basehttp "GET /admin/auth/user/ HTTP/1.1" 302 0
-INFO 2025-02-14 22:57:12,362 basehttp "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 3830
-INFO 2025-02-14 22:57:12,421 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:12,429 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:12,433 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:12,458 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:12,473 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:12,478 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:12,481 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:12,497 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:23,644 basehttp "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
-INFO 2025-02-14 22:57:23,717 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11502
-INFO 2025-02-14 22:57:23,805 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,062 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,063 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,066 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,067 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,141 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,146 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 22:57:24,147 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,149 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,180 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,181 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,201 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,202 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,246 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,250 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,269 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:24,285 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
-INFO 2025-02-14 22:57:37,851 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\admin.py changed, reloading.
-INFO 2025-02-14 22:57:39,079 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:57:46,064 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\admin.py changed, reloading.
-INFO 2025-02-14 22:57:48,283 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 22:58:00,277 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 12710
-INFO 2025-02-14 22:58:00,340 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 22:58:01,448 basehttp "GET /admin/bill_rate_system/timesheet/ HTTP/1.1" 200 8415
-INFO 2025-02-14 22:58:01,501 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 22:58:03,351 basehttp "GET /admin/bill_rate_system/project/ HTTP/1.1" 200 8401
-INFO 2025-02-14 22:58:03,410 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 22:59:02,599 basehttp "GET / HTTP/1.1" 200 1401
-INFO 2025-02-14 22:59:15,599 basehttp "GET / HTTP/1.1" 200 1270
-INFO 2025-02-14 22:59:15,648 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
-INFO 2025-02-14 22:59:15,696 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
-INFO 2025-02-14 22:59:26,562 views User 'oys' logged in successfully.
-INFO 2025-02-14 22:59:26,574 basehttp "POST / HTTP/1.1" 302 0
-INFO 2025-02-14 22:59:26,593 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 22:59:26,728 log Not Found: /css2
-WARNING 2025-02-14 22:59:26,728 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:59:31,503 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:59:31,512 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 22:59:37,698 log Not Found: /css2
-WARNING 2025-02-14 22:59:37,699 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 22:59:38,094 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 22:59:38,095 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 22:59:38,368 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-WARNING 2025-02-14 22:59:51,319 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 22:59:51,320 basehttp "GET /upload_temp_file/ HTTP/1.1" 404 3335
-INFO 2025-02-14 23:00:20,468 basehttp "GET / HTTP/1.1" 200 1270
-INFO 2025-02-14 23:00:21,053 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3099
-INFO 2025-02-14 23:00:21,160 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 200 2445372
-WARNING 2025-02-14 23:00:21,497 log Not Found: /favicon.ico
-WARNING 2025-02-14 23:00:21,498 basehttp "GET /favicon.ico HTTP/1.1" 404 3317
-INFO 2025-02-14 23:00:32,994 views User 'oys' logged in successfully.
-INFO 2025-02-14 23:00:33,004 basehttp "POST / HTTP/1.1" 302 0
-INFO 2025-02-14 23:00:33,019 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-INFO 2025-02-14 23:00:33,117 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 163879
-INFO 2025-02-14 23:00:33,121 basehttp "GET /static/assets/css/animate.css HTTP/1.1" 200 17506
-INFO 2025-02-14 23:00:33,133 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 130303
-INFO 2025-02-14 23:00:33,158 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
-INFO 2025-02-14 23:00:33,194 basehttp "GET /static/assets/img/icons/upload.svg HTTP/1.1" 200 985
-INFO 2025-02-14 23:00:33,197 basehttp "GET /static/assets/img/icons/product.svg HTTP/1.1" 200 1271
-INFO 2025-02-14 23:00:33,223 basehttp "GET /static/assets/plugins/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 55418
-INFO 2025-02-14 23:00:33,225 basehttp "GET /static/assets/plugins/select2/css/select2.min.css HTTP/1.1" 200 14989
-INFO 2025-02-14 23:00:33,242 basehttp "GET /static/assets/plugins/fontawesome/css/all.min.css HTTP/1.1" 200 56794
-INFO 2025-02-14 23:00:33,258 basehttp "GET /static/assets/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 5233
-WARNING 2025-02-14 23:00:33,376 log Not Found: /css2
-WARNING 2025-02-14 23:00:33,378 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-14 23:00:33,380 basehttp "GET /static/assets/img/icons/dashboard.svg HTTP/1.1" 200 1187
-INFO 2025-02-14 23:00:33,381 basehttp "GET /static/assets/img/icons/users1.svg HTTP/1.1" 200 1468
-INFO 2025-02-14 23:00:33,399 basehttp "GET /static/assets/js/jquery-3.6.0.min.js HTTP/1.1" 200 89503
-INFO 2025-02-14 23:00:33,405 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 78135
-INFO 2025-02-14 23:00:33,538 basehttp "GET /static/assets/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4534
-INFO 2025-02-14 23:00:33,542 basehttp "GET /static/assets/js/script.js HTTP/1.1" 200 13994
-INFO 2025-02-14 23:00:33,543 basehttp "GET /static/assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 4739
-INFO 2025-02-14 23:00:33,544 basehttp "GET /static/assets/js/jquery.dataTables.min.js HTTP/1.1" 200 106738
-INFO 2025-02-14 23:00:33,545 basehttp "GET /static/assets/js/feather.min.js HTTP/1.1" 200 75775
-INFO 2025-02-14 23:00:33,558 basehttp "GET /static/assets/plugins/select2/js/select2.min.js HTTP/1.1" 200 70338
-INFO 2025-02-14 23:00:33,576 basehttp "GET /static/assets/plugins/sweetalert/sweetalert2.all.min.js HTTP/1.1" 200 72874
-INFO 2025-02-14 23:00:33,577 basehttp "GET /static/assets/plugins/sweetalert/sweetalerts.min.js HTTP/1.1" 200 7493
-INFO 2025-02-14 23:00:33,600 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5119
-INFO 2025-02-14 23:00:33,949 basehttp "GET /static/assets/img/law.png HTTP/1.1" 200 27979
-WARNING 2025-02-14 23:01:52,619 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:01:52,620 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 40
-INFO 2025-02-14 23:02:27,964 basehttp "GET / HTTP/1.1" 200 1270
-INFO 2025-02-14 23:02:42,986 views User 'oys' logged in successfully.
-INFO 2025-02-14 23:02:42,997 basehttp "POST / HTTP/1.1" 302 0
-INFO 2025-02-14 23:02:43,014 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-14 23:02:43,156 log Not Found: /css2
-WARNING 2025-02-14 23:02:43,156 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 23:02:48,119 log Not Found: /upload_temp_file/
-WARNING 2025-02-14 23:02:48,120 basehttp "POST /upload_temp_file/ HTTP/1.1" 404 3336
-WARNING 2025-02-14 23:02:53,465 log Not Found: /css2
-WARNING 2025-02-14 23:02:53,466 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-14 23:02:53,788 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-14 23:02:53,802 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-14 23:02:54,104 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-INFO 2025-02-14 23:03:50,695 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 23:04:48,311 basehttp "GET / HTTP/1.1" 200 1270
-INFO 2025-02-14 23:04:48,863 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3099
-INFO 2025-02-14 23:04:48,954 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 200 2445372
-INFO 2025-02-14 23:04:58,048 views User 'oys' logged in successfully.
-INFO 2025-02-14 23:04:58,061 basehttp "POST / HTTP/1.1" 302 0
-INFO 2025-02-14 23:04:58,079 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-INFO 2025-02-14 23:04:58,152 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 163879
-INFO 2025-02-14 23:04:58,159 basehttp "GET /static/assets/css/animate.css HTTP/1.1" 200 17506
-INFO 2025-02-14 23:04:58,173 basehttp "GET /static/assets/plugins/select2/css/select2.min.css HTTP/1.1" 200 14989
-INFO 2025-02-14 23:04:58,182 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 130303
-INFO 2025-02-14 23:04:58,183 basehttp "GET /static/assets/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 5233
-INFO 2025-02-14 23:04:58,187 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
-INFO 2025-02-14 23:04:58,196 basehttp "GET /static/assets/img/icons/upload.svg HTTP/1.1" 200 985
-INFO 2025-02-14 23:04:58,205 basehttp "GET /static/assets/img/icons/product.svg HTTP/1.1" 200 1271
-WARNING 2025-02-14 23:04:58,222 log Not Found: /css2
-WARNING 2025-02-14 23:04:58,228 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-14 23:04:58,230 basehttp "GET /static/assets/img/icons/users1.svg HTTP/1.1" 200 1468
-INFO 2025-02-14 23:04:58,231 basehttp "GET /static/assets/img/icons/dashboard.svg HTTP/1.1" 200 1187
-INFO 2025-02-14 23:04:58,238 basehttp "GET /static/assets/plugins/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 55418
-INFO 2025-02-14 23:04:58,248 basehttp "GET /static/assets/js/jquery-3.6.0.min.js HTTP/1.1" 200 89503
-INFO 2025-02-14 23:04:58,252 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 78135
-INFO 2025-02-14 23:04:58,270 basehttp "GET /static/assets/js/script.js HTTP/1.1" 200 13994
-INFO 2025-02-14 23:04:58,271 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5119
-INFO 2025-02-14 23:04:58,286 basehttp "GET /static/assets/plugins/fontawesome/css/all.min.css HTTP/1.1" 200 56794
-INFO 2025-02-14 23:04:58,424 basehttp "GET /static/assets/js/feather.min.js HTTP/1.1" 200 75775
-INFO 2025-02-14 23:04:58,434 basehttp "GET /static/assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 4739
-INFO 2025-02-14 23:04:58,447 basehttp "GET /static/assets/js/jquery.dataTables.min.js HTTP/1.1" 200 106738
-INFO 2025-02-14 23:04:58,472 basehttp "GET /static/assets/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4534
-INFO 2025-02-14 23:04:58,487 basehttp "GET /static/assets/plugins/select2/js/select2.min.js HTTP/1.1" 200 70338
-INFO 2025-02-14 23:04:58,500 basehttp "GET /static/assets/plugins/sweetalert/sweetalert2.all.min.js HTTP/1.1" 200 72874
-INFO 2025-02-14 23:04:58,516 basehttp "GET /static/assets/plugins/sweetalert/sweetalerts.min.js HTTP/1.1" 200 7493
-INFO 2025-02-14 23:04:59,078 basehttp "GET /static/assets/img/law.png HTTP/1.1" 200 27979
-WARNING 2025-02-14 23:05:07,176 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:05:07,177 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 40
-WARNING 2025-02-14 23:05:34,426 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:05:34,427 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 178
-INFO 2025-02-14 23:05:53,160 basehttp "GET /admin HTTP/1.1" 301 0
-INFO 2025-02-14 23:05:53,179 basehttp "GET /admin/ HTTP/1.1" 302 0
-INFO 2025-02-14 23:05:53,255 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
-INFO 2025-02-14 23:05:53,324 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
-INFO 2025-02-14 23:05:53,343 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
-INFO 2025-02-14 23:05:53,347 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
-INFO 2025-02-14 23:05:53,349 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
-INFO 2025-02-14 23:05:53,351 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
-INFO 2025-02-14 23:05:53,352 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
-INFO 2025-02-14 23:05:53,367 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
-WARNING 2025-02-14 23:05:53,595 log Not Found: /favicon.ico
-WARNING 2025-02-14 23:05:53,596 basehttp "GET /favicon.ico HTTP/1.1" 404 3317
-INFO 2025-02-14 23:05:59,075 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
-INFO 2025-02-14 23:05:59,101 basehttp "GET /admin/ HTTP/1.1" 200 8120
-INFO 2025-02-14 23:05:59,147 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
-INFO 2025-02-14 23:05:59,167 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
-INFO 2025-02-14 23:05:59,169 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
-INFO 2025-02-14 23:05:59,172 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
-INFO 2025-02-14 23:06:02,760 basehttp "GET /admin/bill_rate_system/timesheet/ HTTP/1.1" 200 8415
-INFO 2025-02-14 23:06:02,808 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
-INFO 2025-02-14 23:06:02,823 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 23:06:02,825 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
-INFO 2025-02-14 23:06:02,826 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
-INFO 2025-02-14 23:06:02,826 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
-INFO 2025-02-14 23:06:02,826 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
-INFO 2025-02-14 23:06:02,831 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
-INFO 2025-02-14 23:06:02,838 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
-INFO 2025-02-14 23:06:02,845 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
-INFO 2025-02-14 23:06:02,853 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
-INFO 2025-02-14 23:06:02,871 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
-INFO 2025-02-14 23:06:02,917 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
-INFO 2025-02-14 23:06:05,507 basehttp "GET /admin/bill_rate_system/project/ HTTP/1.1" 200 8401
-INFO 2025-02-14 23:06:05,551 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 23:06:07,179 basehttp "GET /admin/bill_rate_system/project/add/ HTTP/1.1" 200 9169
-INFO 2025-02-14 23:06:07,223 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
-INFO 2025-02-14 23:06:07,226 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
-INFO 2025-02-14 23:06:07,235 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 23:06:07,237 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
-INFO 2025-02-14 23:06:07,249 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
-INFO 2025-02-14 23:06:13,664 basehttp "POST /admin/bill_rate_system/project/add/ HTTP/1.1" 302 0
-INFO 2025-02-14 23:06:13,698 basehttp "GET /admin/bill_rate_system/project/ HTTP/1.1" 200 9899
-INFO 2025-02-14 23:06:13,741 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 23:06:13,767 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
-INFO 2025-02-14 23:06:18,854 basehttp "GET /admin/bill_rate_system/project/1/change/ HTTP/1.1" 200 9409
-INFO 2025-02-14 23:06:18,900 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 23:06:20,758 basehttp "GET /admin/bill_rate_system/project/1/delete/ HTTP/1.1" 200 8365
-INFO 2025-02-14 23:06:20,804 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
-INFO 2025-02-14 23:06:21,904 basehttp "POST /admin/bill_rate_system/project/1/delete/ HTTP/1.1" 302 0
-INFO 2025-02-14 23:06:21,930 basehttp "GET /admin/bill_rate_system/project/ HTTP/1.1" 200 8557
-INFO 2025-02-14 23:06:21,971 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-02-14 23:10:50,724 autoreload Watching for file changes with StatReloader
-INFO 2025-02-14 23:15:58,903 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:16:00,887 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:16:02,873 views User 'testuser' logged out.
-WARNING 2025-02-14 23:16:03,845 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:16:03,851 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:16:05,837 views Failed login attempt for username: testuser
-INFO 2025-02-14 23:18:43,520 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:18:45,460 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:18:47,423 views User 'testuser' logged out.
-WARNING 2025-02-14 23:18:48,402 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:18:48,408 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:18:50,719 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:18:53,099 log Bad Request: /revenue_collection/upload_temp_file/
-INFO 2025-02-14 23:20:48,713 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:20:50,632 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:20:52,595 views User 'testuser' logged out.
-WARNING 2025-02-14 23:20:53,573 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:20:53,579 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:20:55,572 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:20:57,514 log Bad Request: /revenue_collection/upload_temp_file/
-INFO 2025-02-14 23:22:35,281 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:22:37,247 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:22:39,206 views User 'testuser' logged out.
-WARNING 2025-02-14 23:22:40,173 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:22:40,180 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:22:42,173 views Failed login attempt for username: testuser
-INFO 2025-02-14 23:23:13,883 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:23:16,134 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:23:18,176 views User 'testuser' logged out.
-WARNING 2025-02-14 23:23:19,150 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:23:19,155 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:23:21,102 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:23:23,079 log Bad Request: /revenue_collection/upload_temp_file/
-INFO 2025-02-14 23:24:46,388 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:24:48,335 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:24:50,282 views User 'testuser' logged out.
-WARNING 2025-02-14 23:24:51,286 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:24:51,291 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:24:53,238 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:24:55,187 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:24:55,192 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:24:55,199 log Bad Request: /revenue_collection/upload_temp_file/
-INFO 2025-02-14 23:25:43,597 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:25:45,539 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:25:47,476 views User 'testuser' logged out.
-WARNING 2025-02-14 23:25:48,533 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:25:48,538 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:25:50,544 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:25:52,674 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:25:52,679 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:25:52,685 log Bad Request: /revenue_collection/upload_temp_file/
-INFO 2025-02-14 23:26:22,197 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:26:25,517 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:26:27,479 views User 'testuser' logged out.
-INFO 2025-02-14 23:26:36,947 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:26:39,315 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:26:41,610 views User 'testuser' logged out.
-WARNING 2025-02-14 23:26:42,831 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:26:42,837 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:26:44,855 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:26:46,855 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:26:46,859 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:26:46,867 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:26:46,913 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-14 23:27:53,477 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:27:55,615 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:27:57,549 views User 'testuser' logged out.
-WARNING 2025-02-14 23:27:58,521 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:27:58,527 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:28:00,515 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:28:02,516 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:28:02,522 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:28:02,531 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:28:02,577 log Bad Request: /revenue_collection/process_file/
-ERROR 2025-02-14 23:28:02,585 log Internal Server Error: /revenue_collection/list_projects/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 264, in list_projects
-    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
-INFO 2025-02-14 23:34:31,870 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:34:33,844 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:34:35,954 views User 'testuser' logged out.
-WARNING 2025-02-14 23:34:37,204 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:34:37,212 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:34:39,187 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:34:41,283 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:34:41,288 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:34:41,295 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:34:41,357 log Bad Request: /revenue_collection/process_file/
-ERROR 2025-02-14 23:34:41,372 log Internal Server Error: /revenue_collection/list_projects/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 264, in list_projects
-    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
-INFO 2025-02-14 23:36:45,987 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:36:48,504 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:36:50,443 views User 'testuser' logged out.
-WARNING 2025-02-14 23:36:51,429 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:36:51,435 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:36:53,420 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:36:55,400 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:36:55,405 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:36:55,412 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:36:55,459 log Bad Request: /revenue_collection/process_file/
-ERROR 2025-02-14 23:36:56,571 log Internal Server Error: /revenue_collection/list_projects/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 264, in list_projects
-    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
-INFO 2025-02-14 23:43:45,676 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:43:47,598 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:43:49,553 views User 'testuser' logged out.
-WARNING 2025-02-14 23:43:50,535 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:43:50,540 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:43:52,484 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:43:54,447 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:43:54,452 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:43:54,459 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:43:54,505 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-14 23:46:29,592 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:46:31,515 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:46:33,762 views User 'testuser' logged out.
-WARNING 2025-02-14 23:46:34,743 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:46:34,748 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:46:36,739 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:46:38,726 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:46:38,732 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:46:38,738 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:46:38,785 log Bad Request: /revenue_collection/process_file/
-ERROR 2025-02-14 23:46:39,808 log Internal Server Error: /revenue_collection/list_projects/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 270, in list_projects
-    return render(request, "bill_rate_system/list_projects.html", {"projects": projects})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
-    return compiled_parent._render(context)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
-    result = block.nodelist.render(context)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
-    nodelist.append(node.render_annotated(context))
-                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'view_invoice' not found. 'view_invoice' is not a valid view function or pattern name.
-INFO 2025-02-14 23:49:05,346 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:49:07,314 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:49:09,341 views User 'testuser' logged out.
-WARNING 2025-02-14 23:49:10,319 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:49:10,324 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:49:12,302 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:49:14,285 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:49:14,291 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:49:14,297 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:49:14,349 log Bad Request: /revenue_collection/process_file/
-ERROR 2025-02-14 23:49:15,487 log Internal Server Error: /revenue_collection/list_projects/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 270, in list_projects
-    return render(request, "bill_rate_system/list_projects.html", {"projects": projects})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
-    return compiled_parent._render(context)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
-    result = block.nodelist.render(context)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
-    nodelist.append(node.render_annotated(context))
-                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'bill_rate_system/view_invoice' not found. 'bill_rate_system/view_invoice' is not a valid view function or pattern name.
-INFO 2025-02-14 23:49:38,837 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:49:40,799 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:49:42,770 views User 'testuser' logged out.
-WARNING 2025-02-14 23:49:43,824 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:49:43,830 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:49:45,833 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:49:47,773 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:49:47,778 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:49:47,785 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:49:47,832 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-14 23:54:51,641 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:54:54,350 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:54:57,006 views User 'testuser' logged out.
-WARNING 2025-02-14 23:54:58,572 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:54:58,578 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:55:01,346 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:55:03,630 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:55:03,634 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:55:03,641 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:55:03,698 log Bad Request: /revenue_collection/process_file/
-ERROR 2025-02-14 23:55:07,207 log Internal Server Error: /revenue_collection/view_invoice/Test Project/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 278, in view_invoice
-    return render(request, "bill_rate_system/invoices.html", {"error": "No invoice data found"})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
-ERROR 2025-02-14 23:55:09,080 log Internal Server Error: /revenue_collection/view_invoice/Test Project/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 283, in view_invoice
-    return render(request, "bill_rate_system/invoices.html", {"error": f"No data found for project: {project_name}"})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: bill_rate_system/invoices.html
-INFO 2025-02-14 23:58:46,247 views New user registered: testuser (test@example.com)
-INFO 2025-02-14 23:58:48,232 views User 'testuser' logged in successfully.
-INFO 2025-02-14 23:58:50,193 views User 'testuser' logged out.
-WARNING 2025-02-14 23:58:51,162 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-14 23:58:51,169 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-14 23:58:53,131 views Failed login attempt for username: testuser
-WARNING 2025-02-14 23:58:55,102 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:58:55,107 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:58:55,114 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-14 23:58:55,164 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:13:05,555 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:13:07,533 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:13:09,492 views User 'testuser' logged out.
-WARNING 2025-02-15 00:13:10,467 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:13:10,473 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:13:12,452 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:13:14,420 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:13:14,425 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:13:14,432 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:13:14,481 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:19:00,255 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:19:02,290 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:19:04,263 views User 'testuser' logged out.
-WARNING 2025-02-15 00:19:05,255 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:19:05,260 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:19:07,281 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:19:09,308 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:19:09,315 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:19:09,321 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:19:09,366 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:22:32,448 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:22:34,404 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:22:36,360 views User 'testuser' logged out.
-WARNING 2025-02-15 00:22:37,352 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:22:37,358 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:22:39,341 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:22:41,326 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:22:41,331 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:22:41,338 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:22:41,384 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:23:55,962 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:23:58,254 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:24:01,390 views User 'testuser' logged out.
-WARNING 2025-02-15 00:24:02,475 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:24:02,480 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:24:05,179 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:24:07,773 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:24:07,778 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:24:07,785 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:24:07,860 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:26:40,466 autoreload Watching for file changes with StatReloader
-WARNING 2025-02-15 00:26:43,996 log Not Found: /list_projects/
-WARNING 2025-02-15 00:26:43,996 basehttp "GET /list_projects/ HTTP/1.1" 404 3326
-INFO 2025-02-15 00:26:54,855 basehttp "GET / HTTP/1.1" 200 1401
-INFO 2025-02-15 00:26:54,900 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
-INFO 2025-02-15 00:26:54,904 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 304 0
-INFO 2025-02-15 00:26:58,484 views User 'oys' logged in successfully.
-INFO 2025-02-15 00:26:58,493 basehttp "POST / HTTP/1.1" 302 0
-INFO 2025-02-15 00:26:58,507 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7029
-WARNING 2025-02-15 00:26:58,597 log Not Found: /css2
-WARNING 2025-02-15 00:26:58,598 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:26:58,643 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
-INFO 2025-02-15 00:27:04,913 basehttp "GET /revenue_collection/list_projects HTTP/1.1" 301 0
-INFO 2025-02-15 00:27:04,930 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:04,984 log Not Found: /css2
-WARNING 2025-02-15 00:27:04,984 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:27,029 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:27,099 log Not Found: /css2
-WARNING 2025-02-15 00:27:27,101 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:29,491 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:29,547 log Not Found: /css2
-WARNING 2025-02-15 00:27:29,548 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:31,239 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:31,297 log Not Found: /css2
-WARNING 2025-02-15 00:27:31,297 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:32,197 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:32,250 log Not Found: /css2
-WARNING 2025-02-15 00:27:32,251 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:33,352 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:33,407 log Not Found: /css2
-WARNING 2025-02-15 00:27:33,408 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:35,619 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:35,669 log Not Found: /css2
-WARNING 2025-02-15 00:27:35,669 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:36,136 basehttp "GET /static/assets/img/law.png HTTP/1.1" 304 0
-INFO 2025-02-15 00:27:37,063 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:37,117 log Not Found: /css2
-WARNING 2025-02-15 00:27:37,117 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:38,415 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:38,472 log Not Found: /css2
-WARNING 2025-02-15 00:27:38,473 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:39,053 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:39,124 log Not Found: /css2
-WARNING 2025-02-15 00:27:39,125 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:39,815 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:39,871 log Not Found: /css2
-WARNING 2025-02-15 00:27:39,872 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:40,679 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:40,748 log Not Found: /css2
-WARNING 2025-02-15 00:27:40,749 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:41,376 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:41,432 log Not Found: /css2
-WARNING 2025-02-15 00:27:41,433 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:42,081 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:42,145 log Not Found: /css2
-WARNING 2025-02-15 00:27:42,145 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:42,543 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:42,600 log Not Found: /css2
-WARNING 2025-02-15 00:27:42,601 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:27:43,013 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:27:43,091 log Not Found: /css2
-WARNING 2025-02-15 00:27:43,091 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:28:41,970 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6360
-WARNING 2025-02-15 00:28:42,058 log Not Found: /css2
-WARNING 2025-02-15 00:28:42,059 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:30:06,137 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 00:30:07,422 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:31:59,302 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 00:32:00,371 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:32:31,877 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 00:32:33,042 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:32:36,469 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 00:32:37,776 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:34:23,588 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 00:34:24,822 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:34:29,565 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 00:34:30,630 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:35:02,698 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-15 00:35:03,799 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:35:07,224 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-15 00:35:08,278 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:35:14,008 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-15 00:35:15,629 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:35:21,065 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-15 00:35:22,515 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:37:29,225 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 6288
-WARNING 2025-02-15 00:37:29,321 log Not Found: /css2
-WARNING 2025-02-15 00:37:29,322 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:37:29,355 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
-INFO 2025-02-15 00:37:30,572 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6957
-WARNING 2025-02-15 00:37:30,631 log Not Found: /css2
-WARNING 2025-02-15 00:37:30,632 basehttp "GET /css2 HTTP/1.1" 404 3296
-ERROR 2025-02-15 00:37:31,864 log Internal Server Error: /revenue_collection/projects/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 302, in project_list
-    return render(request, 'bill_rate_system/project_list.html', {'projects': projects})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
-    return compiled_parent._render(context)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
-    result = block.nodelist.render(context)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'project_add' not found. 'project_add' is not a valid view function or pattern name.
-ERROR 2025-02-15 00:37:31,875 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 500 158453
-INFO 2025-02-15 00:39:42,537 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6813
-WARNING 2025-02-15 00:39:42,642 log Not Found: /css2
-WARNING 2025-02-15 00:39:42,643 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:39:42,964 basehttp "GET /static/assets/img/icons/plus.svg HTTP/1.1" 200 311
-INFO 2025-02-15 00:39:43,120 basehttp "GET /static/assets/img/icons/dropdown.svg HTTP/1.1" 200 194
-INFO 2025-02-15 00:39:43,202 basehttp "GET /static/assets/plugins/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 75728
-ERROR 2025-02-15 00:39:48,427 log Internal Server Error: /revenue_collection/projects/add/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 345, in project_add
-    return render(request, 'bill_rate_system/project_add.html')
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
-    return compiled_parent._render(context)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
-    result = block.nodelist.render(context)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'project_list' not found. 'project_list' is not a valid view function or pattern name.
-ERROR 2025-02-15 00:39:48,436 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 500 157927
-INFO 2025-02-15 00:40:04,012 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7532
-WARNING 2025-02-15 00:40:04,085 log Not Found: /css2
-WARNING 2025-02-15 00:40:04,086 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:40:16,346 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6813
-WARNING 2025-02-15 00:40:16,408 log Not Found: /css2
-WARNING 2025-02-15 00:40:16,408 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:40:23,587 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6813
-WARNING 2025-02-15 00:40:23,645 log Not Found: /css2
-WARNING 2025-02-15 00:40:23,646 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:40:26,202 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6813
-WARNING 2025-02-15 00:40:26,257 log Not Found: /css2
-WARNING 2025-02-15 00:40:26,257 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:41:50,916 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6877
-WARNING 2025-02-15 00:41:51,015 log Not Found: /css2
-WARNING 2025-02-15 00:41:51,016 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:41:52,041 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6877
-WARNING 2025-02-15 00:41:52,100 log Not Found: /css2
-WARNING 2025-02-15 00:41:52,100 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:41:53,397 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7596
-WARNING 2025-02-15 00:41:53,455 log Not Found: /css2
-WARNING 2025-02-15 00:41:53,456 basehttp "GET /css2 HTTP/1.1" 404 3296
-ERROR 2025-02-15 00:41:55,730 log Internal Server Error: /revenue_collection/timesheets/
-Traceback (most recent call last):
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 308, in timesheets
-    return render(request, 'bill_rate_system/timesheets.html', {'timesheet_data': timesheet_data})
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
-    return compiled_parent._render(context)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
-    result = block.nodelist.render(context)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ~~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'upload-page' not found. 'upload-page' is not a valid view function or pattern name.
-ERROR 2025-02-15 00:41:55,738 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 500 158609
-INFO 2025-02-15 00:42:22,918 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 6906
-WARNING 2025-02-15 00:42:22,985 log Not Found: /css2
-WARNING 2025-02-15 00:42:22,986 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:42:29,152 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7021
-WARNING 2025-02-15 00:42:29,229 log Not Found: /css2
-WARNING 2025-02-15 00:42:29,230 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:42:32,231 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 6906
-WARNING 2025-02-15 00:42:32,293 log Not Found: /css2
-WARNING 2025-02-15 00:42:32,294 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:42:33,081 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7596
-WARNING 2025-02-15 00:42:33,155 log Not Found: /css2
-WARNING 2025-02-15 00:42:33,156 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:43:01,618 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7456
-WARNING 2025-02-15 00:43:01,696 log Not Found: /css2
-WARNING 2025-02-15 00:43:01,697 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:43:06,168 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6737
-WARNING 2025-02-15 00:43:06,226 log Not Found: /css2
-WARNING 2025-02-15 00:43:06,227 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:43:07,497 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 6766
-WARNING 2025-02-15 00:43:07,557 log Not Found: /css2
-WARNING 2025-02-15 00:43:07,558 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:43:09,604 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6737
-WARNING 2025-02-15 00:43:09,664 log Not Found: /css2
-WARNING 2025-02-15 00:43:09,665 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:43:10,296 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6881
-WARNING 2025-02-15 00:43:10,365 log Not Found: /css2
-WARNING 2025-02-15 00:43:10,366 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:43:12,097 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6737
-WARNING 2025-02-15 00:43:12,156 log Not Found: /css2
-WARNING 2025-02-15 00:43:12,157 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:43:12,840 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 6766
-WARNING 2025-02-15 00:43:12,932 log Not Found: /css2
-WARNING 2025-02-15 00:43:12,933 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:45:05,928 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:45:07,883 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:45:09,857 views User 'testuser' logged out.
-WARNING 2025-02-15 00:45:10,825 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:45:10,831 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:45:12,820 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:45:14,793 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:45:14,798 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:45:14,805 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:45:14,856 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:51:14,432 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:51:16,431 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:51:18,610 views User 'testuser' logged out.
-WARNING 2025-02-15 00:51:19,591 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:51:19,597 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:51:21,619 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:51:23,693 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:51:23,698 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:51:23,704 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:51:23,758 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:54:16,407 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:54:20,092 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 6737
-WARNING 2025-02-15 00:54:20,211 log Not Found: /css2
-WARNING 2025-02-15 00:54:20,212 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:54:20,428 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
-INFO 2025-02-15 00:54:21,330 basehttp "GET /revenue_collection/projects/add/ HTTP/1.1" 200 7457
-WARNING 2025-02-15 00:54:21,394 log Not Found: /css2
-WARNING 2025-02-15 00:54:21,395 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 00:54:32,391 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 00:54:34,683 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:55:28,746 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:55:33,192 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\urls.py changed, reloading.
-INFO 2025-02-15 00:55:34,332 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 00:55:47,279 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:55:49,256 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:55:51,265 views User 'testuser' logged out.
-WARNING 2025-02-15 00:55:52,240 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:55:52,245 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:55:54,267 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:55:56,307 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:55:56,312 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:55:56,318 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:55:56,366 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 00:56:25,561 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 00:56:27,537 views User 'testuser' logged in successfully.
-INFO 2025-02-15 00:56:29,819 views User 'testuser' logged out.
-WARNING 2025-02-15 00:56:30,990 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 00:56:30,996 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 00:56:33,174 views Failed login attempt for username: testuser
-WARNING 2025-02-15 00:56:35,139 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:56:35,144 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:56:35,151 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 00:56:35,198 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:02:35,409 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 01:02:37,967 views User 'testuser' logged in successfully.
-INFO 2025-02-15 01:02:39,926 views User 'testuser' logged out.
-WARNING 2025-02-15 01:02:40,930 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 01:02:40,936 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 01:02:42,919 views Failed login attempt for username: testuser
-WARNING 2025-02-15 01:02:44,894 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:02:44,898 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:02:44,905 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:02:44,953 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:03:38,459 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 01:03:40,835 views User 'testuser' logged in successfully.
-INFO 2025-02-15 01:03:42,966 views User 'testuser' logged out.
-WARNING 2025-02-15 01:03:43,959 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 01:03:43,965 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 01:03:45,995 views Failed login attempt for username: testuser
-WARNING 2025-02-15 01:03:48,215 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:03:48,220 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:03:48,227 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:03:48,276 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:04:20,410 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 01:04:22,491 views User 'testuser' logged in successfully.
-INFO 2025-02-15 01:04:24,582 views User 'testuser' logged out.
-WARNING 2025-02-15 01:04:25,566 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 01:04:25,571 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 01:04:27,682 views Failed login attempt for username: testuser
-WARNING 2025-02-15 01:04:29,698 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:04:29,704 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:04:29,710 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:04:29,758 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:05:52,238 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 01:05:54,185 views User 'testuser' logged in successfully.
-INFO 2025-02-15 01:05:56,163 views User 'testuser' logged out.
-WARNING 2025-02-15 01:05:57,160 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 01:05:57,168 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 01:05:59,264 views Failed login attempt for username: testuser
-WARNING 2025-02-15 01:06:01,270 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:06:01,275 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:06:01,281 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:06:01,332 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:07:02,396 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 01:07:04,954 views User 'testuser' logged in successfully.
-INFO 2025-02-15 01:07:06,915 views User 'testuser' logged out.
-WARNING 2025-02-15 01:07:07,885 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 01:07:07,892 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 01:07:09,843 views Failed login attempt for username: testuser
-WARNING 2025-02-15 01:07:11,836 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:07:11,841 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:07:11,847 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:07:11,895 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:09:23,617 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 01:09:26,077 views User 'testuser' logged in successfully.
-INFO 2025-02-15 01:09:28,300 views User 'testuser' logged out.
-WARNING 2025-02-15 01:09:29,356 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 01:09:29,363 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 01:09:31,466 views Failed login attempt for username: testuser
-WARNING 2025-02-15 01:09:33,606 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:09:33,611 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:09:33,621 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:09:33,680 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:14:19,629 views New user registered: testuser (test@example.com)
-INFO 2025-02-15 01:14:21,883 views User 'testuser' logged in successfully.
-INFO 2025-02-15 01:14:24,853 views User 'testuser' logged out.
-WARNING 2025-02-15 01:14:25,899 views User registration failed: Username 'testuser' already exists.
-WARNING 2025-02-15 01:14:25,906 views User 'newuser' registration failed: Passwords do not match.
-WARNING 2025-02-15 01:14:27,988 views Failed login attempt for username: testuser
-WARNING 2025-02-15 01:14:30,151 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:14:30,155 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:14:30,163 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:14:30,208 log Bad Request: /revenue_collection/process_file/
-INFO 2025-02-15 01:19:27,539 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:19:34,180 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6881
-INFO 2025-02-15 01:19:34,251 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 304 0
-WARNING 2025-02-15 01:19:34,282 log Not Found: /css2
-WARNING 2025-02-15 01:19:34,283 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 01:19:34,470 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
-INFO 2025-02-15 01:23:07,455 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6936
-WARNING 2025-02-15 01:23:07,551 log Not Found: /css2
-WARNING 2025-02-15 01:23:07,552 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 01:23:22,302 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6955
-WARNING 2025-02-15 01:23:22,371 log Not Found: /css2
-WARNING 2025-02-15 01:23:22,372 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 01:23:24,981 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6955
-WARNING 2025-02-15 01:23:25,035 log Not Found: /css2
-WARNING 2025-02-15 01:23:25,036 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-15 01:23:29,513 log Not Found: /css2
-WARNING 2025-02-15 01:23:29,514 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-15 01:23:29,950 basehttp "GET /static/assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 1925
-WARNING 2025-02-15 01:23:29,959 basehttp "GET /static/assets/js/feather.min.js.map HTTP/1.1" 404 1898
-WARNING 2025-02-15 01:23:30,005 basehttp "GET /static/assets/css/bootstrap.min.css.map HTTP/1.1" 404 1910
-INFO 2025-02-15 01:23:53,749 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6963
-WARNING 2025-02-15 01:23:53,836 log Not Found: /css2
-WARNING 2025-02-15 01:23:53,837 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 01:24:39,035 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7105
-WARNING 2025-02-15 01:24:39,119 log Not Found: /css2
-WARNING 2025-02-15 01:24:39,120 basehttp "GET /css2 HTTP/1.1" 404 3296
-INFO 2025-02-15 01:25:20,147 basehttp "GET /revenue_collection/ HTTP/1.1" 200 6962
-WARNING 2025-02-15 01:25:20,234 log Not Found: /css2
-WARNING 2025-02-15 01:25:20,235 basehttp "GET /css2 HTTP/1.1" 404 3296
-WARNING 2025-02-15 01:25:38,324 log Bad Request: /revenue_collection/upload_temp_file/
-WARNING 2025-02-15 01:25:38,325 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 40
-INFO 2025-02-15 01:26:00,160 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:26:01,527 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:26:14,629 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:26:15,729 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:28:02,126 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:28:03,182 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:28:24,849 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:28:26,154 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:29:52,583 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:29:53,958 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:29:58,950 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:30:00,041 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:30:01,708 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:30:03,142 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:31:14,924 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:31:16,014 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:32:18,922 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:32:20,164 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:32:29,193 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:32:30,364 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:32:33,993 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:32:35,063 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:34:32,081 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:34:33,124 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:34:37,426 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:34:39,265 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:34:41,329 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:34:42,264 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:35:01,569 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:35:02,644 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:35:06,290 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:35:07,599 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:35:14,411 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:35:16,015 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:35:20,330 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:35:21,870 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:35:28,984 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:35:31,002 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:35:38,455 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:35:39,500 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:36:18,624 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:36:20,395 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:36:24,587 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:36:25,774 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:36:29,324 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:36:30,456 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:36:33,925 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:36:35,143 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:37:19,202 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:37:20,313 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:37:24,458 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:37:25,541 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:37:29,153 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:37:30,494 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:37:34,930 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:37:36,260 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:37:45,204 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:37:46,329 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:39:08,876 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:39:10,881 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:39:14,693 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:39:15,795 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:40:01,093 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:40:02,356 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:40:05,913 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:40:07,213 autoreload Watching for file changes with StatReloader
-INFO 2025-02-15 01:40:17,924 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
-INFO 2025-02-15 01:40:19,169 autoreload Watching for file changes with StatReloader
+  File "C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py", line 184, in process_file
+    exists = Timesheet.objects.filter(
+             ~~~~~~~~~~~~~~~~~~~~~~~~^
+        employee_id=row['Employee ID'],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        end_time=row['End Time']
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ).exists()
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\lookups.py", line 369, in get_prep_lookup
+    return super().get_prep_lookup()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dell\Documents\revenue_collection\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+ValueError: Field 'employee_id' expected a number but got '"gff"'.
+INFO 2025-02-15 02:28:33,892 views 3 new entries successfully added to the database.
+INFO 2025-02-15 02:28:33,893 views Starting invoice generation process.
+INFO 2025-02-15 02:28:33,900 views Converted time fields successfully.
+INFO 2025-02-15 02:28:33,902 views Calculated billable hours and cost.
+INFO 2025-02-15 02:28:33,920 views Invoice data successfully generated.
+INFO 2025-02-15 02:28:33,922 views File processing completed successfully.
+INFO 2025-02-15 02:28:33,932 basehttp "POST /revenue_collection/process_file/ HTTP/1.1" 200 170
+INFO 2025-02-15 02:28:40,000 views User oys accessed the project list page.
+INFO 2025-02-15 02:28:40,000 views Retrieved 4 projects from session data.
+INFO 2025-02-15 02:28:40,014 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 7894
+INFO 2025-02-15 02:28:40,102 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:28:40,121 log Not Found: /css2
+WARNING 2025-02-15 02:28:40,122 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:28:40,140 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:28:42,750 views User oys accessed invoice for project: Spotify
+INFO 2025-02-15 02:28:42,750 views Successfully retrieved invoice data for project: Spotify. Entries found: 1
+INFO 2025-02-15 02:28:42,755 basehttp "GET /revenue_collection/view_invoice/Spotify/ HTTP/1.1" 200 7133
+WARNING 2025-02-15 02:28:42,839 log Not Found: /css2
+WARNING 2025-02-15 02:28:42,840 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:30:10,197 views User oys accessed the upload page.
+INFO 2025-02-15 02:30:10,200 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:30:10,330 log Not Found: /css2
+INFO 2025-02-15 02:30:10,331 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:30:10,331 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:30:10,341 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:30:16,179 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:30:16,180 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 47
+INFO 2025-02-15 02:35:14,090 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:35:15,357 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:35:51,596 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:35:52,635 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:36:10,880 views User oys accessed the timesheets page.
+INFO 2025-02-15 02:36:10,882 views Retrieved 2 distinct timesheets.
+INFO 2025-02-15 02:36:10,961 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 7683
+INFO 2025-02-15 02:36:11,060 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:36:11,065 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:36:11,085 log Not Found: /css2
+WARNING 2025-02-15 02:36:11,086 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:36:11,125 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:36:11,128 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:36:29,682 log Not Found: /sadmin
+WARNING 2025-02-15 02:36:29,683 basehttp "GET /sadmin HTTP/1.1" 404 3302
+INFO 2025-02-15 02:36:34,202 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-02-15 02:36:34,227 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-02-15 02:36:34,274 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3805
+INFO 2025-02-15 02:36:34,882 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-02-15 02:36:34,927 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-02-15 02:36:34,929 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-02-15 02:36:34,940 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-02-15 02:36:34,964 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-02-15 02:36:34,979 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-02-15 02:36:34,989 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-02-15 02:36:34,997 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-02-15 02:36:41,882 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-02-15 02:36:41,928 basehttp "GET /admin/ HTTP/1.1" 200 8781
+INFO 2025-02-15 02:36:41,998 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-02-15 02:36:42,019 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-02-15 02:36:42,020 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-02-15 02:36:42,021 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-02-15 02:36:44,464 basehttp "GET /admin/bill_rate_system/timesheet/ HTTP/1.1" 200 11900
+INFO 2025-02-15 02:36:44,544 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-02-15 02:36:44,552 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-02-15 02:36:44,553 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-02-15 02:36:44,554 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-02-15 02:36:44,555 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-02-15 02:36:44,568 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-02-15 02:36:44,575 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-15 02:36:44,577 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-02-15 02:36:44,578 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-02-15 02:36:44,584 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-02-15 02:36:44,624 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-02-15 02:36:44,670 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-02-15 02:36:49,553 basehttp "POST /admin/bill_rate_system/timesheet/ HTTP/1.1" 200 9662
+INFO 2025-02-15 02:36:49,636 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-02-15 02:36:50,769 basehttp "POST /admin/bill_rate_system/timesheet/ HTTP/1.1" 302 0
+INFO 2025-02-15 02:36:50,793 basehttp "GET /admin/bill_rate_system/timesheet/ HTTP/1.1" 200 8555
+INFO 2025-02-15 02:36:50,848 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-02-15 02:36:58,582 views User yaw accessed the timesheets page.
+INFO 2025-02-15 02:36:58,583 views Retrieved 0 distinct timesheets.
+INFO 2025-02-15 02:36:58,587 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 6893
+WARNING 2025-02-15 02:36:58,677 log Not Found: /css2
+WARNING 2025-02-15 02:36:58,678 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:37:00,206 views User yaw accessed the upload page.
+INFO 2025-02-15 02:37:00,212 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:37:00,284 log Not Found: /css2
+WARNING 2025-02-15 02:37:00,285 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 02:37:05,220 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:37:05,220 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 40
+INFO 2025-02-15 02:37:13,152 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 68
+INFO 2025-02-15 02:37:19,472 views Processing file request received.
+INFO 2025-02-15 02:37:19,473 views Request JSON successfully parsed.
+INFO 2025-02-15 02:37:19,473 views Generated sheet name: sheetAF143X
+INFO 2025-02-15 02:37:19,476 views CSV file loaded successfully.
+INFO 2025-02-15 02:37:19,486 views New entry added for Employee ID: 1 on 2019-07-01.
+INFO 2025-02-15 02:37:19,490 views New entry added for Employee ID: 2 on 2019-07-01.
+INFO 2025-02-15 02:37:19,495 views New entry added for Employee ID: 3 on 2019-07-01.
+INFO 2025-02-15 02:37:19,499 views New entry added for Employee ID: 4 on 2019-07-01.
+INFO 2025-02-15 02:37:19,511 views 4 new entries successfully added to the database.
+INFO 2025-02-15 02:37:19,511 views Starting invoice generation process.
+INFO 2025-02-15 02:37:19,517 views Converted time fields successfully.
+INFO 2025-02-15 02:37:19,518 views Calculated billable hours and cost.
+INFO 2025-02-15 02:37:19,537 views Invoice data successfully generated.
+INFO 2025-02-15 02:37:19,539 views File processing completed successfully.
+INFO 2025-02-15 02:37:19,549 basehttp "POST /revenue_collection/process_file/ HTTP/1.1" 200 170
+INFO 2025-02-15 02:37:21,864 views User yaw accessed the project list page.
+INFO 2025-02-15 02:37:21,864 views Retrieved 3 projects from session data.
+INFO 2025-02-15 02:37:21,872 basehttp "GET /revenue_collection/list_projects/ HTTP/1.1" 200 7594
+WARNING 2025-02-15 02:37:21,957 log Not Found: /css2
+WARNING 2025-02-15 02:37:21,958 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:37:23,327 views User yaw accessed invoice for project: Amazon
+INFO 2025-02-15 02:37:23,328 views Successfully retrieved invoice data for project: Amazon. Entries found: 1
+INFO 2025-02-15 02:37:23,334 basehttp "GET /revenue_collection/view_invoice/Amazon/ HTTP/1.1" 200 7116
+WARNING 2025-02-15 02:37:23,391 log Not Found: /css2
+WARNING 2025-02-15 02:37:23,391 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 02:37:56,933 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:37:56,934 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 70
+WARNING 2025-02-15 02:38:21,974 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:38:21,975 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 46
+WARNING 2025-02-15 02:38:40,698 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:38:40,699 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 170
+INFO 2025-02-15 02:40:39,777 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:40:41,040 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:40:47,225 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:40:49,275 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:41:37,344 views User yaw accessed the upload page.
+INFO 2025-02-15 02:41:37,369 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+INFO 2025-02-15 02:41:37,443 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:41:37,444 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:41:37,460 log Not Found: /css2
+WARNING 2025-02-15 02:41:37,460 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:41:37,469 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:41:37,495 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:41:42,808 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:41:42,809 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 136
+INFO 2025-02-15 02:43:32,626 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:43:33,685 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:43:38,998 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:43:40,058 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:43:58,405 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:43:59,464 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:44:08,782 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:44:09,838 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:44:13,560 views User yaw accessed the upload page.
+INFO 2025-02-15 02:44:13,588 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:44:13,704 log Not Found: /css2
+WARNING 2025-02-15 02:44:13,705 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 02:44:18,805 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:44:18,807 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 208
+INFO 2025-02-15 02:46:37,028 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:46:39,025 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:46:44,101 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:46:45,126 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:46:51,229 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:46:52,589 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:46:54,466 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:46:55,794 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:46:59,651 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:47:01,360 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:47:06,193 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:47:07,503 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:47:12,344 views User yaw accessed the upload page.
+INFO 2025-02-15 02:47:12,373 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:47:12,473 log Not Found: /css2
+WARNING 2025-02-15 02:47:12,475 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:47:12,477 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:47:12,483 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:47:12,505 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:47:12,509 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:47:16,418 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 67
+INFO 2025-02-15 02:48:02,738 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:48:04,005 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:48:05,961 views User yaw accessed the upload page.
+INFO 2025-02-15 02:48:05,983 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:48:06,053 log Not Found: /css2
+WARNING 2025-02-15 02:48:06,053 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:48:06,835 basehttp "GET /static/assets/img/law.png HTTP/1.1" 304 0
+WARNING 2025-02-15 02:48:15,228 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:48:15,229 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 208
+INFO 2025-02-15 02:48:24,932 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:48:26,087 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:48:28,826 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:48:29,821 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:49:27,286 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:49:28,454 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:50:36,145 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:50:37,341 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:50:41,409 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:50:42,608 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:50:50,867 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:50:52,269 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:51:23,508 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:51:24,626 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:51:29,678 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:51:30,950 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-15 02:51:34,302 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:51:34,303 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 176
+INFO 2025-02-15 02:52:23,404 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 67
+INFO 2025-02-15 02:54:49,168 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:54:51,127 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:55:01,540 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:55:02,957 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:55:19,831 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:55:20,920 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:55:26,898 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:55:28,459 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:55:47,198 views User yaw accessed the upload page.
+INFO 2025-02-15 02:55:47,222 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+INFO 2025-02-15 02:55:47,292 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:55:47,292 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 304 0
+WARNING 2025-02-15 02:55:47,310 log Not Found: /css2
+WARNING 2025-02-15 02:55:47,312 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 02:55:47,312 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:55:47,313 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 304 0
+INFO 2025-02-15 02:55:47,422 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 304 0
+INFO 2025-02-15 02:55:52,798 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 200 67
+INFO 2025-02-15 02:56:12,606 views User yaw accessed the upload page.
+INFO 2025-02-15 02:56:12,609 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:56:12,718 log Not Found: /css2
+WARNING 2025-02-15 02:56:12,719 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 02:56:16,904 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:56:16,905 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 189
+INFO 2025-02-15 02:58:00,315 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:58:02,436 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:58:08,038 views User yaw accessed the upload page.
+INFO 2025-02-15 02:58:08,067 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7089
+WARNING 2025-02-15 02:58:08,184 log Not Found: /css2
+WARNING 2025-02-15 02:58:08,184 basehttp "GET /css2 HTTP/1.1" 404 3296
+WARNING 2025-02-15 02:58:13,462 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 02:58:13,463 basehttp "POST /revenue_collection/upload_temp_file/ HTTP/1.1" 400 49
+INFO 2025-02-15 02:59:15,779 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:59:17,116 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:59:21,049 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:59:22,048 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 02:59:27,892 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
+INFO 2025-02-15 02:59:29,106 autoreload Watching for file changes with StatReloader
