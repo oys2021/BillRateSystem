@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: #4e34b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.login-form {
+    background: #4e34b6;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.login-form h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%; /* Ensures the parent container takes full width */
+    max-width: 800px; /* Limits the maximum width of the container */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content, .form-img {
+    flex: 1; /* Ensures both .content and .form-img take equal space */
+    width: 50%; /* Explicitly set width to 50% for equal distribution */
+    max-width: 400px; /* Optional: Limits the width of each section */
+}
+
+.content {
+    padding: 3em;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #272346;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn, button, input {
+    border-radius: 35px;
+}
+
+.btn:hover, button:hover {
+    transition: 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input {
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #999;
+    text-align: left;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #f7fafc;
+    transition: 0.3s ease;
+}
+
+.login-form input:focus {
+    background: transparent;
+    border: 1px solid #4e34b6;
+}
+
+.login-form button {
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #4e34b6;
+    border: none;
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+p.account a {
+    color: #4e34b6;
+}
+
+p.account a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .content, .form-img {
+        width: 100%; 
+    }
+
+    .form-img {
+        display: none; 
+    }
+
+    .content {
+        padding: 2em;
+    }
+}

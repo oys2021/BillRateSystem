@@ -3788,3 +3788,73 @@ INFO 2025-02-15 17:28:21,911 autoreload C:\Users\dell\Documents\revenue_collecti
 INFO 2025-02-15 17:28:23,858 autoreload Watching for file changes with StatReloader
 INFO 2025-02-15 17:28:36,813 autoreload C:\Users\dell\Documents\revenue_collection\revenue_collection_web\bill_rate_system\views.py changed, reloading.
 INFO 2025-02-15 17:28:37,910 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 17:31:51,959 views User oys accessed the upload page.
+INFO 2025-02-15 17:31:51,994 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7191
+WARNING 2025-02-15 17:31:52,099 log Not Found: /css2
+WARNING 2025-02-15 17:31:52,100 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 17:31:53,272 views User oys accessed the project list.
+INFO 2025-02-15 17:31:53,274 views Retrieved 4 projects from the database.
+INFO 2025-02-15 17:31:53,284 basehttp "GET /revenue_collection/projects/ HTTP/1.1" 200 7948
+WARNING 2025-02-15 17:31:53,352 log Not Found: /css2
+WARNING 2025-02-15 17:31:53,353 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 17:31:54,275 views User oys accessed the timesheets page.
+INFO 2025-02-15 17:31:54,277 views Retrieved 2 distinct timesheets.
+INFO 2025-02-15 17:31:54,331 basehttp "GET /revenue_collection/timesheets/ HTTP/1.1" 200 7786
+WARNING 2025-02-15 17:31:54,372 log Not Found: /css2
+WARNING 2025-02-15 17:31:54,373 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 17:31:55,251 views User 'oys' logged out.
+INFO 2025-02-15 17:31:55,255 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-02-15 17:31:55,267 basehttp "GET / HTTP/1.1" 200 1490
+INFO 2025-02-15 17:31:59,781 basehttp "GET / HTTP/1.1" 200 1270
+INFO 2025-02-15 17:32:16,068 views User 'oys' logged in successfully.
+INFO 2025-02-15 17:32:16,078 basehttp "POST / HTTP/1.1" 302 0
+INFO 2025-02-15 17:32:16,086 views User oys accessed the upload page.
+INFO 2025-02-15 17:32:16,088 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7191
+WARNING 2025-02-15 17:32:16,117 log Not Found: /css2
+WARNING 2025-02-15 17:32:16,118 basehttp "GET /css2 HTTP/1.1" 404 3296
+INFO 2025-02-15 17:33:20,566 views New user registered: testuser (test@example.com)
+INFO 2025-02-15 17:33:22,833 views User 'testuser' logged in successfully.
+INFO 2025-02-15 17:33:25,233 views User 'testuser' logged out.
+WARNING 2025-02-15 17:33:26,347 views User registration failed: Username 'testuser' already exists.
+WARNING 2025-02-15 17:33:26,353 views User 'testuser' registration failed: Passwords do not match.
+WARNING 2025-02-15 17:33:29,341 views Failed login attempt for username: testuser
+INFO 2025-02-15 17:33:31,581 views User testuser accessed the upload page.
+WARNING 2025-02-15 17:33:31,640 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 17:33:31,646 log Bad Request: /revenue_collection/upload_temp_file/
+WARNING 2025-02-15 17:33:31,654 log Bad Request: /revenue_collection/upload_temp_file/
+INFO 2025-02-15 17:33:31,668 views Processing file request received.
+INFO 2025-02-15 17:33:31,668 views Request JSON successfully parsed.
+INFO 2025-02-15 17:33:31,668 views Generated sheet name: sheetAWCARS
+INFO 2025-02-15 17:33:31,670 views CSV file loaded successfully.
+INFO 2025-02-15 17:33:31,687 views New entry added for Employee ID: 123 on 2024-02-14.
+INFO 2025-02-15 17:33:31,688 views 1 new entries successfully added to the database.
+INFO 2025-02-15 17:33:31,689 views Starting invoice generation process.
+INFO 2025-02-15 17:33:31,697 views Converted time fields successfully.
+INFO 2025-02-15 17:33:31,700 views Calculated billable hours and cost.
+INFO 2025-02-15 17:33:31,733 views Invoice data successfully generated.
+INFO 2025-02-15 17:33:31,733 views File processing completed successfully.
+INFO 2025-02-15 17:33:31,742 views Processing file request received.
+INFO 2025-02-15 17:33:31,742 views Request JSON successfully parsed.
+INFO 2025-02-15 17:33:31,742 views Generated sheet name: sheetRUXKDK
+ERROR 2025-02-15 17:33:31,742 views File not found at path: uploads\nonexistent.csv
+WARNING 2025-02-15 17:33:31,743 log Bad Request: /revenue_collection/process_file/
+INFO 2025-02-15 17:33:32,833 views User testuser accessed the project list page.
+INFO 2025-02-15 17:33:32,833 views Retrieved 1 projects from session data.
+INFO 2025-02-15 17:33:34,104 views User testuser accessed invoice for project: Test Project
+INFO 2025-02-15 17:33:34,104 views Successfully retrieved invoice data for project: Test Project. Entries found: 1
+INFO 2025-02-15 17:33:36,150 views User testuser accessed invoice for project: Test Project
+WARNING 2025-02-15 17:33:36,150 views No invoice data found in session for user testuser.
+INFO 2025-02-15 17:33:37,436 views User testuser accessed invoice for project: Test Project
+WARNING 2025-02-15 17:33:37,436 views No invoice data found for project 'Test Project' requested by user testuser.
+INFO 2025-02-15 17:33:38,779 views User testuser accessed the project list.
+INFO 2025-02-15 17:33:38,780 views Retrieved 2 projects from the database.
+INFO 2025-02-15 17:33:40,071 views User testuser accessed the timesheets page.
+INFO 2025-02-15 17:33:40,071 views Retrieved 2 distinct timesheets.
+INFO 2025-02-15 17:33:41,203 views User testuser accessed timesheet edit page for ID 1.
+INFO 2025-02-15 17:33:41,205 views Updated timesheet name from Sheet1 to New Name.
+INFO 2025-02-15 17:33:42,456 views User testuser accessed timesheet details for sheet name Sheet1.
+INFO 2025-02-15 17:33:42,457 views Retrieved 1 entries for sheet name Sheet1.
+INFO 2025-02-15 17:33:43,551 views User testuser added a new project: New Project.
+WARNING 2025-02-15 17:33:43,555 views User testuser attempted to add a duplicate project: New Project.
+INFO 2025-02-15 17:33:44,618 views User testuser accessed project edit page for project ID 1.
+INFO 2025-02-15 17:33:44,619 views User testuser updated project ID 1 to new name Updated Project.
