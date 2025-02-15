@@ -1,11 +1,11 @@
-# Timesheet & Invoice Management System
+# Revenue Collection & Bill Rate  System
 
 ## Introduction
-The **Timesheet & Invoice Management System** is a Django-based web application designed to facilitate efficient timesheet management, invoice generation, and company/project tracking. It allows finance team to upload timesheets, validate records, generate invoices, and manage projects/companies effectively.
+The **Timesheet & Invoice Management System** is a Django-based web application designed to facilitate efficient timesheet management, invoice generation, and company/project tracking. It allows finance team to upload timesheets, validate records and generate invoices.
 
 ## Features
-- **Timesheet Upload & Validation**: Bulk upload of timesheets with automated validation.
-- **Invoice Generation**: Automated invoice creation based on timesheet data.
+- **Timesheet Upload & Validation**: Bulk upload of timesheets with  validation.
+- **Invoice Generation**:  Invoice creation based on timesheet data(Company).
 - **Timesheet Management**: Track timesheet and their associated projects/companies.
 - **Logging & Error Handling**: Robust logging mechanisms for debugging.
 - **Test**: Robust tests for debugging.
@@ -16,6 +16,7 @@ The **Timesheet & Invoice Management System** is a Django-based web application 
 - **Backend**: Django and whienoise for serving the static files
 - **Frontend**: Html,Css,Javascript
 - **Database**: Sqlite3 (or your preferred database)
+- **Test**:Pytest for tests.
 
 
 ## Installation
