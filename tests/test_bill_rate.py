@@ -7,6 +7,9 @@ import pandas as pd
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.contrib.auth.models import User
 from bill_rate_system.models import Project, Timesheet
+from django.contrib.messages import get_messages
+from datetime import date, time
+
 
 
 
@@ -93,7 +96,6 @@ def test_process_file_missing_file(client):
     assert "File not found!" in response.json()['error']
 
 
-from django.contrib.auth import get_user_model
 
 @pytest.mark.django_db
 def test_list_projects_with_data(client):
@@ -110,27 +112,10 @@ def test_list_projects_with_data(client):
     assert response.status_code == 200
     assert "Test Project" in response.content.decode()
 
-
-
-# @pytest.mark.django_db
-# def test_list_projects_no_data(client):
-#     """Test listing projects when there is no invoice data."""
-#     response = client.get(reverse('bill_rate_system:list-projects'))
-
-#     assert response.status_code == 200
-#     assert "No invoice data found" in response.content.decode()
-
-import pytest
-from django.urls import reverse
-from django.contrib.auth.models import User
-
 @pytest.mark.django_db
 def test_view_invoice_authenticated(client):
-    # Create and login user
     user = User.objects.create_user(username="testuser", password="testpass")
     client.force_login(user)
-
-    # Simulate session data
     session = client.session
     session["invoice_data"] = {
         "Test Project": [
@@ -166,6 +151,135 @@ def test_view_invoice_project_not_found(client):
     assert response.status_code == 200
     assert "No data found for project: Test Project" in response.content.decode()
 
+
+
+
+@pytest.mark.django_db
+def test_project_list_view(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    project1 = Project.objects.create(name="Project A")
+    project2 = Project.objects.create(name="Project B")
+
+    response = client.get(reverse("bill_rate_system:project_list"))
+    assert response.status_code == 200
+    assert "Project A" in response.content.decode()
+    assert "Project B" in response.content.decode()
+
+
+
+@pytest.mark.django_db
+def test_timesheets_view(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    project = Project.objects.create(name="Test Project")
+    Timesheet.objects.create(
+        employee_id=1,
+        project=project,
+        date=date.today(),
+        start_time=time(9, 0),
+        end_time=time(17, 0),
+        billable_rate=100.0,
+        sheet_name="Sheet1",
+    )
+    Timesheet.objects.create(
+        employee_id=2,
+        project=project,
+        date=date.today(),
+        start_time=time(10, 0),
+        end_time=time(18, 0),
+        billable_rate=120.0,
+        sheet_name="Sheet2",
+    )
+    Timesheet.objects.create(
+        employee_id=3,
+        project=project,
+        date=date.today(),
+        start_time=time(8, 0),
+        end_time=time(16, 0),
+        billable_rate=90.0,
+        sheet_name="Sheet1",
+    )
+    response = client.get(reverse("bill_rate_system:timesheets"))
+    assert response.status_code == 200
+    assert "Sheet1" in response.content.decode()
+    assert "Sheet2" in response.content.decode()
+
+
+
+@pytest.mark.django_db
+def test_edit_timesheet_name(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    project = Project.objects.create(name="Test Project")
+    timesheet=Timesheet.objects.create(
+        employee_id=3,
+        project=project,
+        date=date.today(),
+        start_time=time(8, 0),
+        end_time=time(16, 0),
+        billable_rate=90.0,
+        sheet_name="Sheet1",
+    )
+
+    response = client.post(
+        reverse("bill_rate_system:edit_timesheet_name", args=[timesheet.id]),
+        {"sheet_name": "New Name"},
+    )
+
+    timesheet.refresh_from_db()
+    assert timesheet.sheet_name == "New Name"
+
+    messages = [m.message for m in get_messages(response.wsgi_request)]
+    assert "All timesheets with this name have been updated successfully!" in messages
+
+
+@pytest.mark.django_db
+def test_timesheet_detail_view(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    project = Project.objects.create(name="Test Project")
+    Timesheet.objects.create(
+        employee_id=3,
+        project=project,
+        date=date.today(),
+        start_time=time(8, 0),
+        end_time=time(16, 0),
+        billable_rate=90.0,
+        sheet_name="Sheet1",
+    )
+    response = client.get(reverse("bill_rate_system:timesheet_detail", args=["Sheet1"]))
+
+    assert response.status_code == 200
+    assert "Sheet1" in response.content.decode()
+
+
+
+
+
+@pytest.mark.django_db
+def test_project_add(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    response = client.post(reverse("bill_rate_system:project_add"), {"firstname": "New Project"})
+    assert Project.objects.filter(name="New Project").exists()
+    response = client.post(reverse("bill_rate_system:project_add"), {"firstname": "New Project"})
+    messages = [m.message for m in get_messages(response.wsgi_request)]
+    assert "A project with this name already exists. Please choose a different name." in messages
+
+
+
+@pytest.mark.django_db
+def test_project_edit(client):
+    user = User.objects.create_user(username="testuser", password="testpass")
+    client.force_login(user)
+    project = Project.objects.create(name="Old Project")
+
+    response = client.post(reverse("bill_rate_system:project_edit", args=[project.id]), {"firstname": "Updated Project"})
+    project.refresh_from_db()
+
+    assert project.name == "Updated Project"
+    assert response.status_code == 302 
 
 
 

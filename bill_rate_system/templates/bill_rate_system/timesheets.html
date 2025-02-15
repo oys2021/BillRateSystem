@@ -1,4 +1,4 @@
-{% extends 'brs/base.html' %}
+{% extends 'bill_rate_system/base.html' %}
 {%load static %}
 {% block content %}
 <div class="d-flex justify-content-between align-items-center">
@@ -6,7 +6,7 @@
     
     <div class="page-header">
     <div class="page-btn">
-    <a href="{% url 'upload-page' %}" class="btn btn-added">
+    <a href="{% url 'bill_rate_system:upload-page' %}" class="btn btn-added">
     <img src="{% static 'assets/img/icons/plus.svg'%}" class="me-1" alt="img">Add Timesheet
     </a>
     </div>
@@ -30,10 +30,10 @@
         <tr>
             <td>{{ sheet_name }}</td>
             <td>
-                <a href="{% url 'timesheet_detail' sheet_name=sheet_name %}" class="btn btn-primary">Detail</a>
+                <a href="{% url 'bill_rate_system:timesheet_detail' sheet_name=sheet_name %}" class="btn btn-primary">Detail</a>
             </td>
             <td>
-                <a href="{% url 'edit_timesheet_name' timesheet_id=timesheets.0.id %}" class="btn btn-primary">Edit</a>
+                <a href="{% url 'bill_rate_system:edit_timesheet_name' timesheet_id=timesheets.0.id %}" class="btn btn-primary">Edit</a>
             </td>            
             <td>{{ timesheets.0.created_at }}</td>
         </tr>

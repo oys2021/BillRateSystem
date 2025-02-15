@@ -13,10 +13,13 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.db import IntegrityError
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+import logging
+logger = logging.getLogger('views_logger')
 
 
 @login_required(login_url='authentication:login')
 def upload_page(request):
+    logger.info(f"User {request.user} accessed the upload page.")
     return render(request, "bill_rate_system/upload.html")
 
 
@@ -138,40 +141,46 @@ def generate_sheet_name():
 
 
 
+
 @csrf_exempt
 def process_file(request):
     try:
+        logger.info("Processing file request received.")
+
         if request.method != "POST":
+            logger.warning("Invalid request method: %s", request.method)
             return JsonResponse({"error": "Invalid request method"}, status=400)
 
         try:
             data = json.loads(request.body)
+            logger.info("Request JSON successfully parsed.")
         except json.JSONDecodeError:
+            logger.error("Invalid JSON data received.")
             return JsonResponse({"error": "Invalid JSON data"}, status=400)
 
         file_name = data.get("file_name")
         sheet_name = generate_sheet_name()
-        
-        print(sheet_name)
-        if not file_name:
-            return JsonResponse({"error": "No file name provided"}, status=400)
+        logger.info(f"Generated sheet name: {sheet_name}")
 
-        sheet_uploaded = Timesheet.objects.filter(sheet_name=sheet_name).exists()
+        if not file_name:
+            logger.warning("No file name provided in request.")
+            return JsonResponse({"error": "No file name provided"}, status=400)
 
         file_path = os.path.join("uploads", file_name)
         if not os.path.exists(file_path):
+            logger.error(f"File not found at path: {file_path}")
             return JsonResponse({"error": "File not found!"}, status=400)
 
         df = pd.read_csv(file_path)
-        
-        print(df)
+        logger.info("CSV file loaded successfully.")
 
         df['Date'] = pd.to_datetime(df['Date'], errors='coerce').dt.strftime('%Y-%m-%d')
+
         new_entries = []
         for _, row in df.iterrows():
             try:
                 project = Project.objects.get(name=row['Project'].strip().title())
-                
+
                 exists = Timesheet.objects.filter(
                     employee_id=row['Employee ID'],
                     project=project,
@@ -181,7 +190,7 @@ def process_file(request):
                 ).exists()
 
                 if not exists:
-                    new_entries.append(Timesheet(
+                    new_entry = Timesheet(
                         employee_id=row['Employee ID'],
                         billable_rate=row['Billable Rate'],
                         project=project,
@@ -189,57 +198,48 @@ def process_file(request):
                         start_time=row['Start Time'],
                         end_time=row['End Time'],
                         sheet_name=sheet_name  
-                    ))
-                    print("Doesnt Exist!!!")
-                    print(new_entries)
-                    
-                    
+                    )
+                    new_entries.append(new_entry)
+                    logger.info(f"New entry added for Employee ID: {row['Employee ID']} on {row['Date']}.")
 
             except Exception as row_error:
-                print(f"Error processing row {row}: {row_error}")
+                logger.error(f"Error processing row {row.to_dict()}: {row_error}", exc_info=True)
 
         if new_entries:
             Timesheet.objects.bulk_create(new_entries)
+            logger.info(f"{len(new_entries)} new entries successfully added to the database.")
 
         invoice_data = generate_invoice(df)
         request.session["invoice_data"] = invoice_data
-        request.session.modified = True 
-        
-        sheet_name_message=f"the sheetname is {sheet_name}.You can change it later"
-        
-        if new_entries:
-            return JsonResponse({
-            "message": "File processed successfully!",
-            "sheet_name":sheet_name_message,
-            "redirect_url": "/list_projects/"
-        })
+        request.session.modified = True  
 
-       
-        return JsonResponse({
+        sheet_name_message = f"The sheet name is {sheet_name}. You can change it later."
+        response_data = {
             "message": "File processed successfully!",
-            "sheet_name":"",
+            "sheet_name": sheet_name_message if new_entries else "",
             "redirect_url": "/list_projects/"
-        })
-
+        }
+        logger.info("File processing completed successfully.")
+        return JsonResponse(response_data)
 
     except Exception as e:
+        logger.critical(f"Unexpected processing error: {str(e)}", exc_info=True)
         return JsonResponse({"error": f"Processing error: {str(e)}"}, status=400)
 
 
-    
 def generate_invoice(df):
-    """
-    Processes the DataFrame to calculate billable hours and generate invoices per project.
-    """
     try:
-        df['Start Time'] = pd.to_datetime(df['Start Time'], format='%H:%M').dt.time
-        df['End Time'] = pd.to_datetime(df['End Time'], format='%H:%M').dt.time
-
+        logger.info("Starting invoice generation process.")
+        df['Start Time'] = pd.to_datetime(df['Start Time'], format='%H:%M', errors='coerce').dt.time
+        df['End Time'] = pd.to_datetime(df['End Time'], format='%H:%M', errors='coerce').dt.time
+        df = df.dropna(subset=['Start Time', 'End Time'])
+        logger.info("Converted time fields successfully.")
+        
         df['Hours Worked'] = df.apply(
             lambda row: (datetime.combine(datetime.min, row['End Time']) - 
                          datetime.combine(datetime.min, row['Start Time'])).seconds / 3600, axis=1)
-
         df['Cost'] = df['Hours Worked'] * df['Billable Rate']
+        logger.info("Calculated billable hours and cost.")
 
         grouped = df.groupby(['Project', 'Employee ID']).agg(
             Total_Hours=('Hours Worked', 'sum'),
@@ -247,42 +247,53 @@ def generate_invoice(df):
             Total_Cost=('Cost', 'sum')
         ).reset_index()
 
-        
         invoice_data = {}
         for project, project_data in grouped.groupby('Project'):
             invoice_data[project] = project_data.to_dict(orient='records')
 
+        logger.info("Invoice data successfully generated.")
         return invoice_data  
 
     except Exception as e:
+        logger.error(f"Invoice generation error: {str(e)}", exc_info=True)
         return {"error": f"Invoice generation error: {str(e)}"}
+
     
 
 @login_required(login_url='authentication:login')
 def list_projects(request):
+    logger.info(f"User {request.user} accessed the project list page.")
     invoice_data = request.session.get("invoice_data", {})
-
+    
     if not invoice_data:
+        logger.warning("No invoice data found in session for user %s.", request.user)
         return render(request, "bill_rate_system/view_invoice.html", {"invoice": "No invoice data found"})
-
-    projects = list(invoice_data.keys())  
+    projects = list(invoice_data.keys())
+    
+    logger.info(f"Retrieved {len(projects)} projects from session data.")
 
     return render(request, "bill_rate_system/list_projects.html", {"projects": projects})
 
 
-
 @login_required(login_url='authentication:login')
 def view_invoice(request, project_name):
+    logger.info(f"User {request.user} accessed invoice for project: {project_name}")
     invoice_data = request.session.get("invoice_data", {})
 
     if not invoice_data:
-        return render(request, "bill_rate_system/view_invoice.html", {"invoice": "No invoice data found", "error": "No invoice data found"})
-    
+        logger.warning(f"No invoice data found in session for user {request.user}.")
+        return render(request, "bill_rate_system/view_invoice.html", {
+            "invoice": "No invoice data found",
+            "error": "No invoice data found"
+        })
     project_invoice = invoice_data.get(project_name)
 
     if not project_invoice:
-        return render(request, "bill_rate_system/view_invoice.html", {"invoice": f"No data found for project: {project_name}", "error": f"No data found for project: {project_name}"})
-
+        logger.warning(f"No invoice data found for project '{project_name}' requested by user {request.user}.")
+        return render(request, "bill_rate_system/view_invoice.html", {
+            "invoice": f"No data found for project: {project_name}",
+            "error": f"No data found for project: {project_name}"
+        })
     processed_invoice = []
     for entry in project_invoice:
         processed_invoice.append({
@@ -291,6 +302,84 @@ def view_invoice(request, project_name):
             "Unit_Price": entry["Unit_Price"],
             "Total_Cost": entry["Total_Cost"]
         })
+    logger.info(f"Successfully retrieved invoice data for project: {project_name}. Entries found: {len(processed_invoice)}")
+    return render(request, "bill_rate_system/view_invoice.html", {
+        "project": project_name,
+        "invoice": processed_invoice
+    })
+    
 
-    return render(request, "bill_rate_system/view_invoice.html", {"project": project_name, "invoice": processed_invoice})
 
+@login_required(login_url='authentication:login')
+def project_list(request):
+    logger.info(f"User {request.user} accessed the project list.")
+    projects = Project.objects.all()
+    logger.info(f"Retrieved {projects.count()} projects from the database.")
+    return render(request, 'bill_rate_system/project_list.html', {'projects': projects})
+
+@login_required(login_url='authentication:login')
+def timesheets(request):
+    logger.info(f"User {request.user} accessed the timesheets page.")
+    sheet_names = Timesheet.objects.values('sheet_name').distinct()
+    timesheet_data = {sheet['sheet_name']: Timesheet.objects.filter(sheet_name=sheet['sheet_name']) for sheet in sheet_names}
+    logger.info(f"Retrieved {len(timesheet_data)} distinct timesheets.")
+    return render(request, 'bill_rate_system/timesheets.html', {'timesheet_data': timesheet_data})
+
+@login_required(login_url='authentication:login')
+def edit_timesheet_name(request, timesheet_id):
+    timesheet = get_object_or_404(Timesheet, id=timesheet_id)
+    timesheets = Timesheet.objects.filter(sheet_name=timesheet.sheet_name)
+    logger.info(f"User {request.user} accessed timesheet edit page for ID {timesheet_id}.")
+
+    if request.method == "POST":
+        new_name = request.POST.get("sheet_name")
+        if new_name:
+            timesheets.update(sheet_name=new_name)
+            logger.info(f"Updated timesheet name from {timesheet.sheet_name} to {new_name}.")
+            messages.success(request, "All timesheets with this name have been updated successfully!")
+            return render(request, "bill_rate_system/edit_timesheet.html", {"timesheet": timesheet})  
+        else:
+            logger.warning(f"User {request.user} attempted to rename a timesheet but provided an empty name.")
+            messages.error(request, "Timesheet name cannot be empty.")
+
+    return render(request, "bill_rate_system/edit_timesheet.html", {"timesheet": timesheet})
+
+@login_required(login_url='authentication:login')
+def timesheet_detail(request, sheet_name):
+    logger.info(f"User {request.user} accessed timesheet details for sheet name {sheet_name}.")
+    timesheets = Timesheet.objects.filter(sheet_name=sheet_name)
+    logger.info(f"Retrieved {timesheets.count()} entries for sheet name {sheet_name}.")
+    return render(request, 'bill_rate_system/timesheet_detail.html', {'timesheets': timesheets, "sheet_name": sheet_name})
+
+@login_required(login_url='authentication:login')
+def project_add(request):
+    if request.method == 'POST':
+        project_name = request.POST.get('firstname')
+        if project_name:
+            try:
+                Project.objects.create(name=project_name)
+                logger.info(f"User {request.user} added a new project: {project_name}.")
+                messages.success(request, "Project added successfully!")
+                return redirect('bill_rate_system:project_list')  
+            except IntegrityError:
+                logger.warning(f"User {request.user} attempted to add a duplicate project: {project_name}.")
+                messages.error(request, "A project with this name already exists. Please choose a different name.")
+
+    return render(request, 'bill_rate_system/project_add.html')
+
+
+@login_required(login_url='authentication:login')
+def project_edit(request, id):
+    project = get_object_or_404(Project, id=id)
+    logger.info(f"User {request.user} accessed project edit page for project ID {id}.")
+
+    if request.method == 'POST':
+        project_name = request.POST.get('firstname')
+        if project_name:
+            project.name = project_name
+            project.save()
+            logger.info(f"User {request.user} updated project ID {id} to new name {project_name}.")
+            messages.success(request, "Project updated successfully!")
+            return redirect('bill_rate_system:project_edit', id=id) 
+
+    return render(request, 'bill_rate_system/project_edit.html', {'project': project})

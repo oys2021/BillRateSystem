@@ -1,10 +1,10 @@
-{% extends 'brs/base.html' %}
+{% extends 'bill_rate_system/base.html' %}
 {% load static %}
 
 {% block content %}
 <div class="d-flex justify-content-between align-items-center">
     <h3>Timesheet Details for {{ sheet_name }}</h3>
-    <a href="{% url 'timesheets' %}" class="btn btn-secondary">Back to List</a>
+    <a href="{% url 'bill_rate_system:timesheets' %}" class="btn btn-secondary">Back to List</a>
 </div>
 
 <div class="table-responsive mt-3">

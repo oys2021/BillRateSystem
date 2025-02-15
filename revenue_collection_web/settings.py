@@ -14,15 +14,19 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+from decouple import config
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = config("SECRET_KEY", default="fallback-secret-key")
 SECRET_KEY = 'django-insecure-u-g!omzusfr0hv#jlz39)y^lu7mgrs23*0cdm)+gf_wk4b%=gv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
