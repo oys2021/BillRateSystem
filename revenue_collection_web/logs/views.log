@@ -3908,3 +3908,38 @@ INFO 2025-02-15 19:11:38,145 views Successfully retrieved invoice data for proje
 INFO 2025-02-15 19:11:38,154 basehttp "GET /revenue_collection/view_invoice/Spotify/ HTTP/1.1" 200 7221
 WARNING 2025-02-15 19:11:38,286 log Not Found: /css2
 WARNING 2025-02-15 19:11:38,287 basehttp "GET /css2 HTTP/1.1" 404 179
+INFO 2025-02-15 19:52:27,824 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 19:53:36,391 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 19:54:03,110 basehttp "GET / HTTP/1.1" 200 1270
+INFO 2025-02-15 19:54:03,167 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3099
+INFO 2025-02-15 19:54:03,260 basehttp "GET /static/assets/img/law3.jpg HTTP/1.1" 200 2445372
+INFO 2025-02-15 19:54:18,524 views User 'oys' logged in successfully.
+INFO 2025-02-15 19:54:18,535 basehttp "POST / HTTP/1.1" 302 0
+INFO 2025-02-15 19:54:18,543 views User oys accessed the upload page.
+INFO 2025-02-15 19:54:18,549 basehttp "GET /revenue_collection/ HTTP/1.1" 200 7191
+INFO 2025-02-15 19:54:18,611 basehttp "GET /static/assets/css/upload.css HTTP/1.1" 200 3910
+INFO 2025-02-15 19:54:18,623 basehttp "GET /static/assets/img/icons/upload1.svg HTTP/1.1" 200 436
+INFO 2025-02-15 19:54:18,624 basehttp "GET /static/assets/img/icons/company.svg HTTP/1.1" 200 906
+WARNING 2025-02-15 19:54:18,641 log Not Found: /css2
+WARNING 2025-02-15 19:54:18,642 basehttp "GET /css2 HTTP/1.1" 404 179
+INFO 2025-02-15 19:54:18,655 basehttp "GET /static/assets/img/icons/csv.svg HTTP/1.1" 200 1252
+INFO 2025-02-15 19:54:18,656 basehttp "GET /static/assets/img/icons/logout.svg HTTP/1.1" 200 421
+INFO 2025-02-15 19:54:18,790 basehttp "GET /static/assets/js/feather.min.js HTTP/1.1" 200 75775
+INFO 2025-02-15 19:54:18,790 basehttp "GET /static/assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 4739
+INFO 2025-02-15 19:54:18,791 basehttp "GET /static/assets/js/jquery.dataTables.min.js HTTP/1.1" 200 106738
+INFO 2025-02-15 19:54:18,823 basehttp "GET /static/assets/plugins/sweetalert/sweetalert2.all.min.js HTTP/1.1" 200 72874
+INFO 2025-02-15 19:54:18,823 basehttp "GET /static/assets/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4534
+INFO 2025-02-15 19:54:18,826 basehttp "GET /static/assets/plugins/sweetalert/sweetalerts.min.js HTTP/1.1" 200 7493
+INFO 2025-02-15 19:54:18,849 basehttp "GET /static/assets/js/upload.js HTTP/1.1" 200 5119
+INFO 2025-02-15 19:54:18,860 basehttp "GET /static/assets/plugins/select2/js/select2.min.js HTTP/1.1" 200 70338
+INFO 2025-02-15 19:54:19,032 basehttp "GET /static/assets/img/law.png HTTP/1.1" 200 27979
+INFO 2025-02-15 19:54:23,378 basehttp "GET /register/ HTTP/1.1" 200 1758
+INFO 2025-02-15 19:54:23,500 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 200 2485883
+INFO 2025-02-15 19:56:44,247 basehttp "GET /register/ HTTP/1.1" 200 1643
+INFO 2025-02-15 19:56:44,309 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 304 0
+INFO 2025-02-15 19:56:44,313 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 304 0
+INFO 2025-02-15 19:57:38,559 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 19:57:48,800 basehttp "GET /register/ HTTP/1.1" 200 1643
+INFO 2025-02-15 19:57:48,835 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3179
+INFO 2025-02-15 19:57:48,922 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 200 2485883
+INFO 2025-02-15 20:02:25,873 autoreload Watching for file changes with StatReloader
