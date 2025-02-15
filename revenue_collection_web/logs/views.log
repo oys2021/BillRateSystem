@@ -3943,3 +3943,6 @@ INFO 2025-02-15 19:57:48,800 basehttp "GET /register/ HTTP/1.1" 200 1643
 INFO 2025-02-15 19:57:48,835 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3179
 INFO 2025-02-15 19:57:48,922 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 200 2485883
 INFO 2025-02-15 20:02:25,873 autoreload Watching for file changes with StatReloader
+INFO 2025-02-15 20:02:37,002 basehttp "GET /register/ HTTP/1.1" 200 1643
+INFO 2025-02-15 20:02:37,045 basehttp "GET /static/assets/css/auth.css HTTP/1.1" 200 3133
+INFO 2025-02-15 20:02:37,102 basehttp "GET /static/assets/img/law1.jpg HTTP/1.1" 200 2485883
